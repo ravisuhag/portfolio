@@ -1,5 +1,5 @@
 body{
-	
+	margin-top: 61px;
 }
 .navbar-inner{
 	border-bottom: solid 1px #fff !important;
@@ -17,3 +17,44 @@ body{
 	width:auto;
 
 }
+/* Jumbotrons
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  background: url(../img/web_header.png) repeat center center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+.jumbotron a {
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+}
+.jumbotron a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+.masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+.masthead p {
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+.masthead-links {
+  margin: 0;
+  list-style: none;
+}
+.masthead-links li {
+  display: inline;
+  padding: 0 10px;
+  color: rgba(255,255,255,.25);
+ }
