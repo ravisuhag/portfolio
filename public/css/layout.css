@@ -1,0 +1,19 @@
+body{
+	
+}
+.navbar-inner{
+	border-bottom: solid 1px #fff !important;
+}
+.navbar-inner {
+  -webkit-box-shadow: 0 1px 5px -1px rgba(0,0,0,.5) !important;
+  -moz-box-shadow: 0 1px 5px -1px rgba(0,0,.5) !important;
+  box-shadow: 0 1px 5px -1px rgba(0,0,0,.5) !important;
+}
+.landing_img{
+	height:80%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width:auto;
+
+}
