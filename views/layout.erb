@@ -13,13 +13,9 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/layout.css" rel="stylesheet">
-    <link rel="stylesheet" href="/rvl/css/reveal.css">
-    <link rel="stylesheet" href="/rvl/css/theme/simple.css" id="theme">
-    <link rel="stylesheet" href="rvl/lib/css/zenburn.css">
   </head>
   <body>
-  <!-- Navbar
-  ================================================== -->
+  <!-- =====================[ Navbar ]================== -->
   <div class="navbar navbar-fixed-top  ">
    <div class="navbar-inner">
      <div class="container">
@@ -31,17 +27,8 @@
        <a class="brand" href="/">Ravi Suhag</a>
        <div class="nav-collapse">
           <ul class="nav pull-right">
-            <li><a id="swatch-link" href="/personal">Personal</a></li>
-            
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Professional</a>
-              <ul class="dropdown-menu" id="swatch-menu">
-                <li><a href="#">UI/UX Designer</a></li>
-                <li><a href="/webdev">Web Developer</a></li>
-                <li><a href="#">Embedded Developer</a></li>
-                <li><a href="#">Entrepreneur</a></li>  
-              </ul>
-            </li>
+            <li><a href="/personal">Personal</a></li>
+            <li><a href="/webdev">Web Developer</a></li>
             <li><a href="#">Lab</a></li>
             <li><a href="#">Social</a> </li>
             <li><a href="#">Connect</a></li>
@@ -55,26 +42,5 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/application.js"></script>
-  <script src="/rvl/lib/js/head.min.js"></script>
-  <script src="/rvl/js/reveal.min.js"></script>
-  <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: false,
-        zoom: true,
-
-        theme: Reveal.getQueryHash().theme,
-        transition: Reveal.getQueryHash().transition || 'default', 
-        dependencies: [
-          { src: '/rvl/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '/rvl/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '/rvl/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          
-        ]
-      });
-
-    </script>
 </body>
 </html>
