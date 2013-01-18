@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>rvs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ravi Suhag Personal Portfolio">
-  <meta name="author" content="Ravi Suhag">
+  <head>
+    <meta charset="utf-8">
+    <title>rvs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Ravi Suhag Personal Portfolio"/>
+    <meta name="author" content="Ravi Suhag"/>
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
-      <link href="/css/bootstrap.css" rel="stylesheet">
-      <link href="/css/bootstrap-responsive.css" rel="stylesheet">
-      <link href="/css/layout.css" rel="stylesheet">
-    </head>
-    <body>
-
-
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="/rvl/css/reveal.min.css">
+    <link rel="stylesheet" href="/rvl/css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="rvl/lib/css/zenburn.css">
+  </head>
+  <body>
   <!-- Navbar
   ================================================== -->
   <div class="navbar navbar-fixed-top  ">
@@ -53,5 +55,27 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/application.js"></script>
+  <script src="/rvl/lib/js/head.min.js"></script>
+  <script src="/rvl/js/reveal.min.js"></script>
+  <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'default', 
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
 </body>
 </html>
