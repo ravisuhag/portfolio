@@ -13,7 +13,7 @@
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/layout.css" rel="stylesheet">
-    <link rel="stylesheet" href="/rvl/css/reveal.min.css">
+    <link rel="stylesheet" href="/rvl/css/reveal.css">
     <link rel="stylesheet" href="/rvl/css/theme/simple.css" id="theme">
     <link rel="stylesheet" href="rvl/lib/css/zenburn.css">
   </head>
@@ -62,17 +62,16 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
+        center: false,
+        zoom: true,
 
         theme: Reveal.getQueryHash().theme,
         transition: Reveal.getQueryHash().transition || 'default', 
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: '/rvl/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/rvl/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/rvl/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          
         ]
       });
 
