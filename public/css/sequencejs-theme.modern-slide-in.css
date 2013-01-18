@@ -52,13 +52,12 @@ table {
 /* prefix declarations */
 /* THEME STYLES */
 #sequence-theme {
-  color: white;
   font-size: 0.625em;
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 600px;
-  /*max-width: 1280px;*/
+  /*height: 600px;
+  max-width: 1280px;*/
   -webkit-backface-visibility: hidden;
   /* prevent graphical glitches in WebKit browsers when using transitions */
 }
@@ -69,10 +68,10 @@ table {
   overflow: hidden;
   /*max-width: 1280px;*/
   width: 100%;
-  background-color: #D9D9D9;
+  /*background-color: #D9D9D9;
   background-image: url("../images/bg-sequence.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 100%;*/
 }
 #sequence-theme .next,
 #sequence-theme .prev {
@@ -234,19 +233,19 @@ table {
   transition-duration: 0.5s;
 }
 #sequence-theme .model {
-  left: 30%;
-  bottom: -48%;
+  left: -30%;
+  bottom: -50%;
   opacity: 0;
-  position: relative;
-  height: auto !important;
-  max-height: 568px !important;
-  width: 30%;
+  position: absolute;
+  height:80;
+  
+  width:auto;
   min-width: 225px;
   /*prevents the model from shrinking when the browser is resized*/
-  max-width: 266px;
+  
 }
 #sequence-theme .animate-in .model {
-  left: 15%;
+  left: 0%;
   opacity: 1;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
