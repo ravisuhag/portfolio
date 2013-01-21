@@ -10,6 +10,6 @@ end
 get '/personal' do
 	erb :personal
 end
-get '/webdev' do
-	erb :webdev
+get '/professional' do
+	erb :professional
 end
