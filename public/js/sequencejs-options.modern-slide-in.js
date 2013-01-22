@@ -3,7 +3,7 @@ $(document).ready(function(){
         nextButton: true,
         prevButton: true,
         animateStartingFrameIn: true,
-        autoPlayDelay: 3000,
+        autoPlayDelay: 6000,
         preloader: true,
         pauseOnHover: false,
         preloadTheseFrames: [1],
