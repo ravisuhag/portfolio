@@ -1,4 +1,4 @@
-@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+@import url('http://fonts.googleapis.com/css?family=Armata');
 /*!
  * Bootstrap v2.2.2
  *
@@ -206,7 +206,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family:'Armata';
   font-size: 17px;
   line-height: 26px;
   color: #333333;
@@ -874,7 +874,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: 'Armata';
 }
 label {
   display: block;
@@ -3646,7 +3646,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 17px 20px 17px;
+  padding: 20px 20px 20px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -3797,7 +3797,7 @@ input[type="submit"].btn.btn-mini {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 5px 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -3807,6 +3807,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 .navbar .nav > li > a {
+  font-size: 0.9em;
   float: none;
   padding: 17px 15px 17px;
   color: #333333;

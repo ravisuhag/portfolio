@@ -154,12 +154,11 @@ table {
 }
 #sequence-theme h2 {
   color: black;
-  font-family: 'Sirin Stencil', serif;
   font-weight: bold;
   text-transform: uppercase;
 }
 #sequence-theme h3 {
-  font-family: 'Ruluko', serif;
+ font-weight: normal;
 }
 #sequence-theme .next,
 #sequence-theme .prev {
@@ -207,12 +206,13 @@ table {
   transition-duration: 0.5s;
 }
 #sequence-theme .subtitle {
-  color: black;
-  font-size: 2em;
+  color:#333;
+  font-size: 1.5em;
   left: 35%;
   width: 35%;
   opacity: 0;
   top: 101%;
+  line-height: 1.6em;
 }
 #sequence-theme .animate-in .subtitle {
   left: 50%;

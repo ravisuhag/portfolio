@@ -1,7 +1,6 @@
 $(function() {
     var boxheight = (parseInt($(window)
         .height())) - 61;
-alert(boxheight);
     $('.dis')
         .css({
         'height': boxheight
