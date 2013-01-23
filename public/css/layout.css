@@ -63,3 +63,14 @@ body{
   padding: 0 10px;
   color: rgba(255,255,255,.25);
  }
+
+.prof_masthead .span3{
+  text-align: center;
+  padding-top: 40px;
+}  
+.prof_masthead span{
+  display:block;
+  padding:30px 0px;
+  width:100%;
+  text-align: center;
+}
