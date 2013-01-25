@@ -207,8 +207,8 @@ textarea {
 body {
   margin: 0;
   font-family:'Armata';
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 24px;
   color: #333333;
   background-color: #f6f6f6;
 }
@@ -3807,7 +3807,7 @@ input[type="submit"].btn.btn-mini {
   float: left;
 }
 .navbar .nav > li > a {
-  font-size: 0.9em;
+  font-size: 1em;
   float: none;
   padding: 17px 15px 17px;
   color: #333333;

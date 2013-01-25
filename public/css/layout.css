@@ -1,10 +1,13 @@
-body{
-	margin-top: 61px;
-}
 @media (max-width: 979px){
   body{
     margin-top: 0px !important;
   }
+}
+body{
+  margin-top: 61px;
+}
+.green_title{
+  color:#0066ff;
 }
 .navbar-inner{
 	border-bottom: solid 1px #fff !important;
@@ -63,14 +66,25 @@ body{
   padding: 0 10px;
   color: rgba(255,255,255,.25);
  }
-
+/* Professional
+--------------------------------------------------*/
 .prof_masthead .span3{
   text-align: center;
   padding-top: 40px;
 }  
 .prof_masthead span{
   display:block;
+  font-size:1.4em;
   padding:30px 0px;
   width:100%;
   text-align: center;
 }
+.what_box{
+  padding-top:20px;
+}
+.what_box ul{
+  color:#0066ff;
+  font-size:16px;
+  line-height: 34px;
+}
+.what_box img{max-width:100px;padding-bottom:15px }
