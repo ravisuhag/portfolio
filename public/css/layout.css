@@ -68,9 +68,14 @@ body{
  }
 /* Professional
 --------------------------------------------------*/
-.prof_masthead .span3{
+.prof_masthead .span12{
   text-align: center;
   padding-top: 40px;
+}
+.prof_masthead img{
+  width:100%;
+  height:auto;
+  max-width:200px; 
 }  
 .prof_masthead span{
   display:block;
