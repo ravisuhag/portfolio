@@ -73,14 +73,14 @@ body{
   padding-top: 40px;
 }
 .prof_masthead img{
-  width:100%;
+  width:90%;
   height:auto;
   max-width:200px; 
 }  
 .prof_masthead span{
   display:block;
   font-size:1.4em;
-  padding:30px 0px;
+  padding-top:30px;
   width:100%;
   text-align: center;
 }
@@ -92,4 +92,7 @@ body{
   font-size:16px;
   line-height: 34px;
 }
-.what_box img{max-width:100px;padding-bottom:15px }
+.what_box img{
+  max-width:100px;
+  padding-bottom:15px
+}
