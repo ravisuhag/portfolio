@@ -8,6 +8,7 @@ body{
 }
 .green_title{
   color:#0066ff;
+  font-weight: normal;
 }
 .navbar-inner{
 	border-bottom: solid 1px #fff !important;
@@ -87,10 +88,10 @@ body{
 .what_box{
   padding-top:20px;
 }
-.what_box ul{
+.what_box ul,.what_box li{
   color:#0066ff;
   font-size:16px;
-  line-height: 34px;
+  line-height: 34px !important;
 }
 .what_box img{
   max-width:100px;
