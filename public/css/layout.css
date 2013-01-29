@@ -85,6 +85,9 @@ body{
   width:100%;
   text-align: center;
 }
+.prof_masthead .intro_text{
+  text-align: left;
+}
 .what_box{
   padding-top:20px;
 }
@@ -96,4 +99,12 @@ body{
 .what_box img{
   max-width:100px;
   padding-bottom:15px
+}
+.time{
+  font-size: 20px;
+  text-align: center;
+}
+.client img{
+  max-width:200px;
+  max-height:150px; 
 }

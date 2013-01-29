@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'data_mapper'
+require 'erb'
 enable :sessions
 
 get '/' do
