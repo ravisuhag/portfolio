@@ -5,6 +5,8 @@ source :gemcutter
 	gem "httparty"
 	gem "thin"
 	gem "data_mapper"
+	gem "pony"
+	gem "haml"
 
 group :production, :staging do
 	gem "dm-postgres-adapter"

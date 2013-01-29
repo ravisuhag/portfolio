@@ -100,11 +100,24 @@ body{
   max-width:100px;
   padding-bottom:15px
 }
+
 .time{
   font-size: 20px;
   text-align: center;
 }
+.client .span3{
+  text-align: center;
+  padding-top:30px; 
+}
 .client img{
   max-width:200px;
   max-height:150px; 
+}
+/**************[Social]**************** */
+.social_page{
+  padding-top: 30px
+}
+.social li{
+  list-style:none;
+  display:inline-block; 
 }
