@@ -10,9 +10,6 @@ $(document).ready(function(){
         autoplay :true,
         preloadTheseFrames: [1],
         preloadTheseImages: [
-            "images/tn-model1.png",
-            "images/tn-model2.png",
-            "images/tn-model3.png"
         ]
     };
     var sequence = $("#sequence").sequence(options).data("sequence");

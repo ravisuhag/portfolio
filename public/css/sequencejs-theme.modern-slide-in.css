@@ -1,4 +1,6 @@
-
+#sequence-theme ul{
+  margin: 0px;
+}
 /* THEME STYLES */
 #sequence-theme {
   font-size: 0.625em;
@@ -133,7 +135,7 @@
   left: 65%;
   width: 35%;
   opacity: 0;
-  bottom: 30%;
+  bottom: 23%;
   z-index: 50;
 }
 #sequence-theme .animate-in .title {

@@ -33,8 +33,15 @@ body{
   padding: 40px 40px 30px 40px ;
   color: #fff;
   text-align: center;
-  background: url(../img/web_header.png) repeat center center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+.jumbo1{
+background: url(../img/web_header.png) repeat center center;
+}
+.jumbo2{
+  background: url(../img/bg/hex.jpg) repeat center center;
+  color:#333;
+  border-bottom:solid 1px #cfcfcf; 
 }
 .jumbotron a {
   color: #fff;
@@ -71,7 +78,6 @@ body{
 --------------------------------------------------*/
 .prof_masthead .span12{
   text-align: center;
-  padding-top: 40px;
 }
 .prof_masthead img{
   width:90%;
@@ -85,8 +91,13 @@ body{
   width:100%;
   text-align: center;
 }
-.prof_masthead .intro_text{
+.intro {
+  padding-top: 20px
+}
+.intro .intro_text{
   text-align: left;
+  font-size: 16px;
+  line-height: 28px
 }
 .what_box{
   padding-top:20px;
@@ -120,4 +131,9 @@ body{
 .social li{
   list-style:none;
   display:inline-block; 
+}
+.contact{
+  padding-top: 40px;
+  font-size: 15px;
+  line-height: 20px
 }

@@ -17,3 +17,6 @@ end
 get '/social' do
 	erb :social
 end
+get '/connect' do
+	erb :connect
+end
