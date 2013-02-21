@@ -33,7 +33,7 @@ body{
   padding-right: 65px;
 }
 .title{
-  color:#000;
+  color:#783A3B;
   font-size: 2.2em;
   display:block;
 }
@@ -54,7 +54,7 @@ body{
 }
 .home_social a{
   opacity:0.8;
-  filter:alpha(opacity=80);
+  filter:alpha(opacity=80); 
 }
 .home_social a:hover{
   opacity:1;
@@ -65,7 +65,11 @@ body{
   width:20px;
   height:auto;
 }
-
+.personal_jumbo{
+  background-image:url(../img/web_header.png);
+  font-size: 1.1em;
+  background-repeat: repeat;
+}
 
 /* Jumbotrons
 -------------------------------------------------- */
@@ -76,9 +80,7 @@ body{
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
-.jumbo1{
-background: url(../img/web_header.png) repeat center center;
-}
+
 .jumbo2{
   background: url(../img/bg/hex.jpg) repeat center center;
   color:#333;
