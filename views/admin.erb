@@ -1,0 +1,10 @@
+<% @notes.each do |note| %>  
+  <table class="table">
+    <tr>
+      <td><%= note.id %></td>
+      <td><%= note.name %></td>
+      <td><%= note.email_address %></td>
+      <td><%= note.message %></td>
+    </tr>
+  </table>
+<% end %>  
