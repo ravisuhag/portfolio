@@ -7,5 +7,12 @@ source :gemcutter
 	gem "data_mapper"
 	gem "pony"
 	gem "haml"
+
+group :production, :staging do
 	gem "dm-postgres-adapter"
 	gem "pg"
+end
+group :development, :test do
+	gem "dm-sqlite-adapter"
+	gem "sqlite3"
+end
