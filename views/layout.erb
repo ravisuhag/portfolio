@@ -19,7 +19,14 @@
     <script src="/js/texteffect.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-    $("body").queryLoader2(backgroundColor:'#DCD3B2');
+    $("body").queryLoader2({
+        barColor: "#2E2D28",
+        backgroundColor: "#DBD2B1",
+        percentage: true,
+        barHeight: 1,
+        completeAnimation: "grow",
+        minimumTime: 100
+    });
 });
     </script>
   </head>
