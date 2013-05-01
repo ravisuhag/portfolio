@@ -5,7 +5,7 @@ require 'data_mapper'
 require 'erb'
 enable :sessions
 
-DataMapper.setup(:default, 'postgres://x:x@ec2-54-225-84-29.compute-1.amazonaws.com:5432/d5dm8c2e73rac3')
+DataMapper.setup(:default, 'postgres://x:x@ec2-54-235-152-226.compute-1.amazonaws.com:5432/d99gkdou4433hf'))
 class Messages 
   include DataMapper::Resource  
   property :id, Serial  
