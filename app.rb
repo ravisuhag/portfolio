@@ -5,7 +5,7 @@ require 'data_mapper'
 require 'erb'
 enable :sessions
 
-DataMapper::setup(:default, 'postgres://x:x@ec2-54-225-84-29.compute-1.amazonaws.com:5432/d5dm8c2e73rac3')
+/DataMapper::setup(:default, 'postgres://x:x@ec2-54-225-84-29.compute-1.amazonaws.com:5432/d5dm8c2e73rac3')
 
 class Messages 
   include DataMapper::Resource  
@@ -16,7 +16,7 @@ class Messages
   property :created_at, DateTime  
 end
 DataMapper.finalize.auto_upgrade!
-
+/
 get '/' do
 	erb :index
 end
@@ -32,7 +32,7 @@ end
 get '/connect' do
 	erb :connect
 end
-
+/
 post '/connect' do  
   n = Messages.new  
   n.message = params[:message]
@@ -47,4 +47,4 @@ get '/adminadminadmin' do
   @title = 'All Messages'  
   erb :admin 
 end 
-
+/
