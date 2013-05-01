@@ -8,14 +8,14 @@ enable :sessions
 get '/' do
 	erb :index
 end
-get '/personal' do
-	erb :personal
+get '/about' do
+	erb :about
 end
-get '/professional' do
-	erb :professional
+get '/work' do
+	erb :work
 end
-get '/social' do
-	erb :social
+get '/lab' do
+	erb :lab
 end
 get '/connect' do
 	erb :connect
