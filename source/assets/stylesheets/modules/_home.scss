@@ -1,12 +1,13 @@
 // Home Page - Landing Image
 
 .landing-image{
-	height: 87%;
+	height: auto;
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
 	width: auto;
-
+	max-width:100%;
+	max-height:87%;
 }
 
 
