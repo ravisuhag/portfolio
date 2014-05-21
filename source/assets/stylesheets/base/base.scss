@@ -1,3 +1,22 @@
+@import url('http://fonts.googleapis.com/css?family=Armata');
+
+@font-face {
+	font-family: 'scribblebox';
+	src: url(../fonts/scribblebox.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
-	background:#F2DEB9 url(http://cowboy.premiumcoding.com/wp-content/themes/cowbox/images/bg/bg-pattern-grunge.png) repeat 0 0 !important
+	margin-top:50px;
+	background-image:url(../images/bg-pattern.jpg);
+	background-attachment:fixed;
+	font-family: 'Armata';
+}
+@media (max-width: 979px){
+.navbar-fixed-top {
+	margin-bottom:0px !important;
+}
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	padding: 0px !important;
+}
 }

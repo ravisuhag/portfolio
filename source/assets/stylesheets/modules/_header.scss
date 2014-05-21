@@ -1,0 +1,26 @@
+.rs-navbar{
+	border-bottom:0 !important;
+	background:#333 url(../images/bg_header.jpg) repeat-x;
+
+	.navbar-brand {
+		padding: 16px 20px 14px;
+		font-size: 20px;
+		font-weight: lighter;
+		color: #FFC;
+		text-shadow: none;
+	}
+	.navbar-nav{
+		padding-right: 10px;
+	}
+	.navbar-nav > li > a{
+		padding-top:17px;
+		padding-bottom:13px;
+		color: #999999;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus{
+		color: #ff9
+	}
+}
