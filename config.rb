@@ -35,6 +35,8 @@
 # Pretty Urls
 activate :directory_indexes
 
+page "/README.md", :directory_index => false
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
