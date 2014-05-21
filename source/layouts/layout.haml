@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %title Ravi Suhag
+    %meta{:charset => "utf-8"}
+    %meta{:content => "", :name => ""}
+    %meta{:content => "on", "http-equiv" => "cleartype"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %link{:href => "/assets/stylesheets/style.css", :rel => "stylesheet"}
+
+  %body
+    = render_partial 'partials/header'
+    = yield
+    = render_partial 'partials/footer'
