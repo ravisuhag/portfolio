@@ -9,8 +9,11 @@
 		color: #FFC;
 		text-shadow: none;
 	}
+	.navbar-brand:hover{
+		color: #fff;
+	}
 	.navbar-nav{
-		padding-right: 10px;
+		padding-right: 20px;
 	}
 	.navbar-nav > li > a{
 		padding-top:17px;
