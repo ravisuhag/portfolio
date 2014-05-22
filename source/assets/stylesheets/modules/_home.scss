@@ -49,8 +49,9 @@
 		padding-top:30px;
 
 		 a{
-		 	background-color: #CE3323;
-			color: #fff;
+		 	background-color: transparent;
+			color: #CE3323;
+		 	
 			border: dashed 1px #CE3323;	
 			border-radius:0;
 			font-size: 13px;
@@ -58,8 +59,8 @@
 			margin-right: 20px;
 		}
 		a:hover{
-			background-color: transparent;
-			color: #CE3323;
+			background-color: #CE3323;
+			color: #fff;
 			
 		}
 	}
