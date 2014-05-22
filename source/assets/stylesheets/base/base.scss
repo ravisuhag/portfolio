@@ -19,11 +19,18 @@ body{
 	color:#000
 }
 
-h2{
+h2,h1{
 	font-family:blueprint;
-	font-size:50px;
 	letter-spacing:0.05em;
 	color: darken(#049372, 7%);
+}
+h1{
+	font-size:109px;
+	color:#CE3323;
+	margin-bottom:0;
+}
+h2{
+	font-size:50px;
 }
 
 
