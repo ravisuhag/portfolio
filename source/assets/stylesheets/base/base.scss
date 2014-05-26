@@ -1,38 +1,46 @@
 @import url('http://fonts.googleapis.com/css?family=Armata');
 
 @font-face {
-	font-family: 'scribblebox';
-	src: url(../fonts/scribblebox.ttf) format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
 	font-family: 'blueprint';
 	src: url(../fonts/BluprintDEMO.otf);
 	font-weight: normal;
 	font-style: normal;
 }
+body, html{
+	height:100%;
+}
 body{
 	margin-top:50px;
 	background:#F2DEB9 url(../images/bg-pattern.png) repeat 0 0;
-	font-family: 'Armata';
-	color:#000;
+	font-family: $body-font;
+	color:$brand-dark;
 	line-height:1.6em;
-	font-size:15px;
 }
 
-h2,h1{
-	font-family:blueprint;
+h1,h2,h4,h3{
+	font-family:$heading-font;
 	letter-spacing:0.05em;
-	color: darken(#049372, 7%);
 }
 h1{
 	font-size:109px;
-	color:#CE3323;
+	color:$brand-primary;
 	margin-bottom:0;
 }
 h2{
-	font-size:50px;
+	// color:darken($brand-secondary, 4%);
+	color:$brand-primary;
+	font-size:48px;
+}
+h3{
+	color:$brand-primary;
+
+	font-size:60px;
 }
 
 
+.p-t-20{
+	padding-top:20px;
+}
+.p-t-60{
+	padding-top:20px;
+}

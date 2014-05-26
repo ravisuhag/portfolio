@@ -1,5 +1,3 @@
-// Home Page - Landing Image
-
 .landing-image{
 	height: auto;
 	position: absolute;
@@ -14,44 +12,19 @@
 	padding-right: 55px;
 	
 	.title {
-		display: block;
-		font-family: blueprint;
-		font-weight: lighter;
+		font-family: $heading-font;
 		font-size: 95px;
 		letter-spacing: 0.02em;
-		color: #CE3323;
-		margin-bottom: 0;
-		padding-bottom:0;
+		color: $brand-primary;
 		line-height: 0.9em
 	}
 
-	ul{
-		list-style-type: disc;
-		padding-left:24px;
-
-		li {
-			padding-bottom:5px;
-			font-size: 16px;
-		}
-	}
-	.subtitle {
-		color: #333;
-		font-size: 1em;
-		line-height: 1.6em;
-		transition-duration: 0.5s;
-
-		strong{
-			color: #000;
-		}
-	}
 	.home-action{
-	
 		padding-top:30px;
 
-		 a{
+		a{
 		 	background-color: transparent;
-			color: #CE3323;
-		 	
+			color: #CE3323;		 	
 			border: dashed 1px #CE3323;	
 			border-radius:0;
 			font-size: 13px;
@@ -61,7 +34,6 @@
 		a:hover{
 			background-color: #CE3323;
 			color: #fff;
-			
 		}
 	}
 }

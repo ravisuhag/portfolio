@@ -6,25 +6,13 @@
 // Colors
 $white:           #fff;
 $black:           #000;
-$brand-secondary: #186ED0;
+$brand-primary:   #CE3323;
+$brand-secondary: #037057;
 $brand-tertiary:  #f26522;
 $brand-light:     #F7F7F7;
-$brand-dark:      #2A2A2A;
+$brand-dark:      #000;
 
 
-
-//== Layout
-//
-//## Variables and Config for Layouts
-$offset-top : 60px;
-
-
-
-//== Modules
-//
-//## Variables and Config for all the Modules
-
-// Header Module
-$header-background-color:#eee;
-$header-border-color:#dddddd;
-$header-spacing: 10px 0;
+// Fonts
+$body-font : 'Open Sans';
+$heading-font: 'blueprint';

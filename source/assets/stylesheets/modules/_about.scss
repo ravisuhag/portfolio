@@ -1,16 +1,17 @@
-.about-top{
-	border-bottom:solid 1px #555;
-	padding-top:30px;
+.about{
+	// min-height:100%;
+	padding-top:50px;
 	img{
 		height: 300px;
 	}
 }
-.about{
-	padding-top:40px;
-}
+
+
+
 .bar {
 	background: url(../images/title-divider-right.png) no-repeat center;
 	background-size: 90% auto;
+	// padding-top:50px;
 	height:74px;
 	font-family: blueprint;
 	margin: 90px 0px 80px;
@@ -25,7 +26,6 @@
 	margin: 0 auto;
 	background:#F2DEB9 url(../images/bg-pattern.png) repeat 0 0;
 	padding:0 10px;
-	
 }
 
 .timeline img{
@@ -71,3 +71,34 @@
 	background:url(../images/move.png) no-repeat;
 	background-size:45px 45px;
 }
+
+
+
+// New about
+.abt-side{
+	width:150px;
+	height:150px;
+	background:url(../images/RaviSuhag_home.png) top center no-repeat;
+	background-size:cover;
+	opacity: 0.9;
+	border-radius: 75px;
+	margin-top:40px;
+}
+.sidebar{
+	margin-top:20px;
+	color: $brand-primary;
+}
+.sidebar li {
+	padding-bottom:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
