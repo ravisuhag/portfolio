@@ -1,6 +1,9 @@
 .rs-navbar{
-	border-bottom:0 !important;
-	background:#333 url(../images/bg_header.jpg) repeat-x;
+	// border-bottom:0 !important;
+	// background:#333 url(../images/bg_header.jpg) repeat-x;
+	background:#d24d57 url(../images/bg-pattern.png) repeat 0 0;
+	padding:2px 0;
+	border-bottom:solid 1px #c21d17 !important; 
 
 	.navbar-brand {
 		padding: 16px 20px 14px;
@@ -18,7 +21,7 @@
 	.navbar-nav > li > a{
 		padding-top:17px;
 		padding-bottom:13px;
-		color: #999999;
+		color: #fff;
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	}
 

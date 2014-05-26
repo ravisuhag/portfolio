@@ -1,7 +1,6 @@
 .about{
-	// min-height:100%;
 	padding-top:50px;
-	img{
+	.about-icon{
 		height: 300px;
 	}
 }
@@ -10,14 +9,14 @@
 
 .bar {
 	background: url(../images/title-divider-right.png) no-repeat center;
-	background-size: 90% auto;
+	background-size: 100% auto;
 	// padding-top:50px;
-	height:74px;
 	font-family: blueprint;
-	margin: 90px 0px 80px;
+	height:70px;
+	margin: 90px 0px 30px;
 	text-align: center;
-	color: #CE3323;
-	font-size:80px;
+	color: #000;
+	font-size:70px;
 	letter-spacing:0.1em;
 	font-weight:500;
 	line-height:1.2em
@@ -28,74 +27,6 @@
 	padding:0 10px;
 }
 
-.timeline img{
-	width:90%;
-	max-width:1100px;
-}
-.skill img{
-	max-width: 220px;
-}
-.more_me{
-	color:#000;
-	font-size:14px;
-}
-.more_me .span4{padding:0px 50px !important}
-.more_me h2{ 
-	color:#181818;
-	font-weight:normal !important;
-	padding:0px 0px 0px 60px;
-	margin:0px;
-	background-size:38px 38px;
-}
-.more_me h2.athlete{
-	background:url(../images/ball.png) no-repeat;
-	background-size:45px 45px;
-}
-.more_me h2.thinker{
-	background:url(../images/brain.png) no-repeat;
-	background-size:45px 45px;
-}
-.more_me h2.dancer{
-	background:url(../images/player.png) no-repeat;
-	background-size:45px 45px;
-}
-.more_me h2.superhero{
-	background:url(../images/hul.png) no-repeat;
-	background-size:45px 45px;
-}
-.more_me h2.learner{
-	background:url(../images/book.png) no-repeat;
-	background-size:45px 45px;
-}
-.more_me h2.movielover{
-	background:url(../images/move.png) no-repeat;
-	background-size:45px 45px;
-}
-
-
-
-// New about
-.abt-side{
-	width:150px;
-	height:150px;
-	background:url(../images/RaviSuhag_home.png) top center no-repeat;
-	background-size:cover;
-	opacity: 0.9;
-	border-radius: 75px;
-	margin-top:40px;
-}
-.sidebar{
-	margin-top:20px;
-	color: $brand-primary;
-}
-.sidebar li {
-	padding-bottom:5px;
-}
-
-.resu{
-	width:100px;
-	height:100px !important;
-}
 
 .award{
 	background-color:transparent;
@@ -104,6 +35,19 @@
 }
 
 
+footer {
+	padding: 100px 10px;
+	background:#d24d57 url(../images/bg-pattern.png) repeat 0 0;
+	margin-top: 40px;
+	font-size: 12px;
+	color: #000;
+}
+.foot-title {
+	color:#fff;
+	font-family:$heading-font;
+	font-size:90px;
+	letter-spacing:0.2em;
+}
 
 
 
