@@ -5,38 +5,8 @@
 	}
 }
 
-
-
-.bar {
-	background: url(../images/title-divider-right.png) no-repeat center;
-	background-size: 100% auto;
-	// padding-top:50px;
-	font-family: blueprint;
-	height:70px;
-	margin: 90px 0px 30px;
-	text-align: center;
-	color: #000;
-	font-size:70px;
-	letter-spacing:0.1em;
-	font-weight:500;
-	line-height:1.2em
-}
-.bar span {
-	margin: 0 auto;
-	background:#F2DEB9 url(../images/bg-pattern.png) repeat 0 0;
-	padding:0 10px;
-}
-
-
-.award{
-	background-color:transparent;
-	border:dashed 1px $brand-primary;
-	border-radius:0;
-}
-
-
 footer {
-	padding: 100px 10px;
+	padding: 70px 10px 70px;
 	background:#d24d57 url(../images/bg-pattern.png) repeat 0 0;
 	margin-top: 40px;
 	font-size: 12px;
@@ -47,7 +17,62 @@ footer {
 	font-family:$heading-font;
 	font-size:90px;
 	letter-spacing:0.2em;
+	line-height:90px;
 }
+.social{
+	padding-top:20px;
+	font-weight:lighter;
+	font-size:18px;
+
+	li{
+		border-right: solid 1px rgba(255, 255, 255, 0.4);
+		padding:0 10px;
+
+		a{
+			color:#000;
+		}
+	}
+}
+.intouch{
+	background:transparent;
+	border:solid 1px #fff;
+	padding: 12px 35px;
+	margin-top: 30px;
+	color:#fff;
+	border-radius:3px;
+
+	&:hover{
+		border:solid 1px #fff;
+		background:rgba(255, 255, 255, 0.6)
+	}
+}
+
+
+
+
+.bar {
+	background: url(../images/title-divider-right.png) no-repeat center;
+	background-size: 100% auto;
+	padding-top:50px;
+	font-family: blueprint;
+	height:70px;
+	margin: 90px 0px 30px;
+	text-align: center;
+	color: #000;
+	font-size:70px;
+	letter-spacing:0.1em;
+	font-weight:500;
+	line-height:1.2em;
+
+	span {
+		margin: 0 auto;
+		background:#F2DEB9 url(../images/bg-pattern.png) repeat 0 0;
+		padding:0 10px;
+	}
+}
+
+
+
 
 
 

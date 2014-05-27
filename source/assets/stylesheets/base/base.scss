@@ -24,23 +24,21 @@ h1{
 	margin-bottom:0;
 }
 h2{
-	// color:darken($brand-secondary, 4%);
 	color:$brand-primary;
 	font-size:48px;
 }
 h3{
-	color:$brand-primary;
 	font-size:60px;
 }
 h4{
-	color: $brand-secondary;
-	font-size:25px;
+	color: #444;
+	font-size:20px;
 }
 
 
 .p-t-20{
 	padding-top:20px;
 }
-.p-t-60{
+.p-t-40{
 	padding-top:40px;
 }
