@@ -13,6 +13,9 @@ body{
 	color:$brand-dark;
 	line-height:1.6em;
 }
+a, a:hover{
+	color:$link-color;
+}
 
 h1,h2,h3{
 	font-family:$heading-font;
