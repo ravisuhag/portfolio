@@ -17,25 +17,23 @@ a, a:hover{
 	color:$link-color;
 }
 
-h1,h2,h3{
+h1,h2{
 	font-family:$heading-font;
 	letter-spacing:0.05em;
+	color:$brand-primary;
 }
 h1{
 	font-size:109px;
-	color:$brand-primary;
 	margin-bottom:0;
 }
 h2{
-	color:$brand-primary;
 	font-size:48px;
 }
 h3{
-	font-size:60px;
+	font-size:25px;
 }
 h4{
-	color: #444;
-	font-size:20px;
+	font-size:22px;
 }
 
 

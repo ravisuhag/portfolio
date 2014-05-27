@@ -1,0 +1,36 @@
+.heading{
+	margin: 45px 0 72px;
+	font-family: $body-font;
+	font-size: 40px;
+	text-transform: uppercase;
+
+	.title{
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.subtitle {
+		display: block;
+		font-size: 13px;
+		line-height: 20px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-shadow: none;
+	}
+}
+
+.border{
+	border-bottom:solid 1px #888;
+	padding-bottom: 20px;
+	text-align: justify
+}
+	
+.position{
+	h4{
+		display: inline-block;
+
+		span{
+			font-size: 13px;
+		}
+	}
+}
