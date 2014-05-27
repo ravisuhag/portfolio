@@ -22,18 +22,16 @@
 	.home-action{
 		padding-top:30px;
 
-		a{
-		 	background-color: transparent;
-			color: #CE3323;		 	
-			border: dashed 1px #CE3323;	
-			border-radius:0;
-			font-size: 13px;
-			font-weight: bolder;
+		a{	
+			padding: 10px 30px;
+		 	background-color: rgba(206,51,35, 0.9);
+			color: #fff;	 	
+			border: solid 1px #CE3323;	
+			border-radius:2px;
 			margin-right: 20px;
 		}
 		a:hover{
-			background-color: #CE3323;
-			color: #fff;
+			background-color: rgba(206,51,35, 1);
 		}
 	}
 }
