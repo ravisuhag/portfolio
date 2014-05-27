@@ -1,2 +1,2 @@
-//= require jquery
-//= require bootstrap
+= require jquery
+= require bootstrap
