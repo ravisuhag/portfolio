@@ -2,36 +2,36 @@
 	.row
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/connx.png", :alt => ""}/ 
+				=image_tag 'connx.png'
 				%p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 	
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/2.png", :alt => ""}/ 
+				=image_tag '2.png' 
 				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 	
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/3.jpeg", :alt => ""}/ 
+				=image_tag '3.png'
 				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 	
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/4.png", :alt => ""}/ 		
+				=image_tag '4.png'		
 				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/5.png", :alt => ""}/ 
+				=image_tag '5.png'
 				%p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 	
 		.col-sm-4.col-md-3
 			%a.thumbnail{:href => "#"}
-				%img{:src => "/assets/images/work/6.png", :alt => ""}/ 
+				=image_tag '6.png'
 				%p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 				.clearfix
 	
@@ -40,7 +40,7 @@
 	.foot-title Making web a better place
 	%ul.list-inline.social
 		%li 
-			%a{:href => "/resume"} Resume
+			= link_to 'Resume', '/resume.html'
 		%li 
 			%a{:href => "http://in.linkedin.com/in/ravisuhag/", :target=>"blank"} Linkedin
 		%li 
@@ -51,6 +51,6 @@
 			%a{:href => "https://twitter.com/Ravi_Suhag", :target=>"blank"} Twitter
 		%li 
 			%a{:href => "https://www.facebook.com/suhag.ravi", :target=>"blank"} Facebook 
-	%a.btn.btn-lg.btn-default.intouch{:href => "/connect"} Get in touch 
+	= link_to 'Get in touch', '/connect.html', :class=> 'btn.btn-lg.btn-default.intouch'
 
 
