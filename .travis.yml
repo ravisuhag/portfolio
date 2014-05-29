@@ -3,4 +3,6 @@ language: ruby
 rvm:
   - 2.0.0-p247
 
-script:  bundle exec middleman build
+script:  
+	- bundle exec rack biuild
+	- bundle exec rack deploy
