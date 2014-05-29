@@ -11,5 +11,4 @@
   %body
     = render_partial 'partials/header'
     = yield
-
-    %script{:src => "assets/javascripts/all.js"}
+    = javascript_include_tag 'all'
