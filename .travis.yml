@@ -3,6 +3,4 @@ language: ruby
 rvm:
   - 2.0.0-p247
 
-script:  
-	- bundle exec rack build
-	- bundle exec rack deploy
+script:  bundle exec rack publish
