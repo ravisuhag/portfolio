@@ -29,7 +29,10 @@
 	}
 
 	.navbar-nav > li > a:hover,
-	.navbar-nav > li > a:focus{
-		color: #ff9
+	.navbar-nav > li > a:focus,
+	.navbar-nav > li.active > a:hover,
+	.navbar-nav > li.active > a:focus{
+		color: #ff9;
+		background:transparent;
 	}
 }
