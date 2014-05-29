@@ -1,4 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0-p247
-script:  bundle exec rake build 
+script:  
+	- bundle exec rake build 
+	- bundle exec rake publish
