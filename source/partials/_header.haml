@@ -10,13 +10,13 @@
 			= link_to 'Ravi Suhag', '/index.html', :class => 'navbar-brand'
 		.navbar-collapse.collapse
 			%ul.nav.navbar-nav.navbar-right
-				%li { is_page_active('/')
+				%li{ is_page_active('/about/')}
 					= link_to 'About', '/about.html'
-				%li { is_page_active('/')
+				%li{ is_page_active('/work/')}
 					= link_to 'Work', '/work.html'
 				-# %li
 				-# 	%a{:href => "#"} Lab
 				-# %li
 				-# 	%a{:href => "#"} Blog
-				%li { is_page_active('/')
+				%li{ is_page_active('/connect/')}
 					= link_to 'Connect', '/connect.html'
