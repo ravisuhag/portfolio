@@ -3,7 +3,7 @@ My Small Corner on Large Web    [![Build Status](https://travis-ci.org/ravisuhag
 =================================================
 My Personal website www.ravisuhag.com - Home of the Geek 
 
-## Who i am ?
+## Who am  I ?
 
 I am an EmCoDesignEr. Now you must be thinking what the f*** is that. Well here you go :-
 
