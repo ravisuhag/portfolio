@@ -21,8 +21,10 @@ EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)
 ## Quick Routes 
 Check following routes. These routes are realtive to the root path of the project repo on your server. 
  - <code>/</code> Home page
- - <code>#/about</code> About Me
- - <code>#/work</code> Portfolio 
+ - <code>/about</code> About Me
+ - <code>/work</code> Portfolio 
+ -  <code>/resume</code> Resume
+ -   <code>connect/</code> Connect
  - <code>#/lab</code> Coming Soon ... !
 
 ## Author
