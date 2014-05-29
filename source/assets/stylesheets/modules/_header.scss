@@ -22,6 +22,10 @@
 		color: #fff;
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	}
+	.navbar-nav > li.active > a{
+		background:transparent;
+		color: #ff9;
+	}
 
 	.navbar-nav > li > a:hover,
 	.navbar-nav > li > a:focus{
