@@ -6,11 +6,10 @@
     %meta{:content => "", :name => ""}
     %meta{:content => "on", "http-equiv" => "cleartype"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
-    %link{:href => "/assets/stylesheets/style.css", :rel => "stylesheet"}
+    %link{:href => "assets/stylesheets/style.css", :rel => "stylesheet"}
 
   %body
     = render_partial 'partials/header'
     = yield
-    -# = render_partial 'partials/footer'
 
-    %script{:src => "/assets/javascripts/all.js"}
+    %script{:src => "assets/javascripts/all.js"}
