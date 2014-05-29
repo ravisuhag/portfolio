@@ -12,3 +12,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 
 gem "bootstrap-sass", :require => false
+
+gem 'middleman-gh-pages'
