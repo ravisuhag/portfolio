@@ -27,6 +27,12 @@ Check following routes. These routes are realtive to the root path of the projec
  -   <code>connect/</code> Connect
  - <code>#/lab</code> Coming Soon ... !
 
+## Quick Setup
+- <code>bundle install</code>
+- <code>bundle exec middleman server</code>
+- <code>bundle exec rack build</code>
+- <code>bundle exec rack publish</code>
+
 ## Author
 
 **Ravi Suhag**
