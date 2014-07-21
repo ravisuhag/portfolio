@@ -45,6 +45,8 @@
 		h4{
 			display: inline-block;
 			margin-bottom: 4px;
+			font-weight:  normal;
+			font-size: 19px;
 	
 			span{
 				font-size: 13px;
@@ -57,8 +59,13 @@
 		margin: 10px 0 0;
 	}
 
-	.technical li{
-		font-size: 13px;
+	.technical {
+		h4{
+			
+		}
+		li{
+			font-size: 13px;
+		}
 	}
 
 }
