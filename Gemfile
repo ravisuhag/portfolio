@@ -1,10 +1,10 @@
-# If you have OpenSSL installed, we recommend updating
+ # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
 source 'http://rubygems.org'
 
 gem 'rake', '~> 10.3.2'
 
-gem "middleman", "~>3.2.2"
+gem "middleman", "~>3.3.10"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
