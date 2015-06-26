@@ -10,12 +10,12 @@ I am an EmCoDesignEr. Now you must be thinking what the f*** is that. Well here 
 EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)
 
 ## Tech Stack 
-* Middle Man as static site generator
-* SASS as CSS preprocessor
-* Bootstrap 3 as CSS Framework
-* Haml as Markup Language
-* Travis for Continous Integration
-* Heroku as hosting server
+* ```Middle Man``` as static site generator
+* ```SASS``` as CSS preprocessor
+* ```Bootstrap 3``` as CSS Framework
+* ```Haml``` as Markup Language
+* ```Travis``` for Continous Integration
+* ```Heroku``` as hosting server
 
 
 ## Quick Routes 
