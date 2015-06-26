@@ -9,7 +9,7 @@ I am an EmCoDesignEr. Now you must be thinking what the f*** is that. Well here 
 
 EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)
 
-## Tech Stack 
+## Tech Stack
 * ```Middle Man``` as static site generator
 * ```SASS``` as CSS preprocessor
 * ```Bootstrap 3``` as CSS Framework
@@ -18,11 +18,11 @@ EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)
 * ```Heroku``` as hosting server
 
 
-## Quick Routes 
-Check following routes. These routes are realtive to the root path of the project repo on your server. 
+## Quick Routes
+Check following routes. These routes are realtive to the root path of the project repo on your server.
  - <code>/</code> Home page
  - <code>/about</code> About Me
- - <code>/work</code> Portfolio 
+ - <code>/work</code> Portfolio
  -  <code>/resume</code> Resume
  -   <code>connect/</code> Connect
  - <code>#/lab</code> Coming Soon ... !
