@@ -1,13 +1,9 @@
-
-Home of the Geek    [![Build Status](https://travis-ci.org/ravisuhag/ravisuhag.com.svg?branch=master)](https://travis-ci.org/ravisuhag/ravisuhag.com)
-=================================================
-I am an award-winning web architect, designer, developer, hardware hacker and entrepreneur from India. I help people build great products.
+![Screenshot](/Screeshot.png?raw=true "Screenshot")
 
 ## Who am  I ?
+I am an award-winning web architect, designer, developer, hardware hacker and entrepreneur from India. Winner of 8 global hackathons out of 11 i participated. I help people build great products. I like to call myself EmCoDesignEr. Now you must be thinking what the f*** is that. Well here you go :-
 
-I am an EmCoDesignEr. Now you must be thinking what the f*** is that. Well here you go :-
-
-EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)
+```EmCoDesignEr = Embedded + Code + Design + Entrepreneur or Engineer ;)```
 
 ## Tech Stack
 * ```Middle Man``` as static site generator
