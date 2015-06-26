@@ -1,7 +1,7 @@
 
-My small corner on large web    [![Build Status](https://travis-ci.org/ravisuhag/ravisuhag.com.svg?branch=master)](https://travis-ci.org/ravisuhag/ravisuhag.com)
+Home of the Geek    [![Build Status](https://travis-ci.org/ravisuhag/ravisuhag.com.svg?branch=master)](https://travis-ci.org/ravisuhag/ravisuhag.com)
 =================================================
-My Personal website www.ravisuhag.com - Home of the Geek 
+I am an award-winning web architect, designer, developer, hardware hacker and entrepreneur from India. I help people build great products.
 
 ## Who am  I ?
 
