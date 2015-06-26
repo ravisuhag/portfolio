@@ -1,4 +1,4 @@
-![Screenshot](/Screeshot.png?raw=true "Screenshot")
+![Screenshot](/Screenshot.png?raw=true "Screenshot")
 
 ## Who am  I ?
 I am an award-winning web architect, designer, developer, hardware hacker and entrepreneur from India. Winner of 8 global hackathons out of 11 i participated. I help people build great products. I like to call myself EmCoDesignEr. Now you must be thinking what the f*** is that. Well here you go :-
