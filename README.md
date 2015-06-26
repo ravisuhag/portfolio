@@ -1,5 +1,5 @@
 
-My Small Corner on Large Web    [![Build Status](https://travis-ci.org/ravisuhag/ravisuhag.com.svg?branch=master)](https://travis-ci.org/ravisuhag/ravisuhag.com)
+My small corner on large web    [![Build Status](https://travis-ci.org/ravisuhag/ravisuhag.com.svg?branch=master)](https://travis-ci.org/ravisuhag/ravisuhag.com)
 =================================================
 My Personal website www.ravisuhag.com - Home of the Geek 
 
