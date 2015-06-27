@@ -10,24 +10,24 @@ I am an award-winning web architect, designer, developer, hardware hacker and en
 * ```SASS``` as CSS preprocessor
 * ```Bootstrap 3``` as CSS Framework
 * ```Haml``` as Markup Language
-* ```Travis``` for Continous Integration
+* ```Travis``` for Continuous Integration
 * ```Heroku``` as hosting server
 
 
 ## Quick Routes
 Check following routes. These routes are realtive to the root path of the project repo on your server.
- - <code>/</code> Home page
- - <code>/about</code> About Me
- - <code>/work</code> Portfolio
- -  <code>/resume</code> Resume
- -   <code>connect/</code> Connect
- - <code>#/lab</code> Coming Soon ... !
+ - ```/``` Home page
+ - ```/about``` About Me
+ - ```/work``` Portfolio
+ - ```/resume``` Resume
+ - ```/connect``` Connect
+ - ```/lab``` Coming Soon
 
 ## Quick Setup
-- <code>bundle install</code>
-- <code>bundle exec middleman server</code>
-- <code>bundle exec rake build</code>
-- <code>bundle exec rake publish</code>
+- ```bundle install```
+- ```bundle exec middleman server```
+- ```bundle exec rake build```
+- ```bundle exec rake publish```
 
 ## Author
 
