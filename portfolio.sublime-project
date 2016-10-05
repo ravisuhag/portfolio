@@ -6,6 +6,10 @@
 			[
 				"portfolio.sublime-project"
 			],
+			"folder_exclude_patterns":
+			[
+				".sass-cache"
+			],
 			"path": "."
 		}
 	]
