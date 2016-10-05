@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
 				"le",
 				"letter-spacing"
 			],
@@ -340,10 +348,6 @@
 				"labels"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"bore",
 				"border-bottom"
 			],
@@ -510,15 +514,29 @@
 			[
 				"ht",
 				"htmlString"
-			],
-			[
-				"quer",
-				"queryString"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "source/partials/header.html.erb",
+			"settings":
+			{
+				"buffer_size": 41,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/assets/styles/index.css.scss",
+			"settings":
+			{
+				"buffer_size": 245,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -641,10 +659,26 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio"
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/styles"
 	],
 	"file_history":
 	[
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/styles/base/_grid.scss",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/styles/index.css.scss",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/styles/_normalize.scss",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/layouts/layout.erb",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/config.rb",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/scripts/main.js",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/assets/styles/index.scss",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/README.md",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/index.html.erb",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/source/partials/header.html.erb",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/.gitignore",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/Gemfile",
+		"/Users/ravisuhag/Batcave/Workspace/Ronin/portfolio/portfolio.sublime-project",
 		"/Users/ravisuhag/Desktop/main.js",
 		"/Users/ravisuhag/Desktop/main2.js",
 		"/Users/ravisuhag/Desktop/index.html",
@@ -759,24 +793,11 @@
 		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/v1/hi/web.js",
 		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/v2/en_US/app.js",
 		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/v2/en_US/web.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/v2/hi/app.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/en_US/index.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/controllers/api/profile.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/routes/api.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/helpers/performance_parser.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/assets/scripts/lib/parser.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/en_US/web.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/hi/web.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/controllers/auth/logout.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/assets/styles/layout/containers.scss",
-		"/Users/ravisuhag/Batcave/Workspace/Infoclot/Echo/Dev/echo/app/controllers/auth/logout.js",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/assets/styles/vendor/select/react-select.scss",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/assets/styles/modules/select.scss",
-		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/assets/scripts/components/dropdown.jsx"
+		"/Users/ravisuhag/Batcave/Workspace/Harvard/Dev/paydash/app/locales/v2/hi/app.js"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -790,6 +811,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"conta",
 			"stats",
 			"color: $color-grey-light;",
 			"$color-grey-lighter",
@@ -916,8 +938,7 @@
 			"td",
 			"Cards",
 			"portalId",
-			"255",
-			"span"
+			"255"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -935,8 +956,65 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "source/partials/header.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/assets/styles/index.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -999,7 +1077,7 @@
 		[
 			[
 				"",
-				"~/Batcave/Workspace/InspirationEdge/Resumite/Dev/resumite/resumite.sublime-project"
+				"~/Batcave/Workspace/Harvard/paydash/paydash.sublime-project"
 			]
 		],
 		"width": 380.0

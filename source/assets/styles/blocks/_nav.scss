@@ -1,0 +1,27 @@
+.nav {
+    padding: 20px 0;
+}
+
+.nav__logo {
+    height: 40px;
+}
+
+.nav__menu {
+    float: right;
+    margin-top: 12px;
+}
+
+.nav__menu__item {
+    color: #7F7F7F;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.nav__menu__item:hover {
+    color: #333;
+}
+@media screen and (max-width: 35.5em){
+    .nav__menu__item{
+        margin-left: 10px;
+    }
+}

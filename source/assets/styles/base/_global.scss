@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #7F7F7F;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+

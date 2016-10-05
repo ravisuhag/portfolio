@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    color: #1D789C
+}
+a:hover{
+    text-decoration: none;
+    color: darken(#1D789C, 10%)
+}
+.heading--large{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.heading--base{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #4D4C4C
+}
+.text--large{
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+}
