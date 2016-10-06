@@ -11,13 +11,21 @@
     margin-top: 12px;
 }
 
-.nav__menu__item {
+.nav__menu__item{
+    display: inline;
+    list-style: none
+}
+.nav__menu__item.active a {
+    color: #333;
+}
+
+.nav__menu__item a{
     color: #7F7F7F;
     text-decoration: none;
     margin-left: 60px;
 }
 
-.nav__menu__item:hover {
+.nav__menu__item a:hover {
     color: #333;
 }
 @media screen and (max-width: 35.5em){

@@ -23,7 +23,7 @@ helpers do
   
   # Active page
   def is_page_active(page)
-    current_page.url == page ? {:class => 'active'} : {}
+    current_page.url == page ? 'active' : ''
   end
 
 end
