@@ -1,4 +1,4 @@
-<img style="width:100px" src="/source/assets/images/logo.png" />
+<img width=150 src="/source/assets/images/logo.png" />
 
 ### Hello, welcome to my little space on the web!
 
