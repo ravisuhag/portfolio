@@ -1,4 +1,4 @@
-<img src="/source/assets/images/logo.png" />
+<img style="width:200px" src="/source/assets/images/logo.png" />
 
 ### Hello, welcome to my little space on the web!
 
@@ -14,25 +14,19 @@ This site is built with [Middleman](http://www.middlemanapp.com) and `SASS`, dep
 To install dependencies: 
 
 ```
-    $ bundle install
-
+$ bundle install
 ```
 To run development server:
 
 ```
-    $ bundle exec middleman server
+$ bundle exec middleman server
 ```
 
 To deploy on gh-pages:
 
-
 ```
-    $ rake build
-    $ rake publish
+$ rake build
+$ rake publish
 ```
 
 If you have questions, please open an issue in the [discussion forum](https://github.com/ravisuhag/portfolio/issues).
-
-## Author
-
-[Ravi Suhag](http://twitter.com/Ravi_Suhag)
