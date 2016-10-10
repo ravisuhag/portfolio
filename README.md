@@ -1,15 +1,14 @@
-## Portfolio
-I am an award-winning web architect, designer, developer, hardware hacker and entrepreneur from India. Winner of 8 global hackathons out of 11 i participated. I help people build great products.
+## Hello, welcome to my little space on the web!
 
-## Technology
+Crafting delightful experiences for the web and beyond.
 
-* ```Middle Man``` as static site generator
-* ```SASS``` as CSS preprocessor
-* ```Haml``` as Markup Language
-* ```Travis``` for Continuous Integration
-* ```Heroku``` as hosting server
+I am an award-winning web architect, designer, developer, maker, data journalist and entrepreneur from India. I help people build great products. I'm currently working as tech consultant at Evidence for Policy Design at the Center for International Development, Harvard University where we build tools that enable government to make data driven policy decisions.
 
-## Quick Setup
+Have fun in browsing and thank you for visiting!
+
+## Setting up
+This site is built with [Middleman](http://www.middlemanapp.com) and SASS, deployed on github pages using middleman-gh-pages. 
+
 - ```bundle install```
 - ```bundle exec middleman server```
 - ```bundle exec rake build```
