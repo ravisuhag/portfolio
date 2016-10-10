@@ -1,7 +1,7 @@
-## Hello, welcome to my little space on the web!
+## Portfolio
 <img align="right" height="250" src="/source/assets/images/logo.png">
 
->  Crafting delightful experiences for the web and beyond.
+>  Hello, welcome to my little space on the web!
 
 I am an award-winning web architect, designer, developer, maker, data journalist and entrepreneur from India. I help people build great products. I'm currently working as tech consultant at Evidence for Policy Design at the Center for International Development, Harvard University where we build tools that enable government to make data driven policy decisions.
 
