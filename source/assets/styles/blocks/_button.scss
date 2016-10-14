@@ -5,6 +5,12 @@
     padding: 7px 10px;
     color: inherit;
     margin-top: 15px;
+    border-radius: 1px
+}
+.button:hover{
+    border-color: #aaa;
+    color: #444;
+    
 }
 .blog__heading{
     display: block;
