@@ -6,7 +6,12 @@ footer{
     padding: 40px 0;
 }
 .button--footer{
-    border-color: #1D789C;
-    // color: #1D789C;
-    border-radius: 2px
+    border-color: #444;
+    color: #fff;
+    background-color: #444;
+    border-radius: 3px
+}
+.button--footer:hover{
+    background-color: #333;
+    color: #fff;
 }
