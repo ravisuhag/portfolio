@@ -1,15 +1,16 @@
 .button{
-    border: solid 1px #ddd;
+    border: solid 1px #aaa;
     background-color: transparent;
     display: inline-block;
     padding: 7px 10px;
-    color: inherit;
+    color: #333;
     margin-top: 15px;
     border-radius: 1px
 }
 .button:hover{
     border-color: #aaa;
     color: #444;
+    background-color: #fafafa
     
 }
 .blog__heading{

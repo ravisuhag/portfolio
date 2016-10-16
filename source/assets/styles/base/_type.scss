@@ -1,5 +1,6 @@
 h4{
     margin-bottom:0;
+    color: #333;
 }
 a{
     text-decoration: none;
@@ -21,9 +22,10 @@ a:hover{
     letter-spacing: 0.04em
 }
 .heading--base{
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     color: #333;
+    font-weight: bold;
     letter-spacing: 0.02em
 }
 .heading--large{

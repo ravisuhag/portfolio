@@ -28,3 +28,12 @@
 .u-text-center{
     text-align:center;
 }
+
+/* Add a gutter to Pure's Columns */
+.pure-g.pure-g--gutter {
+  margin: 0 -1em;
+}
+
+.pure-g.pure-g--gutter > div {
+  padding: 0 1em;
+}
