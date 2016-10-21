@@ -1,12 +1,20 @@
-<div class="container">
-  <div class="pure-g u-pt-120">
-    <div class="pure-u pure-u-md-18-24 pure-u-sm-24-24 group">
-      <div class="heading heading--jumbo">Blog</div>
-      <a target="_blank" class="heading heading--wide" href="https://medium.com/@ravisuhag/techie-heart-vs-entrepreneurial-mind-ac9caec6a9c8#.hc6eyqtwv">Techie heart vs Entrepreneurial mind</a>
-      <p>10th August 2014, I was in the process of evaluating tech stack for my next project. For last few projects I used MEAN stack , most recent being Resumite and I loved working on Express and Angular but now it was time to move on, as future of both was very doubtful.
-      5:00 am in the morning and I found myself diving in the world of Isomorphic JS with React, flux and what not. Being a JS lover, I am fascinated with future of isomorphic/universal era of the web.
-      </p>
-      <a target="_blank" href="https://medium.com/@ravisuhag/techie-heart-vs-entrepreneurial-mind-ac9caec6a9c8#.hc6eyqtwv" class="button">Read more &#8674;</a>
+<div class="container u-pt-120">
+  <div class="heading heading--jumbo">Featured Projects</div>
+  <div class="pure-g u-pt-30">
+    <div class="pure-u pure-u-md-6-24 u-gutter--base pure-u-12-24">
+      <%= image_tag "work_airist.png", :class => 'u-full-width u-mt-20'%>
+      <p> In an effort to monitor air-quality in the national capital and other cities in India, design and development of the realtime air quality monitoring platform for Hindustan Times.</p>
+      <%= link_to 'View project &#8674;', '/projects/airist/index.html', :class=>'button' %>
+    </div>
+    <div class="pure-u pure-u-md-6-24 u-gutter--base pure-u-12-24">
+      <%= image_tag "work_paydash.png", :class => 'u-full-width u-mt-20'%>
+      <p>Design and development of the payment dashbaord for National Rural Employment Guarntee Act, an initiative launched by Ministry of Rural Development, Government of India.</p>
+      <%= link_to 'View project &#8674;', '/projects/paydash/index.html', :class=>'button' %>
+    </div>
+    <div class="pure-u pure-u-md-6-24 u-gutter--base pure-u-12-24">
+      <%= image_tag "work_nrega.jpg", :class => 'u-full-width u-mt-20'%>
+      <p>Design and development of the dashbaord for National Rural Employment Guarntee Act, an initiative launched by Ministry of Rural Development, Government of India.</p>
+      <%= link_to 'View project &#8674;', '/projects/reporty/index.html', :class=>'button' %>
     </div>
   </div>
 </div>
