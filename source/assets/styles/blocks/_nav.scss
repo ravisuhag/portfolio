@@ -15,20 +15,19 @@
     display: inline;
     list-style: none
 }
-.nav__menu__item.active a {
-    color: #333;
-    font-weight: bold;
-}
-
 .nav__menu__item a{
     color: #7F7F7F;
     text-decoration: none;
     margin-left: 60px;
 }
-
 .nav__menu__item a:hover {
     color: #333;
 }
+.nav__menu__item.active a {
+    color: #333;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 35.5em){
     .nav__menu__item{
         margin-left: 10px;

@@ -10,34 +10,42 @@ a:hover{
     text-decoration: none;
     color: darken(#1D789C, 10%)
 }
+.link--underline{
+    color: #555;
+    font-size: .7rem;
+    text-decoration: underline
+}
+.heading{
+    color: #333;
+    display: block;
+}
 .heading--jumbo{
     font-size: 2rem;
     line-height: 2.5em;
-    color: #333;
-}
-.heading--small{
-    color: #333;
-    font-weight: bold;
-    display: block;
-    letter-spacing: 0.04em
-}
-.heading--base{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 0.02em
 }
 .heading--large{
     font-size: 1.5rem;
     line-height: 2rem;
+}
+.heading--small{
+    font-weight: bold;
+    letter-spacing: 0.04em
+}
+.heading--inline{
+    display: inline-block;
+}
+.heading--base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em
+}
+.heading--wide{
+    font-size: 1.5em;
+    margin: 60px 0 20px;
     color: #333;
-    display: block
 }
 .text--large{
     font-size: 1.05rem;
     line-height: 1.4rem;
-}
-.heading--inline{
-    display: inline-block;
 }

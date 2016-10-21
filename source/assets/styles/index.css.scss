@@ -1,18 +1,27 @@
 @charset "utf-8";
 // 
-// Import Modules
+// Import Base Modules
 // 
 @import "base/normalize";
 @import "base/grid";
 @import "base/type";
 @import "base/global";
+@import "base/list";
+// 
+// Import Block Modules
+// 
 @import "blocks/nav";
+@import "blocks/banner";
 @import "blocks/line";
+@import "blocks/group";
 @import "blocks/button";
 @import "blocks/footer";
+// 
+// Import Helpers Modules
+// 
 @import "helpers/util";
-@import "pages/home";
-@import "pages/about";
-@import "pages/blog";
-@import "pages/connect";
+// 
+// Import Page Modules
+// 
+@import "pages/page";
 @import "pages/projects";

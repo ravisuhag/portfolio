@@ -1,4 +1,4 @@
-.button{
+.button {
     border: solid 1px #aaa;
     background-color: transparent;
     display: inline-block;
@@ -7,21 +7,28 @@
     margin-top: 15px;
     border-radius: 1px
 }
-.button:hover{
+
+.button:hover {
     border-color: #aaa;
     color: #444;
     background-color: #fafafa
-    
 }
-.blog__heading{
-    display: block;
-    font-size: 1.5em;
-    margin: 60px 0 20px;
-    color: #333;
-}
-.button--jumbo{
+
+.button--jumbo {
     font-size: 1.1rem;
     padding: 10px 30px;
     border-radius: 2px;
     line-height: 2rem;
+}
+
+.button--grey {
+    border-color: #444;
+    color: #fff;
+    background-color: #444;
+    border-radius: 3px
+}
+
+.button--grey:hover {
+    background-color: #333;
+    color: #fff;
 }
