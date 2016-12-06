@@ -7,8 +7,17 @@ I am an award-winning web architect, designer, developer, maker, data journalist
 
 Have fun in browsing and thank you for visiting!
 
+## Colophon
+
+This portfolio makes use of many great tools; tools that make my life as a developer easy and fun.
+
+Portfolio is built with [Middleman](http://www.middlemanapp.com), an open source static site generator. It is deployed on github pages using [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages). 
+
+The CSS is written in Sass. The font used is Open Sans, and is served via Google Fonts. The photograph on the aboutpage’s masthead is of me speaking at JoshTalks.
+
+Feel free to take a look round, but please don’t steal anything.
+
 ## Usage
-This site is built with [Middleman](http://www.middlemanapp.com) and `SASS`, deployed on github pages using [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages). 
 
 To install dependencies: 
 
@@ -29,3 +38,4 @@ $ rake publish
 ```
 
 If you have questions, please open an issue in the [discussion forum](https://github.com/ravisuhag/portfolio/issues).
+
