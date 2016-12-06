@@ -6,7 +6,7 @@
         <div class="pure-u pure-u-md-14-24 pure-u-sm-24-24">
             <p class="heading heading--large">Hello, welcome to my little space on the web!</p>
             <p>Crafting delightful experiences for the web and beyond.</p>
-            <p>I am an award-winning web architect, designer, developer, maker, data journalist and entrepreneur from India. I help people build great products. I'm currently working as tech consultant at Evidence for Policy Design at the Center for International Development, Harvard University where we build tools that enable government to make data driven policy decisions.</p>
+            <p>I am an <a href="/about">award-winning</a> web architect, designer, developer, maker, data journalist and entrepreneur from India. I help people build great products. I'm currently working as tech consultant at Evidence for Policy Design at the Center for International Development, Harvard University where we build tools that enable government to make data driven policy decisions.</p>
             <p>Have fun in browsing and thank you for visiting!</p>
             <%= link_to 'Know more about me &#8674;', '/about', :class=>'button' %>
         </div>
@@ -14,39 +14,45 @@
     
     <!-- Featured on -->
     <div class="heading heading--base u-pt-100">Trusted by</div>
-    <div class="pure-g pure-g--gutter u-text-center u-pt-50">
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/epod.png", :class => 'u-full-width banner--medium'%></a>
+    <div class="pure-g pure-g--gutter u-text-center u-pt-30">
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/epod.jpg", :class => 'u-full-width banner--medium'%>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/ddugky.png", :class => 'u-full-width banner--medium'%></a>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/ddugky.jpg", :class => 'u-full-width banner--medium'%>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/jpal.png", :class => 'u-full-width banner--medium'%></a>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/jpal.jpg", :class => 'u-full-width banner--medium'%>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/ht.png", :class => 'u-full-width banner--medium'%></a>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/ht.jpg", :class => 'u-full-width banner--medium'%>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/indiamart.png", :class => 'u-full-width banner--medium'%></a>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/indiamart.jpg", :class => 'u-full-width banner--medium'%>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "clients/aajevika.png", :class => 'u-full-width banner--medium'%></a>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/aajevika.jpg", :class => 'u-full-width banner--medium'%>
+        </div>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/cii.jpg", :class => 'u-full-width banner--medium'%>
+        </div>
+        <div class="pure-u pure-u-md-6-24 pure-u-8-24 u-ptb-20">
+            <%= image_tag "featured/ia.jpg", :class => 'u-full-width banner--medium'%>
         </div>
     </div>
 
     <!-- Featured on -->
-    <div class="heading heading--base u-pt-100">Featured on</div>
-    <div class="pure-g pure-g--gutter u-text-center u-pt-50">
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "featured/josh_talks.jpg", :class => 'u-full-width banner--small'%></a>
+    <div class="heading heading--base u-pt-100">Featured in</div>
+    <div class="pure-g pure-g--gutter u-text-center u-pt-30">
+        <div class="pure-u pure-u-md-8-24 pure-u-8-24 u-ptb-20">
+            <a target="_blank" href="http://joshtalks.com/talks/switched-to-a-5x8-room-taught-physics-and-sold-health-insurances-before-i-could-register-my-company/"><%= image_tag "featured/josh_talks.jpg", :class => 'u-full-width banner--small'%></a>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "featured/angel_hack.jpg", :class => 'u-full-width banner--small'%></a>
+        <div class="pure-u pure-u-md-8-24 pure-u-8-24 u-ptb-20">
+            <a target="_blank" href="https://yourstory.com/2014/09/techie-tuesdays-ravi-suhag/"><%= image_tag "featured/your_story.jpg", :class => 'u-full-width banner--small'%></a>
         </div>
-        <div class="pure-u pure-u-md-8-24 pure-u-sm-24-24 u-ptb-20">
-            <a href="" target="_blank" href=""><%= image_tag "featured/your_story.jpg", :class => 'u-full-width banner--small'%></a>
-        </div>
+        <div class="pure-u pure-u-md-8-24 pure-u-8-24 u-ptb-20">
+            <a target="_blank" href="http://angelhack.com/2014/09/25/infoclot-another-name-to-look-out-for-at-global-demo-day"><%= image_tag "featured/angel_hack.jpg", :class => 'u-full-width banner--small'%></a>
+        </div> 
     </div>
 
     <!-- Projects -->
