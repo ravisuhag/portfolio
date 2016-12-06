@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= current_page.data.title || "Ravi Suhag" %></title>
-    <meta charset="utf-8"/>
-    <meta content="Ravi Suhag" name="Author"/>
-    <meta content="on" http-equiv="cleartype"/>
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta content="ZrYSYpRbwhhEQ9TSHumWhD3dV5p_9VRl7b9YxOiQUGU" name="google-site-verification"/>
+    <meta content="Ravi Suhag" name="Author"/>
+    <title><%= current_page.data.title || "Ravi Suhag" %></title>
     <%= favicon_tag 'logo.png' %>
+
+    <!-- Preemptively open up connections for external assets -->
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <%= stylesheet_link_tag :index %>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Ravi_Suhag">
+    <meta name="twitter:domain" content="ravisuhag.com">
+    <meta name="twitter:creator" content="@Ravi_Suhag">
+    <meta name="twitter:title" content="Ravi Suhag">
+    <meta name="twitter:image" content="http://ravisuhag.com/assets/images/ravisuhag.png">
+
+    <meta name="apple-mobile-web-app-title" content="Ravi Suhag">
+    <meta name="description" content="Award-winning web architect, designer, developer, maker, data journalist and entrepreneur">
+    <link rel="canonical" href="http://ravisuhag.com/">
+
   </head>
   <body class="<%= page_classes %>">
 
