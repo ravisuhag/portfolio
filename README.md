@@ -1,5 +1,5 @@
 ## Portfolio
-<img align="right" height="250" src="/source/assets/images/logo.png">
+<img align="right" height="200" src="/source/assets/images/logo.png">
 
 >  Hello, welcome to my little space on the web!
 
@@ -15,7 +15,7 @@ Portfolio is built with [Middleman](http://www.middlemanapp.com), an open source
 
 The CSS is written in Sass. The font used is Open Sans, and is served via Google Fonts. The photograph on the aboutpage’s masthead is of me speaking at JoshTalks.
 
-Feel free to take a look round, but please don’t steal anything.
+Feel free to take a look round.
 
 ## Usage
 
