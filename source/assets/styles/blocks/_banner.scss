@@ -1,3 +1,7 @@
+.banner--micro {
+    width: 100%;
+    max-width: 100px;
+}
 .banner--small {
     width: 100%;
     max-width: 150px;
@@ -14,6 +18,10 @@
     width: 100%;
     max-width: 250px;
     padding: 20px 20px 20px 0;
+}
+
+.banner--project {
+    border-radius: 4px
 }
 
 .thumbnail--bordered {
