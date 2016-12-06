@@ -20,6 +20,9 @@
     padding: 20px 20px 20px 0;
 }
 
+.banner--grayscale{
+    filter: grayscale(100%)
+}
 .banner--project {
     border-radius: 4px
 }
