@@ -1,12 +1,19 @@
+.banner--small {
+    width: 100%;
+    max-width: 150px;
+}
 .banner--base {
     width: 100%;
     max-width: 350px;
+}
+.banner--medium {
+    width: 100%;
+    max-width: 250px;
 }
 
 .thumbnail--bordered {
     border: solid 1px #E2E2E2
 }
-
 .thumbnail--medium {
     max-width: 400px
 }

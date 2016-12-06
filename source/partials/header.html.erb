@@ -2,17 +2,20 @@
   <div class="container">
     <a href="/"><%= image_tag "logo.png", :class => 'nav__logo'%></a>
     <div class="nav__menu">
+      <li class="nav__menu__item <%= is_page_active('/') %>">
+        <%= link_to 'Home', '/' %>
+      </li>
       <li class="nav__menu__item <%= is_page_active('/about/') %>">
         <%= link_to 'About', '/about.html' %>
-        </li>
+      </li>
       <li class="nav__menu__item <%= is_page_active('/projects/') %>">
         <%= link_to 'Projects', '/projects.html' %>
-        </li>
-      <li class="nav__menu__item <%= is_page_active('/blog/') %>">
-        <%= link_to 'Blog', '/blog.html' %>
       </li>
       <li class="nav__menu__item <%= is_page_active('/connect/') %>">
-        <%= link_to 'Hire Me', '/connect.html' %>
+        <%= link_to 'Services', '/connect.html' %>
+      </li>
+      <li class="nav__menu__item <%= is_page_active('/blog/') %>">
+        <%= link_to 'Blog', '/blog.html' %>
       </li>
     </div>
   </div>
