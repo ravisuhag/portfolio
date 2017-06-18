@@ -23,6 +23,9 @@
 .banner--grayscale{
     filter: grayscale(100%)
 }
+.banner--grayscale:hover{
+    filter: grayscale(20%)
+}
 .banner--project {
     border-radius: 4px
 }
