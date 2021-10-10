@@ -2,15 +2,169 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #5f5e5e;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-family: Roboto, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
+  color: #0f6ad6;
   text-decoration: none;
+}
+
+a:hover {
+  color: #063670;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/**********  LAYOUT  **********/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 3rem 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 50px;
+}
+
+.column.left {
+  flex: 75%;
+}
+.column.right {
+  flex: 25%;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .column.left,
+  .column.right {
+    flex: 1;
+    flex-direction: column;
+  }
+}
+
+/**********  TYPOGRAPHY  **********/
+
+h1 {
+  color: #000;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+h4 {
+  margin-bottom: 0.3rem;
+}
+
+/**********  HEADER  **********/
+
+.header {
+  padding: 30px 0;
+}
+
+.navbar {
+  text-align: right;
+  float: right;
+}
+
+.navbar a {
+  display: inline-block;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444;
+}
+
+.header a:hover {
+  color: #000;
+}
+
+.navbar .active {
+  color: #000;
+}
+
+/**********  HOME  **********/
+.welcome {
+  min-height: 24px;
+}
+
+.signature {
+  display: block;
+  padding-top: 30px;
+  width: 100px;
+}
+
+/**********  LIST  **********/
+
+.list {
+  margin-top: 40px;
+}
+
+.list__thumbnail {
+  width: 100%;
+  height: 130px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-size: cover;
+  margin-top: 2px;
+}
+
+.list__title {
+  /* color: #053d81; */
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.list__title:hover {
+  color: #0f6ad6;
+}
+
+.list__sub {
+  color: #7a7777;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+
+.list__date {
+  padding-top: 5px;
+  color: #7a7777;
+  font-size: 14px;
+}
+
+/**********  TALKS  **********/
+.videos.list {
+  margin-top: 60px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
