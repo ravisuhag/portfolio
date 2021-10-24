@@ -13,15 +13,12 @@ export default function Bio() {
             <main className="main">
                 <img width="100%" src="/ravi_suhag_full.png" alt="Ravi Suhag" />
                 <p>
-                    Hi there, I am Ravi Suhag, just another creative geek. I have
-                    a very curious path both personally and professionally. Since I was a
-                    little boy, I've been fascinated by how we use technology and interact
-                    with things. After designing embedded systems and robots for a couple
-                    of years during my graduation, obtaining a degree in Electronics and
-                    Communication Engineering, I decided to learn design and code on my own
-                    and have been working as a UI/UX designer and full-stack developer since
-                    June 2012. I am many things and hungry to learn more and be more.
+                    Engineering and product leader with a passion for building great products.
+                    More than 10 years of experience in building and leading high-impact engineering teams.
+                    Proven track record to establish a vision and execute efficiently.
+                    Active contributor and maintainer of open-source projects.
                 </p>
+                <h2>Expertise</h2>
                 <h4> Team Building</h4>
                 <span>Recognizing and attracting top-tier members.Coach and guide teams through their strengths and weaknesses with regular feedback.</span>
 

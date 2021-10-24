@@ -78,7 +78,7 @@ export default function Home() {
 
           <div className="column right">
             <p>
-              <img width="100%" src="/ravi.png" alt="Ravi Suhag" />
+              <img className="home--image" width="100%" src="/ravi.png" alt="Ravi Suhag" />
             </p>
             <p>
               Crafting delightful modern data experiences for the web and beyond. Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me about interesting opportunities, collaborations or thought provoking discussions.

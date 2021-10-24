@@ -24,7 +24,7 @@ a:hover {
 
 /**********  LAYOUT  **********/
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
   min-height: 100vh;
@@ -36,24 +36,27 @@ a:hover {
 
 .row {
   display: flex;
-  justify-content: space-between;
-  grid-gap: 50px;
+  grid-gap: 3%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
 }
 
 .column.left {
-  flex: 75%;
+  flex-basis: 75%;
 }
 .column.right {
-  flex: 25%;
+  flex-basis: 22%;
 }
 
 @media (max-width: 600px) {
   .row {
     flex-wrap: wrap;
+    grid-gap: 0;
   }
   .column.left,
   .column.right {
-    flex: 1;
+    flex-basis: 100%;
     flex-direction: column;
   }
 }
@@ -106,6 +109,11 @@ h4 {
   display: block;
   padding-top: 30px;
   width: 100px;
+}
+@media (max-width: 600px) {
+  .home--image {
+    display: none;
+  }
 }
 
 /**********  LIST  **********/
