@@ -22,7 +22,7 @@ export default function Bio() {
         </p>
         <List contents={[
           {
-            title: 'Olympus: Terraforming repeatable and extensible Infrastructure at Gojek',
+            title: 'Terraforming repeatable and extensible Infrastructure at Gojek',
             subtitle: 'In this post, we’ll talk about our approach of assembling Infrastructure As Code that simplifies the maintenance of an increasingly complex microservices architecture for our company.',
             link: 'https://ravisuhag.substack.com/p/olympus-terraforming-repeatable-and-extensible-infrastructure-at-go-jek-42ad5b0a4f9a',
             image: 'https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F819b97ff-b4fa-4ba7-b169-2b43c837e840_1024x535.jpeg',
@@ -38,8 +38,8 @@ export default function Bio() {
             time: '4'
           },
           {
-            title: 'Chronicle: A story of building technical documentation for Gojek',
-            subtitle: 'In the real world, when we buy a product, it comes with a quick guide or some other form of documents which help you get going with the product. Without these documents, we’ll have to learn how to use the product leveraging solely on the ‘trial and error’ method — which is not a pleasant user experience at all.',
+            title: 'Building technical documentation as a product at scale',
+            subtitle: 'In the real world, when we buy a product, it comes with a quick guide or some other form of documents which help you get going with the product. Without these documents, we’ll have to learn how to use the product leveraging solely on the ‘trial and error’ method — which is not a pleasant user experience.',
             link: 'https://ravisuhag.substack.com/p/chronicle-a-story-of-building-technical-documentation-for-go-data-4c20160107a2',
             image: 'https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F95c12897-e37d-4d33-85dc-f11bfd01b9a0_1024x536.png',
             date: 'July 4, 2018',
