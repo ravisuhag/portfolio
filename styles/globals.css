@@ -3,8 +3,8 @@ body {
   padding: 0;
   margin: 0;
   color: #5f5e5e;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 28px;
   letter-spacing: 0.02em;
   font-family: Roboto, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -39,7 +39,6 @@ a:hover {
   grid-gap: 3%;
   flex-flow: row wrap;
   justify-content: flex-start;
-  /* justify-content: space-between; */
 }
 
 .column.left {
@@ -88,7 +87,6 @@ h4 {
   display: inline-block;
   margin-left: 50px;
   font-weight: 400;
-  font-size: 14px;
   color: #444;
 }
 
@@ -102,7 +100,7 @@ h4 {
 
 /**********  HOME  **********/
 .welcome {
-  min-height: 24px;
+  min-height: 28px;
 }
 
 .signature {
@@ -135,7 +133,7 @@ h4 {
 .list__title {
   /* color: #053d81; */
   color: #000;
-  font-size: 16px;
+  /* font-size: 16px; */
   padding-bottom: 5px;
 }
 

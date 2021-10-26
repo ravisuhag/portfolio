@@ -39,37 +39,48 @@ export default function Home() {
         <div className="row">
           <div className="column left">
             <p>
-              I am Ravi Suhag, an engineering and product leader with a passion for building great products.
-              More than 10 years of experience in building and leading high-impact engineering teams.
-              Proven track record to establish a vision and execute efficiently.
-              Active contributor and maintainer of open-source projects.
+              I am Ravi Suhag, an agile engineer with a vision to transform
+              software chaos into seamless experiences. My inherent passion to
+              solve problems involving analysis and synthesis shaped me to lead
+              technology and product for organizations of all sizes, untangling
+              the knots in software development, smoothing product delivery, and
+              instilling best practices.
             </p>
             <p>
-              I'm currently working as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>, where I lead product and engineering
-              efforts to build large-scale, self-service data platforms including Modern Data Platform,
-              Experimentation Platform, Analytics Platform, and Customer Data Platform.These platforms empower
-              the Gojek workforce to make data-driven decisions.
+              With more than 10 years of experience and proven track record I have
+              crafted both technology and product roadmaps with a distinct programming
+              style and a dedication to transparency and open-source development.
             </p>
             <p>
-              Before that, I was working as a tech consultant at<a href="https://epod.cid.harvard.edu/" target="_blank"> Evidence for Policy Design</a> at the Center for
-              International Development, Harvard University where we built tools that enable the government
-              to make data-driven policy decisions.
+              I am currently working as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
+              Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service
+              data platforms, allowing its workforce to make data-driven decisions. Before that, I worked as a tech
+              consultant at the <a href="https://epod.cid.harvard.edu/" target="_blank">Center for International Development, Harvard University</a>,
+              to build tools that enabled the government to make data-driven policy decisions.
             </p>
             <p>
-              I have a very curious path both personally and professionally. Since I was a little boy,
-              I've been fascinated by how we use technology and interact with things. After designing
-              embedded systems for a couple of years during my graduation, obtaining a degree in Electronics
-              and Communication Engineering, I decided to learn design and code on my own and have been working
-              at the intersection of technology, design, and social impact since then. I wear multiple hats and
-              am hungry to learn more and be more.
+              A curiosity-driven mindset has majorly contributed both to my personal and professional growth.
+              Fascinated by how we use technology and interact with it, I earned a bachelor's degree in
+              Electronics and Communication Engineering, where I studied, designed, and developed embedded
+              systems. At the same time, a serendipitous need to create a website for my startup triggered
+              me to code and design. With no mentor or curriculum to follow, I was drawn to code and tirelessly
+              lost myself in the world of building programs with unabated coding endeavors. This newly developed
+              passion enthralled me to enroll and win several nation-held hackathons. Ever since then, I have been
+              working at the intersection of technology and design to socially impact the lives of others.
             </p>
-            <p><strong>Developer</strong> with experience in developing distributed, fault-tolerant backend and frontend systems using the latest and open-source technology.</p>
-            <p><strong>Designer</strong> with a passion for designing user-centered, clean and functional design. My designs follow structure, simplicity, visibility and reuse.</p>
+            <p>
+              From early childhood I tinkered with electronics by slicing the whole into parts and
+              then binding the parts into a whole. This allowed me to discover critical frameworks
+              through which I could make better sense of reality. I am a life-long learner with an
+              undying urge to execute my endeavors as a:
+            </p>
+            <p><strong>Developer</strong> with experience in developing distributed, fault-tolerant backend and frontend systems using latest technology and contributing to open-source projects.</p>
+            <p><strong>Designer</strong> with a passion to design user-centric, clean and functional products that follows structure, simplicity, visibility and reuse.</p>
             <p><strong>Data journalist</strong> who specializes in building sensor and robo journalism tools/stories around policy, economics, sports and environment.</p>
-            <p><strong>Maker</strong> who loves to play with microcontrollers and electronic boards to design custom embedded and robotic systems.</p>
-            <p><strong>An entrepreneur</strong> as founder of Inspiration Edge, a design driven software company and a community of passionate individuals, thinking disruptively to revolutionize the IT industry and create positive social change.</p>
-            <p><strong>An athlete</strong> who loves to play cricket, basketball, boxing, volleyball, and hiking mountains. I am always interested in learning and trying almost any indoor or outdoor sport.</p>
-            <p><strong>A thinker</strong> with deep passion to interpret and visualize why humans and universe are the way they are and how they are going to evolve.</p>
+            <p><strong>Artisan</strong> who loves to play with microcontrollers and electronic boards to design custom embedded and robotic systems.</p>
+            <p><strong>Entrepreneur</strong> as founder of Inspiration Edge, a design driven software company and a community of passionate individuals, thinking disruptively to revolutionize the IT industry and create positive social change.</p>
+            <p><strong>Athlete</strong> following a lifestyle that includes playing either cricket, basketball, boxing, volleyball, and/or hiking.</p>
+            <p><strong>Utopian</strong> with keenness to interpret and idealize why humans and universe are the way they are and how they are going to evolve.</p>
             <p>
               Have fun browsing and thank you for visiting!
             </p>
