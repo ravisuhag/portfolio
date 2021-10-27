@@ -12,7 +12,7 @@ export default function Header() {
         <Link href="/bio"><a className={router.pathname == "/bio" ? "active" : ""}>Bio</a></Link>
         <Link href="/posts"><a className={router.pathname == "/posts" ? "active" : ""}>Posts</a></Link>
         <Link href="/talks"><a className={router.pathname == "/talks" ? "active" : ""}>Talks</a></Link>
-        <Link href="/projects"><a className={router.pathname == "/projects" ? "active" : ""}>Projects</a></Link>
+        {/* <Link href="/projects"><a className={router.pathname == "/projects" ? "active" : ""}>Projects</a></Link> */}
       </div>
     </div>
   )

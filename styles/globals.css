@@ -174,3 +174,8 @@ h4 {
   width: 100%;
   position: absolute;
 }
+
+.bullet__list {
+  padding-left: 20px;
+  margin-left: 0;
+}
