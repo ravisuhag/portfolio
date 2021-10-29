@@ -26,7 +26,7 @@ export default function Bio() {
                     unified platform for data lifecycle, data management, data integrity,
                     and data governance to magnify developer productivity.
                 </span> */}
-                <h4>VP Engineering, Data Platforms, Gojek</h4>
+                <h4>VP Engineering, Gojek, Jan 2017 - Present</h4>
                 <span>
                     Leading product and engineering efforts to build large-scale, self-service
                     data platforms including Enterprise Data Platform, Experimentation Platform,

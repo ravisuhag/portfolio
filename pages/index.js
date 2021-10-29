@@ -38,9 +38,10 @@ export default function Home() {
         <h1 className="welcome" ref={el} />
         <div className="row">
           <div className="column left">
+            <p><i> Crafting modern data experiences.</i></p>
             <p>
               I am Ravi Suhag, an agile engineer with a vision to transform
-              software chaos into seamless experiences.My inherent passion to
+              software chaos into seamless experiences. My inherent passion to
               solve problems involving analysis and synthesis shaped me to lead
               technology and product for organizations of all sizes, untangling
               the knots in software development, smoothing product delivery, and
@@ -54,7 +55,7 @@ export default function Home() {
             <p>
               I am currently working as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
               Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service
-              data platforms, allowing its workforce to make data-driven decisions.Before that, I worked as a tech
+              data platforms, allowing its workforce to make data-driven decisions. Before that, I worked as a tech
               consultant at the <a href="https://epod.cid.harvard.edu/" target="_blank">Center for International Development, Harvard University</a>,
               to build tools that enabled the government to make data-driven policy decisions.
             </p>
@@ -66,14 +67,15 @@ export default function Home() {
             </p>
             <p>
               At the same time, a serendipitous need to create a website for my startup triggered
-              me to code and design.With no mentor or curriculum to follow, I was drawn to code and tirelessly
-              lost myself in the world of building programs with unabated coding endeavors.This newly developed
-              passion enthralled me to enroll and win several nation-held hackathons.Ever since then, I have been
-              working at the intersection of technology and design to socially impact the lives of others.
+              me to code and design. With no mentor or curriculum to follow, I was drawn to code and tirelessly
+              lost myself in the world of building programs with unabated coding endeavors. This newly developed
+              passion enthralled me to enroll and win several nation-held
+              <a href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school" target="_blank"> hackathons</a>.
+              Ever since then, I have been working at the intersection of technology and design to socially impact the lives of others.
             </p>
             <p>
               From early childhood I tinkered with electronics by slicing the whole into parts and
-              then binding the parts into a whole.This allowed me to discover critical frameworks
+              then binding the parts into a whole. This allowed me to discover critical frameworks
               through which I could make better sense of reality. I am a life-long learner with an
               undying urge to execute my endeavors as a:
             </p>
@@ -92,22 +94,11 @@ export default function Home() {
 
           <div className="column right">
             <p>
-              <img className="home--image" width="100%" src="/ravi.png" alt="Ravi Suhag" />
-            </p>
-            <p>
-              Crafting delightful modern data experiences for the web and beyond.
-            </p>
-            <p>
-              Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me about interesting opportunities, collaborations or thought provoking discussions.
-            </p>
-            <p>
-              I am sharing most of my code on <a target="_blank" href="https://github.com/ravisuhag">Github</a>, some of my design work on <a target="_blank" href="https://www.behance.net/ravisuhag">Behance</a>, random
-              thoughts on <a target="_blank" href="https://twitter.com/Ravi_Suhag">Twitter</a>, everyday moments on <a target="_blank" href="https://www.instagram.com/ravisuhag/">Instagram</a>, articles on <a target="_blank" href="https://ravisuhag.medium.com/">Medium</a> and meeting
-              startups on <a target="_blank" href="https://angel.co/u/ravisuhag">Angel List</a>.Full resume is available on <a target="_blank" href="https://www.linkedin.com/in/ravisuhag/">Linkedin</a>.
+              <img className="home--image" width="100%" src="/ravi_home.png" alt="Ravi Suhag" />
             </p>
           </div>
-        </div>
-      </main>
-    </div>
+        </div >
+      </main >
+    </div >
   );
 }
