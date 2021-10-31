@@ -38,7 +38,7 @@ export default function Home() {
         <h1 className="welcome" ref={el} />
         <div className="row">
           <div className="column left">
-            <p><i> Crafting modern data experiences.</i></p>
+            <i> Crafting modern data experiences.</i>
             <p>
               I am Ravi Suhag, an agile engineer with a vision to transform
               software chaos into seamless experiences. My inherent passion to

@@ -22,10 +22,10 @@ YoutubeEmbed.propTypes = {
 function card(item) {
   return (
     <div className="row list videos" key={item.link}>
-      <div className="column right">
+      {/* <div className="column right">
         <YoutubeEmbed embedId={item.embed} />
-      </div>
-      <div className="column left">
+      </div> */}
+      <div className="column">
         <Link href={item.link}>
           <a target="_blank">
             <div className="list__title">{item.title}</div>

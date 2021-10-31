@@ -65,18 +65,27 @@ a:hover {
 
 h1 {
   color: #000;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
 }
 
 h4 {
   margin-bottom: 0.3rem;
+  color: #000;
+  font-weight: 500;
 }
 
 /**********  HEADER  **********/
 
 .header {
   padding: 30px 0;
+}
+
+.header__logo {
+  color: #000;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 48px;
 }
 
 .navbar {
@@ -96,7 +105,7 @@ h4 {
 }
 
 .navbar .active {
-  color: #000;
+  color: #0f6ad6;
 }
 
 /**********  HOME  **********/
@@ -152,9 +161,9 @@ h4 {
 }
 
 /**********  TALKS  **********/
-.videos.list {
+/* .videos.list {
   margin-top: 60px;
-}
+} */
 
 .video-responsive {
   overflow: hidden;

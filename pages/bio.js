@@ -17,7 +17,40 @@ export default function Bio() {
                     More than 10 years of experience in building and leading high-impact engineering teams.
                     Proven track record to establish a vision and execute efficiently.
                     Active contributor and maintainer of open-source projects.
+                    {/* Key expertise areas include: */}
                 </p>
+                {/* <p>
+                    <strong>Team Building: </strong>
+                    Recognizing and attracting top-tier members. Coach and guide teams through their strengths and weaknesses with regular feedback.
+                </p>
+                <p>
+                    <strong>Data Engineering: </strong>
+                    Experience in building distributed real-time data pipelines that can handle billions of data points per day.
+                </p>
+                <p>
+                    <strong>Data Analytics: </strong>
+                    Experience in building tools to visualize and analyse big data in an effective, understandable & engaging manner.
+                </p>
+                <p>
+                    <strong>Distributed Systems: </strong>
+                    Experience in developing distributed, fault-tolerant backend and frontend systems using the latest technology and modern frameworks.
+                </p>
+                <p>
+                    <strong>Product Development: </strong>
+                    Track record on driving product development with influence that meaningfully moves the business forward.
+                </p>
+                <p>
+                    <strong>Product Design: </strong>
+                    Designing user-centered, clean, and functional products that follow structure, simplicity, visibility, and reuse.
+                </p>
+                <p>
+                    <strong>Partnership: </strong>
+                    Establish strong relationships with both business and technical leaders across and outside organisation.
+                </p>
+                <p>
+                    <strong>Vision: </strong>
+                    Understanding business, analytics, and technology, to guide teams by providing relevant context and inspiration.
+                </p> */}
                 {/* <h4>Founder, Open DataOps Foundation</h4>
                 <span>
                     In 2021, I founded the Open DataOps Foundation, a non-profit organisation
@@ -32,16 +65,12 @@ export default function Bio() {
                     data platforms including Enterprise Data Platform, Experimentation Platform,
                     Analytics Platform, and Customer Data Platform. These platforms empower the
                     Gojek workforce to make data-driven decisions.
-                </span>
-                <span>
-                    Building resilient and scalable data infrastructure across all of Gjek’s
-                    18+ products that help millions of Indonesians commute, shop, eat and pay,
-                    daily. This involves building distributed big data infrastructure, real-time
+                    It involves building distributed big data infrastructure, real-time
                     analytics and visualization pipelines for billions of data points per day using
                     many handcrafted as well big data open source tools including but not limited
                     to Kafka, Flink, Spark, BigQuery, Airflow, Zeppelin etc.
                 </span>
-                <h4>Engineering Lead, Harvard Kennedy School of Government</h4>
+                <h4>Engineering Lead, Harvard Kennedy School of Government, Apr 2014 - Mar 2017</h4>
                 <span>
                     Leading technology efforts to design and develop data interfaces for evidence
                     based policy decisions and increasing accountability in public programs.
@@ -50,7 +79,7 @@ export default function Bio() {
                     creating innovative and effective ways for policy actors to utilize data and
                     research evidence to improve their decision making.
                 </span>
-                <h4>Consultant, Data Journalism, Hindustan Times</h4>
+                <h4>Consultant, Data Journalism, Hindustan Times, Nov 2015 - Aug 2016</h4>
                 <span>
                     Built the definitive online source of real-time air quality monitoring in
                     all of India for Hindustan Times. This project involved working on sensor
@@ -58,7 +87,7 @@ export default function Bio() {
                     for data exploration. The goal of the project was to empower citizens to make
                     better decisions, and so that they can hold their government accountable.
                 </span>
-                <h4>Consultant, Data Interfaces, JPAL</h4>
+                <h4>Consultant, Data Interfaces, JPAL, Apr 2015 - Dec 2015</h4>
                 <span>
                     Built data exploration framework for emission trading system to enable the
                     Ministry of Environment & Forests to cap total pollution emissions in select
@@ -68,7 +97,7 @@ export default function Bio() {
                     Gujarat Pollution Control Board, Maharashtra Pollution Control Board and the Tamil
                     Nadu Pollution Control Board.
                 </span>
-                <h4>Founder, Inspiration Edge</h4>
+                <h4>Founder, Inspiration Edge, Jun 2011 - Dec 2015</h4>
                 <span>
                     Inspiration Edge is a design driven software company and a community of passionate individuals,
                     thinking disruptively to revolutionize the IT industry and create positive social change.
@@ -76,6 +105,13 @@ export default function Bio() {
                     and consulting in commercial, social, educational and government sectors. We believe in improving
                     quality of living with technology and sharing what we learn by running events, conferences and contributing
                     to open source.
+                </span>
+                <h4>Lead Architect, Info Assembly, Dec 2013 - Mar 2014</h4>
+                <span>
+                    Worked on designing architecture for Big Data web platform for Info Assembly which leverages
+                    data analytics and offers innovative FinTech products for businesses. We used Machine Learning
+                    and Natural Language Processing algorithms running on massive big web data to create intuitive
+                    visual experiences which would greatly simplify the manual financial market research process.
                 </span>
                 <h4>Media</h4>
                 <ul className="bullet__list">
@@ -87,18 +123,18 @@ export default function Bio() {
                 </ul>
                 <h4>Awards</h4>
                 <ul className="bullet__list">
-                    <li>Nasscom Technology Adopter | NASSCOM | Jan 2017</li>
-                    <li>Festival of innovation winner | President of India | March 2016</li>
-                    <li>Hack Health On | Embassy Of The Kingdom Of The Netherlands | June 2015</li>
-                    <li>TechNgage Delhi winner | NASSCOM | June 2016</li>
-                    <li>Angel Hack Jaipur HPE winner | Angel Hack | June 2016</li>
-                    <li>Startup Weekend Delhi 2015 Winner | UP Global | May 2015</li>
-                    <li>Sequoia Hack 2014 Winner | Sequoia Capital | September 2014</li>
-                    <li>Angel Hack 2014 Winner | Angel Hack | June 2014</li>
-                    <li>GSF Hacks Winner | GSF India | April 2014</li>
-                    <li>Rockstar of Design | Directi (Big Rock) | Jan 2014</li>
-                    <li>Times Designathon Winner | Times Internet | Oct 2013</li>
-                    <li>PeerHack Hackathon Winner | Peer Hack | July 2013</li>
+                    <li><a target="_blank" href="https://nasscom.in/">NASSCOM</a> - Nasscom Technology Adopter, Jan 2017</li>
+                    <li><a target="_blank" href="https://angelhack.com/">Angel Hack</a> - Angel Hack Jaipur HPE winner, June 2016</li>
+                    <li><a target="_blank" href="https://nasscom.in/">NASSCOM</a> - TechNgage Delhi winner, June 2016</li>
+                    <li><a target="_blank" href="https://presidentofindia.nic.in/fine.htm">President of India</a> - Festival of innovation winner, March 2016</li>
+                    <li><a target="_blank" href="https://www.netherlandsandyou.nl/">Embassy of The Kingdom of Netherlands</a> - Hack Health On, June 2015</li>
+                    <li><a target="_blank" href="">Up Global</a> - Startup Weekend Delhi 2015 Winner, May 2015</li>
+                    <li><a target="_blank" href="https://www.sequoiacap.com/">Sequoia Capital</a> - Sequoia Hack 2014 Winner, September 2014</li>
+                    <li><a target="_blank" href="https://angelhack.com/">Angel Hack</a> - Angel Hack 2014 Winner, June 2014</li>
+                    <li><a target="_blank" href="https://gsfindia.com/">GSF India</a> - GSF Hacks Winner, April 2014</li>
+                    <li><a target="_blank" href="https://www.directi.com/">Directi</a> - Rockstar of Design, Jan 2014</li>
+                    <li><a target="_blank" href="https://timesinternet.in/">Times Internet</a> - Times Designathon Winner, Oct 2013</li>
+                    <li><a target="_blank" href="">Peer Hack</a> - PeerHack Hackathon Winner, July 2013</li>
                 </ul>
             </main>
         </div >

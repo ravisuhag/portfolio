@@ -31,7 +31,7 @@ export default function Bio() {
           to remind to reply, that certainly won't offend me.
         </p>
         <p>
-          Drop me an email at suhag.ravi@gmail.com or call me on +919717860747
+          Drop me an email at suhag.ravi@gmail.com or call me on (+91)9717860747.
         </p>
       </main>
     </div>
