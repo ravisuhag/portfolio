@@ -1,14 +1,14 @@
 # Portfolio
 
-<img align="right" height="200" src="./public/logo_old.png">
+<img align="right" height="200" src="https://www.ravisuhag.com/ravi_home.png">
 
-> Hello, welcome to my little space on the web!
+Hello, welcome to my little space on the web!
 
-I am an developer, designer, maker, data journalist and entrepreneur from India. I help people build great products. I'm currently working as tech consultant at Evidence for Policy Design at the Center for International Development, Harvard University where we build tools that enable government to make data driven policy decisions.
+I am an developer, designer, maker, data journalist and entrepreneur from India. I help people build great products. I am currently working as VP Engineering at Gojek, Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service data platforms, allowing its workforce to make data-driven decisions.
 
 Have fun in browsing and thank you for visiting!
 
-## Colophon
+### Colophon
 
 This portfolio makes use of many great tools; tools that make my life as a developer easy and fun.
 
@@ -16,9 +16,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 The font used is Roboto, and is served via Google Fonts. The photograph on the bio’s masthead is of me speaking at HasGeek.
 
-Feel free to take a look round.
-
-## Usage
+### Usage
 
 To install dependencies:
 
@@ -36,8 +34,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 If you have questions, please open an issue in the [discussion forum](https://github.com/ravisuhag/portfolio/issues).
 
-## Deploy on Vercel
+### Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This website is deployed on the [Vercel Platform](https://vercel.com) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
