@@ -33,7 +33,8 @@ export default function Bio() {
         <p>
           Drop me an email at suhag.ravi@gmail.com or call me on (+91)9717860747.
         </p>
+        <iframe src="https://ravisuhag.substack.com/embed" width="480" height="320" style={{ border: "1px solid #EEE", background: "white" }} frameborder="0" scrolling="no" />
       </main>
-    </div>
+    </div >
   )
 }
