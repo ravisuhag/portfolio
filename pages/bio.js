@@ -113,6 +113,9 @@ export default function Bio() {
                     and Natural Language Processing algorithms running on massive big web data to create intuitive
                     visual experiences which would greatly simplify the manual financial market research process.
                 </span>
+                <p>
+                    Full list of organisations is available on my <a href="https://www.linkedin.com/in/ravisuhag/" target="_blank">Linkedin</a> profile.
+                </p>
                 <h4>Media</h4>
                 <ul className="bullet__list">
                     <li><a target="_blank" href="https://qz.com/995235/ravi-suhag-indias-most-prolific-hackathon-winner-never-went-to-an-iit-or-any-other-name-brand-school/">Quartz </a>- India’s most prolific hackathon winner </li>
