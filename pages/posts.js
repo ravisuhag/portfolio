@@ -63,7 +63,7 @@ export default function Bio() {
           },
           {
             title: 'Data infrastructure at Gojek',
-            subtitle: 'Our data infrastructure lets publish and consume raw and aggregated data effortlessly and reliably. This unleashes a plethora of possibilities within GO-JEK. From AI-based allocations, fraud detections, recommendations, to critical real-time business reporting and monitoring.',
+            subtitle: 'Our data infrastructure lets publish and consume raw and aggregated data effortlessly and reliably. This unleashes a plethora of possibilities within Gojek. From AI-based allocations, fraud detections, recommendations, to critical real-time business reporting and monitoring.',
             link: 'https://ravisuhag.substack.com/p/data-infrastructure-at-go-jek-cd4dc8cbd929',
             image: 'https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F049739e1-6dab-44ee-8b11-2d97323411bc_1024x555.jpeg',
             date: 'March 12, 2018',

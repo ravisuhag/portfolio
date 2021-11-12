@@ -89,7 +89,7 @@ export default function Home() {
             <p>
               Have fun browsing and thank you for visiting!
             </p>
-            <p><img className="signature" width="100%" src="/sign.svg" alt="Ravi Suhag" /></p>
+            <p><img className="signature" width="100%" src="/sign.png" alt="Ravi Suhag" /></p>
           </div>
 
           <div className="column right">
