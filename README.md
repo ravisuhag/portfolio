@@ -1,10 +1,9 @@
-# Portfolio
+<p align="center"><img src="https://www.ravisuhag.com/ravi_home.png" width="200"></p>
 
-<img align="right" height="200" src="https://www.ravisuhag.com/ravi_home.png">
+![Vercel](https://vercelbadge.vercel.app/api/ravisuhag/portfolio)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ravisuhag/portfolio)
 
-Hello, welcome to my little space on the web!
-
-I am an developer, designer, maker, data journalist and entrepreneur from India. I help people build great products. I am currently working as VP Engineering at Gojek, Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service data platforms, allowing its workforce to make data-driven decisions.
+Hello, welcome to my little space on the web. I am Ravi Suhag, an agile engineer with a vision to transform software chaos into seamless experiences. My inherent passion to solve problems involving analysis and synthesis shaped me to lead technology and product for organizations of all sizes, untangling the knots in software development, smoothing product delivery, and instilling best practices.
 
 Have fun in browsing and thank you for visiting!
 
