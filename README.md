@@ -1,7 +1,7 @@
 <p align="center"><img src="https://www.ravisuhag.com/ravi_home.png" width="200"></p>
 
-![Vercel](https://vercelbadge.vercel.app/api/ravisuhag/portfolio)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ravisuhag/portfolio)
+<!-- ![Vercel](https://vercelbadge.vercel.app/api/ravisuhag/portfolio)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ravisuhag/portfolio) -->
 
 Hello, welcome to my little space on the web. I am Ravi Suhag, an agile engineer with a vision to transform software chaos into seamless experiences. My inherent passion to solve problems involving analysis and synthesis shaped me to lead technology and product for organizations of all sizes, untangling the knots in software development, smoothing product delivery, and instilling best practices.
 
@@ -19,13 +19,13 @@ The font used is Roboto, and is served via Google Fonts. The photograph on the b
 
 To install dependencies:
 
-```
+```sh
 $ yarn install
 ```
 
 To run development server:
 
-```
+```sh
 $ yarn dev
 ```
 
@@ -36,5 +36,3 @@ If you have questions, please open an issue in the [discussion forum](https://gi
 ### Deployment
 
 This website is deployed on the [Vercel Platform](https://vercel.com) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
