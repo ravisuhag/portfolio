@@ -14,11 +14,10 @@ export default function Bio() {
       <main className="main">
         <h1>Posts</h1>
         <p>
-          I write blogs, normally about my work to give a lot more
-          background information about the thoughts, process and choices
-          went into the project. Or a tutorial about something interesting
-          I figured out to code or make. Also on thoughts and perspectives
-          that matter to me and had something to share.
+          I indulge in writing, mostly about my work to share my understanding
+          and thoughts, highlighting the process and choices that went into a
+          particular project. The remaining are thought-centric about my perspective
+          and opinions.
         </p>
         <List contents={[
           {
