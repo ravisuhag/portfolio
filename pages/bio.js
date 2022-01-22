@@ -13,10 +13,12 @@ export default function Bio() {
             <main className="main">
                 <img width="100%" src="/ravi_suhag_full.png" alt="Ravi Suhag" />
                 <p>
-                    Engineering and product leader with a passion for building great products.
-                    More than 10 years of experience in building and leading high-impact engineering teams.
-                    Proven track record to establish a vision and execute efficiently.
-                    Active contributor and maintainer of open-source projects.
+                    Having more than a decade of experience in building and leading
+                    high-impact engineering and product teams, I have implemented a deep understanding
+                    of the data ecosystem and the driving forces of modern data platforms,
+                    for solving unstructured problems by holistically matching my tooling
+                    decisions with business circumstances.
+
                     {/* Key expertise areas include: */}
                 </p>
                 {/* <p>
@@ -51,67 +53,68 @@ export default function Bio() {
                     <strong>Vision: </strong>
                     Understanding business, analytics, and technology, to guide teams by providing relevant context and inspiration.
                 </p> */}
-                {/* <h4>Founder, Open DataOps Foundation</h4>
+                <h4>Founder, Open DataOps Foundation, Mar 2021 - Present</h4>
                 <span>
-                    In 2021, I founded the Open DataOps Foundation, a non-profit organisation
-                    where I am leading vision and community efforts to build an open-source,
+                    In 2021, I founded <a target="_blank" href="https://github.com/odpf/">Open DataOps Foundation(ODPF)</a>,
+                    a non-profit organisation where I am leading vision and community efforts to build an open-source,
                     self-service modern data platform. ODPF provides a consistent and
                     unified platform for data lifecycle, data management, data integrity,
                     and data governance to magnify developer productivity.
-                </span> */}
+                </span>
                 <h4>VP Engineering, Gojek, Jan 2017 - Present</h4>
                 <span>
                     Leading product and engineering efforts to build large-scale, self-service
-                    data platforms including Enterprise Data Platform, Experimentation Platform,
-                    Analytics Platform, and Customer Data Platform. These platforms empower the
-                    Gojek workforce to make data-driven decisions.
-                    It involves building distributed big data infrastructure, real-time
-                    analytics and visualization pipelines for billions of data points per day using
-                    many handcrafted as well big data open source tools including but not limited
-                    to Kafka, Flink, Spark, BigQuery, Airflow, Zeppelin etc.
+                    data platforms encompassing Enterprise Data Platform, Experimentation Platform,
+                    Analytics Platform, and Customer Data Platform. These platforms have empowered
+                    Gojek workforce to make data-driven decisions. Scaling these platform involve
+                    building distributed big data infrastructure, real-time analytics, and visualization
+                    workflows for billions of data points per day using many handcrafted as well big
+                    data open-source tools including but not limited to Kafka, Flink, Spark, BigQuery,
+                    Airflow, Zeppelin, Kubernetes etc.
                 </span>
                 <h4>Engineering Lead, Harvard Kennedy School of Government, Apr 2014 - Mar 2017</h4>
                 <span>
-                    Leading technology efforts to design and develop data interfaces for evidence
-                    based policy decisions and increasing accountability in public programs.
-                    We have developed high-potential pilot projects which demonstrate the value
-                    of data and evidence through hands-on capacity building, while simultaneously
-                    creating innovative and effective ways for policy actors to utilize data and
-                    research evidence to improve their decision making.
+                    Orchestrated technology efforts to design and develop data interfaces for
+                    evidence-based policy decisions to increase accountability in public programs.
+                    As a team, developed high-potential pilot projects demonstrating and attesting
+                    the value of data through hands-on capacity building, while simultaneously
+                    creating innovative and effective ways for policy actors to employ to utilize
+                    data and research evidence to improve their decision making.
                 </span>
                 <h4>Consultant, Data Journalism, Hindustan Times, Nov 2015 - Aug 2016</h4>
                 <span>
-                    Built the definitive online source of real-time air quality monitoring in
-                    all of India for Hindustan Times. This project involved working on sensor
-                    journalism, extensive web crawling for data collection and moinitoring platform
-                    for data exploration. The goal of the project was to empower citizens to make
-                    better decisions, and so that they can hold their government accountable.
+                    Built a definitive online source for monitoring the real-time air quality of
+                    India for Hindustan Times. This project constituted sensor journalism, and
+                    extensive web crawling for data collection, as well as monitoring platform
+                    for data exploration. The exposition of the project empowered citizens to
+                    actively engage with the government, allowing decision-makers to reconnect
+                    with citizens’ needs, priorities, and values.
                 </span>
                 <h4>Consultant, Data Interfaces, JPAL, Apr 2015 - Dec 2015</h4>
                 <span>
-                    Built data exploration framework for emission trading system to enable the
-                    Ministry of Environment & Forests to cap total pollution emissions in select
+                    Built data-exploration framework for emission trading system to enable the
+                    Ministry of Environment & Forests to cap total pollution emissions in selected
                     areas and increase regulatory transparency and accountability. The pilot scheme
                     provided a model for expansion within India and a framework for implementing global
-                    environmental policy. This project was done in collaboration with JAPAL South Asia,
+                    environmental policy. This project was done in collaboration with JPAL South Asia,
                     Gujarat Pollution Control Board, Maharashtra Pollution Control Board and the Tamil
                     Nadu Pollution Control Board.
                 </span>
                 <h4>Founder, Inspiration Edge, Jun 2011 - Dec 2015</h4>
                 <span>
-                    Inspiration Edge is a design driven software company and a community of passionate individuals,
-                    thinking disruptively to revolutionize the IT industry and create positive social change.
-                    We work with ambitious people and organizations to provide software delivery, pioneering tools
-                    and consulting in commercial, social, educational and government sectors. We believe in improving
-                    quality of living with technology and sharing what we learn by running events, conferences and contributing
-                    to open source.
+                    Founded Inspiration Edge, a design-driven software company by establishing a progressivist
+                    community of passionate individuals, cohesively working to revolutionize the IT industry and
+                    create positive social impact. Worked with ambitious people and organizations to provide
+                    software delivery, pioneering tools, and consulting in commercial, social, educational,
+                    and government sectors. The company’s belief stood to improve the quality of living with
+                    technology and sharing what we learn by running events, conferences and contributing to open-source.
                 </span>
                 <h4>Lead Architect, Info Assembly, Dec 2013 - Mar 2014</h4>
                 <span>
-                    Worked on designing architecture for Big Data web platform for Info Assembly which leverages
-                    data analytics and offers innovative FinTech products for businesses. We used Machine Learning
-                    and Natural Language Processing algorithms running on massive big web data to create intuitive
-                    visual experiences which would greatly simplify the manual financial market research process.
+                    Worked on designing the architecture for Big Data web platform for Info Assembly which leverages
+                    data analytics and offers innovative FinTech products for businesses. Applied Machine Learning and
+                    Natural Language Processing algorithms running on massive big web data to create intuitive visual
+                    experiences that greatly simplified the manual financial market research process.
                 </span>
                 <p>
                     Full list of organisations is available on my <a href="https://www.linkedin.com/in/ravisuhag/" target="_blank">Linkedin</a> profile.
