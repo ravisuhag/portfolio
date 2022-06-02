@@ -17,10 +17,17 @@ export default function Bio() {
                     I love sharing what I know with others. Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me if you’d like me to come and speak at an event.
                 </p>
                 <Videos contents={[
-
+                    {
+                        title: 'Feature Engineering at Scale with Dagger and Feast',
+                        subtitle: 'In this talk Ravi will about the end to end architecture and how Dagger and Feast work together to provide a cohesive feature engineering workflow.',
+                        link: 'https://youtu.be/9B9qqqJVm4M',
+                        embed: '9B9qqqJVm4M',
+                        date: 'May 2022',
+                        publisher: 'Apply Conf'
+                    },
                     {
                         title: 'Terraforming repeatable and extensible infrastructure at Gojek',
-                        subtitle: 'In this post, we’ll talk about our approach of assembling Infrastructure As Code that simplifies the maintenance of an increasingly complex microservices architecture for our company.',
+                        subtitle: 'In this talk, we’ll talk about our approach of assembling Infrastructure As Code that simplifies the maintenance of an increasingly complex microservices architecture for our company.',
                         link: 'https://youtu.be/z0Jm2EB57zM',
                         embed: 'z0Jm2EB57zM',
                         date: 'Aug 2021',
