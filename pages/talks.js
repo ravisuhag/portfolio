@@ -18,8 +18,16 @@ export default function Bio() {
                 </p>
                 <Videos contents={[
                     {
+                        title: 'Crafting modern data experiences at scale',
+                        subtitle: 'In this talk Ravi shares how organizations can build modern data experiences with ODPF that are easy to use, scalable, and maintainable.',
+                        link: 'https://www.youtube.com/watch?v=V-pZnlfSXCQ',
+                        embed: 'V-pZnlfSXCQ',
+                        date: 'May 2022',
+                        publisher: 'Github Constellation'
+                    },
+                    {
                         title: 'Feature Engineering at Scale with Dagger and Feast',
-                        subtitle: 'In this talk Ravi will about the end to end architecture and how Dagger and Feast work together to provide a cohesive feature engineering workflow.',
+                        subtitle: 'In this talk Ravi will talk about the end to end architecture and how Dagger and Feast work together to provide a cohesive feature engineering workflow.',
                         link: 'https://youtu.be/9B9qqqJVm4M',
                         embed: '9B9qqqJVm4M',
                         date: 'May 2022',
