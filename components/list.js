@@ -9,7 +9,8 @@ function card(item) {
         </div> */}
         <div className="column">
           <div>
-            <div className="list__title">{item.title}</div>
+            {/* <div className="list__title">{item.title}</div> */}
+            <h4>{item.title}</h4>
             <div className="list__sub">{item.subtitle}</div>
             <div className="list__date">{item.date} - {item.time}min read</div>
           </div>

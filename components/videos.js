@@ -28,7 +28,8 @@ function card(item) {
       <div className="column">
         <Link href={item.link}>
           <a target="_blank">
-            <div className="list__title">{item.title}</div>
+            {/* <div className="list__title">{item.title}</div> */}
+            <h4>{item.title}</h4>
             <div className="list__sub">{item.subtitle}</div>
             <div className="list__date">{item.publisher} - {item.date}</div>
           </a>
