@@ -18,6 +18,14 @@ export default function Bio() {
                 </p>
                 <Videos contents={[
                     {
+                        title: 'Building data platform with ODPF at Gojek on Google Cloud',
+                        subtitle: 'In this talk Ravi shares how Gojek built data platform with Open DataOps Foundation suite and Google Cloud.',
+                        link: 'https://www.youtube.com/watch?v=aumm81wzcUQ',
+                        embed: 'V-pZnlfSXCQ',
+                        date: 'June 2022',
+                        publisher: 'Google Data Cloud and Applied ML Summit'
+                    },
+                    {
                         title: 'Crafting modern data experiences at scale',
                         subtitle: 'In this talk Ravi shares how organizations can build modern data experiences with ODPF that are easy to use, scalable, and maintainable.',
                         link: 'https://www.youtube.com/watch?v=V-pZnlfSXCQ',
