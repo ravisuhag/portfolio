@@ -1,22 +1,33 @@
+:root {
+  --link: #0f6ad6;
+  --link_hover: #184b8a;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   color: #555454;
-  font-size: 19px;
-  line-height: 37px;
+  font-size: 16px;
+  line-height: 36px;
   letter-spacing: 0.02em;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
 }
 
+
+
 a {
-  color: #0f6ad6;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:hover {
-  color: #063670;
+  color: var(--link_hover);
+}
+
+a:hover h4{
+  color: var(--link);
 }
 
 * {
@@ -25,7 +36,7 @@ a:hover {
 
 /**********  LAYOUT  **********/
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 30px;
   min-height: 100vh;
@@ -37,16 +48,16 @@ a:hover {
 
 .row {
   display: flex;
-  grid-gap: 3%;
+  grid-gap: 1%;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
 
 .column.left {
-  flex-basis: 75%;
+  flex-basis:82%;
 }
 .column.right {
-  flex-basis: 22%;
+  flex-basis: 17%;
 }
 
 @media (max-width: 600px) {
@@ -127,7 +138,7 @@ h4 {
 /**********  LIST  **********/
 
 .list {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .list__thumbnail {

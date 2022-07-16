@@ -35,9 +35,9 @@ export default function Home() {
       </Head>
       <Header />
       <main className="main">
-        <h1 className="welcome" ref={el} />
         <div className="row">
           <div className="column left">
+            <h1 className="welcome" ref={el} />
             <i> Crafting modern data experiences.</i>
             <p>
               I am Ravi Suhag, an agile engineer with a vision to transform
@@ -91,7 +91,6 @@ export default function Home() {
             </p>
             <p><img className="signature" width="100%" src="/sign.png" alt="Ravi Suhag" /></p>
           </div>
-
           <div className="column right">
             <p>
               <img className="home--image" width="100%" src="/ravi_home.png" alt="Ravi Suhag" />
