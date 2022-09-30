@@ -6,8 +6,8 @@ export default function Post({ postData }) {
   return (
     <div className="container">
       <Head>
-        <title>Contact | Ravi Suhag</title>
-        <meta name="description" content="Ravi Suhag's personal homepage" />
+        <title>{postData.title}</title>
+        <meta name="description" content="{postData.title}" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

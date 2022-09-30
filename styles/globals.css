@@ -2,8 +2,10 @@
   --body_color: #333;
   /* --heading_color: #011834; */
   --heading_color: #000;
-  --link_color: #0f6ad6;
-  --link_hover: #184b8a;
+  /* --link_color: #069275; */
+  /* --link_hover: #047c64; */
+  --link_color: #3856ff;
+  --link_hover: #2a45de;
 }
 
 html,
@@ -32,6 +34,10 @@ a:hover h4 {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 /**********  LAYOUT  **********/
@@ -72,18 +78,39 @@ a:hover h4 {
   }
 }
 
+ul {
+  padding-left: 25px;
+  list-style-type: square;
+}
+
+li {
+  line-height: 1.8em;
+}
+
 /**********  TYPOGRAPHY  **********/
 
 h1 {
   color: var(--heading_color);
-  font-weight: 400;
+  font-weight: normal;
   font-size: 32px;
+}
+
+h2 {
+  color: var(--heading_color);
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: var(--heading_color);
+  font-weight: normal;
+  margin-bottom: 0;
 }
 
 h4 {
   margin-bottom: 0.3rem;
   color: var(--heading_color);
-  font-weight: 600;
+  font-weight: bold;
 }
 
 /**********  HEADER  **********/
@@ -97,7 +124,7 @@ h4 {
 
 .header__logo {
   color: var(--heading_color);
-  font-weight: 600;
+  font-weight: bold;
   font-size: 22px;
 }
 
@@ -113,11 +140,11 @@ h4 {
 }
 
 .header a:hover {
-  color: var(--heading_color);
+  color: var(--link_color);
 }
 
 .navbar .active {
-  color: #0f6ad6;
+  color: var(--link_color);
 }
 
 /**********  HOME  **********/
@@ -197,4 +224,8 @@ h4 {
 .bullet__list {
   padding-left: 20px;
   margin-left: 0;
+}
+
+.remark-highlight pre {
+  border-radius: 6px;
 }
