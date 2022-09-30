@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Header from '../components/header';
 
-export default function Bio() {
+export default function Work() {
     return (
         <div className="container">
             <Head>
-                <title>Bio | Ravi Suhag</title>
+                <title>Work | Ravi Suhag</title>
                 <meta name="description" content="Ravi Suhag's personal homepage" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -18,41 +18,7 @@ export default function Bio() {
                     of the data ecosystem and the driving forces of modern data platforms,
                     for solving unstructured problems by holistically matching my tooling
                     decisions with business circumstances.
-
-                    {/* Key expertise areas include: */}
                 </p>
-                {/* <p>
-                    <strong>Team Building: </strong>
-                    Recognizing and attracting top-tier members. Coach and guide teams through their strengths and weaknesses with regular feedback.
-                </p>
-                <p>
-                    <strong>Data Engineering: </strong>
-                    Experience in building distributed real-time data pipelines that can handle billions of data points per day.
-                </p>
-                <p>
-                    <strong>Data Analytics: </strong>
-                    Experience in building tools to visualize and analyse big data in an effective, understandable & engaging manner.
-                </p>
-                <p>
-                    <strong>Distributed Systems: </strong>
-                    Experience in developing distributed, fault-tolerant backend and frontend systems using the latest technology and modern frameworks.
-                </p>
-                <p>
-                    <strong>Product Development: </strong>
-                    Track record on driving product development with influence that meaningfully moves the business forward.
-                </p>
-                <p>
-                    <strong>Product Design: </strong>
-                    Designing user-centered, clean, and functional products that follow structure, simplicity, visibility, and reuse.
-                </p>
-                <p>
-                    <strong>Partnership: </strong>
-                    Establish strong relationships with both business and technical leaders across and outside organisation.
-                </p>
-                <p>
-                    <strong>Vision: </strong>
-                    Understanding business, analytics, and technology, to guide teams by providing relevant context and inspiration.
-                </p> */}
                 <h4>Founder, Open DataOps Foundation, Mar 2021 - Present</h4>
                 <span>
                     In 2021, I founded <a target="_blank" href="https://github.com/odpf/">Open DataOps Foundation(ODPF)</a>,

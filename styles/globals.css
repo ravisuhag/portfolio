@@ -1,5 +1,8 @@
 :root {
-  --link: #0f6ad6;
+  --body_color: #333;
+  /* --heading_color: #011834; */
+  --heading_color: #000;
+  --link_color: #0f6ad6;
   --link_hover: #184b8a;
 }
 
@@ -7,18 +10,15 @@ html,
 body {
   padding: 0;
   margin: 0;
-  color: #555454;
-  font-size: 16px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
+  color: var(--body_color);
+  font-size: 18px;
+  line-height: 1.6em;
+  font-family: "Source Serif Pro", serif;
+  /* background-color: #eaf5f3; */
 }
 
-
-
 a {
-  color: var(--link);
+  color: var(--link_color);
   text-decoration: none;
 }
 
@@ -26,8 +26,8 @@ a:hover {
   color: var(--link_hover);
 }
 
-a:hover h4{
-  color: var(--link);
+a:hover h4 {
+  color: var(--link_color);
 }
 
 * {
@@ -54,7 +54,7 @@ a:hover h4{
 }
 
 .column.left {
-  flex-basis:82%;
+  flex-basis: 82%;
 }
 .column.right {
   flex-basis: 17%;
@@ -75,28 +75,30 @@ a:hover h4{
 /**********  TYPOGRAPHY  **********/
 
 h1 {
-  color: #000;
+  color: var(--heading_color);
   font-weight: 400;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h4 {
   margin-bottom: 0.3rem;
-  color: #000;
-  font-weight: 500;
+  color: var(--heading_color);
+  font-weight: 600;
 }
 
 /**********  HEADER  **********/
 
 .header {
-  padding: 30px 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
-  color: #000;
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 48px;
+  color: var(--heading_color);
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .navbar {
@@ -107,12 +109,11 @@ h4 {
 .navbar a {
   display: inline-block;
   margin-left: 50px;
-  font-weight: 400;
   color: #444;
 }
 
 .header a:hover {
-  color: #000;
+  color: var(--heading_color);
 }
 
 .navbar .active {
@@ -152,7 +153,7 @@ h4 {
 }
 
 .list__title {
-  color: #000;
+  color: var(--heading_color);
   padding-bottom: 5px;
 }
 
@@ -162,7 +163,7 @@ h4 {
 
 .list__sub,
 .list__date {
-  color: #585858;
+  color: var(--body_color);
 }
 
 .list__date {
