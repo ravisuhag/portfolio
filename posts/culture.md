@@ -19,7 +19,7 @@ This isn’t to say that we don’t disagree — like any group of passionat
 
 From my personal experience, a lot of companies talk about being “people first,” but most don’t practice the mindset of what it takes to be truly people first.
 
-For us, it is about distributing ownership to everyone in the team. This ownership gives everyone the responsibility to put their best and gives meaning to daily work.
+For us, it is about distributing ownership to everyone on the team. This ownership gives everyone the responsibility to put their best and gives meaning to daily work.
 
 ## Empathy
 
@@ -37,7 +37,7 @@ We do our utmost to get this right. As our Group CTO, Ajey, says in his post on 
 
 As individuals and as a team, we never let ourselves get too comfortable — whether it’s about knowing a piece of technology, scaling for hyper-growth, or achieving new milestones every day.
 
-We know for a fact that is there is no finish line and it’s a continuous journey to achieve amazing things and change millions of lives for the better. We grew 900x in 18 months and still rapidly doubling. Being part of this journey is nothing short of exhilarating.
+We know for a fact that there is no finish line and it’s a continuous journey to achieve amazing things and change millions of lives for the better. We grew 900x in 18 months and still rapidly doubling. Being part of this journey is nothing short of exhilarating.
 
 ## It’s not like we have the answers
 

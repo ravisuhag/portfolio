@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(22, 22, 24);
+    --body_color: rgb(155, 161, 166);
+    --heading_color: #ddd;
+    --link_color: #069275;
+    --link_hover: #047c64;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    background: rgb(22, 22, 24) !important;
+    border-color: #333 !important;
+  }
+}

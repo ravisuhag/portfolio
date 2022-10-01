@@ -3,16 +3,12 @@ import Link from 'next/link'
 function card(item) {
   return (
     <Link href={item.link} key={item.link}>
-      <a className="row list" target="_blank">
-        {/* <div className="column right">
-          <div className="list__thumbnail" style={{ backgroundImage: `url(${item.image})` }} />
-        </div> */}
+      <a className="row list">
         <div className="column">
           <div>
-            {/* <div className="list__title">{item.title}</div> */}
             <h4>{item.title}</h4>
             <div className="list__sub">{item.subtitle}</div>
-            <div className="list__date">{item.date} - {item.time}min read</div>
+            <div className="list__date">{item.date} - {item.time} min read</div>
           </div>
         </div>
       </a>

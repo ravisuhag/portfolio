@@ -55,17 +55,20 @@ Modules in Terraform are self-contained packages of Terraform configurations use
 module "kubernetes_base" {
   source = "<path>/terraform/gcloud-kubernetes-base?ref=v1.0.1"
 }
+
 module "kubernetes_telegraf" {
   source       = "<path>/terraform/gcloud-kubernetes-telegraf?ref=v1.1.1"
   cluster_name = "${var.cluster_name}"
   teams        = "${var.teams}"
 }
+
 module "kubernetes_prometheus" {
   source           = "<path>/terraform/gcloud-kubernetes-prometheus?ref=v1.0"
   project_name     = "${var.project_name}"
   cluster_name     = "${var.cluster_name}"
   nginx_ingress_ip = "${module.kubernetes_base.nginx_ingress_ip}"
 }
+
 module "kubernetes_whiterabbit" {
   source = "<path>/terraform/gcloud-kubernetes-whiterabbit?ref=v1.0"
 }
