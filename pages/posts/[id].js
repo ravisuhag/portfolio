@@ -7,7 +7,7 @@ export default function Post({ postData }) {
     <div className="container">
       <Head>
         <title>{postData.title}</title>
-        <meta name="description" content="{postData.title}" />
+        <meta name="description" content="{postData.description}" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

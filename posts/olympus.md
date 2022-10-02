@@ -13,9 +13,22 @@ In this post, we’ll talk about our approach of assembling infrastructure as co
 
 Building infrastructure is, without a doubt, a complex problem evolving over time. Maintainability, scalability, observability, fault-tolerance, and performance are some of the aspects around it that demand improvements over and over again.
 
-One of the reasons it is so complex is the need for high availability. Most of the components are deployed as a cluster with hundreds of microservices and thousands of machines. This constantly growing infrastructure took us to a place where no one knew what the managed infrastructure looked like, how the running machines were configured, what changes were made, how networks were connected. In a nutshell, we lacked observability in our infrastructure, and when there was a failure in the system, it was hard to tell what could’ve brought the system down.
+One of the reasons it is so complex is the need for high availability. Most of the components are deployed as a cluster with hundreds of microservices and thousands of machines. This constantly growing infrastructure took us to a place where no one knew what the managed infrastructure looked like, how the running machines were configured, what changes were made, how networks were connected. In a nutshell, we lacked observability in our infrastructure, and when there was a failure in the system, it was hard to tell what could’ve brought the system down. Some of the unique challenges we encountered:
 
-## Goals
+#### Infrastructure Expansion
+
+With 4 countries, 20+ products and 3 super apps infrastructure keeps on expanding and there is always requirement of launching data infrastructure for an entire product from ground up.
+
+#### Distributed teams
+
+Multiple functions and teams spread across multiple locations and timezones have different on-demand needs from data infrastructure team.
+
+#### Auto scaling
+
+Higher elasticity of infrastructure, where instead of months or years, infrastructure might live for just a few hours.
+Traditional ticket-based on-demand setup for spinning up infrastructure is no longer practical.
+
+## Objectives
 
 We have been using Terraform for our IAC(Infrastructure As Code) in bits and pieces for a while now, but it lacked structure and consistency. Different teams had different repositories. Modules were all over the place or inside the project itself. They were complex, and there were lots and lots of bash scripts.
 
@@ -27,7 +40,7 @@ Project Olympus is the Gojek infrastructure engineering team initiative to solve
 
 **Declarative style infrastructure**
 
-You write code that specifies your desired end state, and the IAC tool itself is responsible for figuring out how to achieve that state. With declarative style, the code always represents the latest state of your infrastructure. Thus, at a glance, you can tell what’s currently deployed and configured without worrying about the past state.
+Engineers write code that specifies its desired end state, and the IAC tool itself is responsible for figuring out how to achieve that state. With declarative style, the code always represents the latest state of your infrastructure. Thus, at a glance, you can tell what’s currently deployed and configured without worrying about the past state.
 
 **Structure and consistency**
 
@@ -35,13 +48,13 @@ Consistent workflow and code structure for developers to provision resources on 
 
 **Self-serve and On-demand infrastructure**
 
-A self-service model to allow developers to pick the infrastructure best suited to run their application and provision it on-demand in a predictable and consistent way.
+A self-service model allows engineers to pick the infrastructure best suited to run their applications/workloads and provision it on-demand in a predictable and consistent way.
 
 **Safety and security**
 
-Limiting the effects of IAC operations to a specific environment/component for security, safety, and avoiding human errors.
+Provide fine-grained control on infrastructure operations for security, safety and reduces human errors. All operations are limited to authorized users following data governance guidelines.
 
-**Observability**
+**Accountability**
 
 With many moving pieces and large-scale infrastructure comes a vital need of allowing both ops teams and service owners to maintain observability of running applications and critical infrastructure.
 
@@ -49,28 +62,22 @@ With many moving pieces and large-scale infrastructure comes a vital need of all
 
 #### Module Registry
 
-Modules in Terraform are self-contained packages of Terraform configurations used to create reusable components. Currently, we have more than 30 core base modules and a few abstracted modules built using composition on top of base modules. E.g. glcoud-kubernetes-foundation The module comprises four base modules that set up monitoring, deployment, and other core Kubernetes services.
+Modules in Terraform are self-contained packages of Terraform configurations used to create reusable components. Currently, we have more than 30 core base modules and a few abstracted modules built using composition on top of base modules.
 
 ```hcl
-module "kubernetes_base" {
-  source = "<path>/terraform/gcloud-kubernetes-base?ref=v1.0.1"
+ module "kafka" {
+  source = "<path>/terraform/gcloud-kafka?ref=v1.0.1"
 }
-
-module "kubernetes_telegraf" {
-  source       = "<path>/terraform/gcloud-kubernetes-telegraf?ref=v1.1.1"
+module "flink" {
+  source = "<path>/terraform/gcloud-kubernetes-flink?ref=v1.1.1"
   cluster_name = "${var.cluster_name}"
   teams        = "${var.teams}"
 }
-
-module "kubernetes_prometheus" {
-  source           = "<path>/terraform/gcloud-kubernetes-prometheus?ref=v1.0"
+module "kubernetes" {
+  source = "<path>/terraform/gcloud-kubernetes?ref=v1.0"
   project_name     = "${var.project_name}"
   cluster_name     = "${var.cluster_name}"
   nginx_ingress_ip = "${module.kubernetes_base.nginx_ingress_ip}"
-}
-
-module "kubernetes_whiterabbit" {
-  source = "<path>/terraform/gcloud-kubernetes-whiterabbit?ref=v1.0"
 }
 ```
 
@@ -88,30 +95,65 @@ module "godata_core_vpc" {
 
 We host our modules on the Gitlab group, which is a central hub for all Terraform modules. The Infrastructure Engineering team maintains all base modules. Having a central module registry also allows us to enforce governance, compliance, and security against the modules made available to teams.
 
-#### Address allocation
+#### Infrastructure provisioner
 
-GANA- Gojek Assigned Numbers Authority is responsible for coordinating the address allocation to resources like VPC, gateways, clusters, etc. GANA is our internal HTTP rest service with a custom-written terraform provider.
+The provisioner provides scaffolding as a foundation to jump-start your development. Users can run commands to scaffold entire projects or valuable parts. We use Proctor an internal tool as our IAC scaffold tool.
+
+```sh
+Usage:
+  proctor provision [command]
+
+Available Commands:
+  app-kminion      generate terraform code for deploying kminion for application side kafka
+  governance       generate terraform modules for governance
+  kube-foundation  generate terraform code for kube foundation
+  kubernetes       generate terraform modules for kubernetes
+  mirrormaker      generate mirrormaker from entity's landscape VPC to given destination project
+  network          generate terraform modules for network
+  ocean-governance generate terraform modules for Ocean governance resources
+  project          generate terraform modules for project
+  radar-router     generate terraform code for Radar Router
+  stream           generate stream from entity's landscape VPC to given destination project
+  tunnel           generate tunnel from entity's landscape VPC to given destination project
+
+Flags:
+  -h, --help   help for provision
+
+Global Flags:
+      --output-dir string     Required, specify terraform root folder path
+      --template-dir string   Required, specify template folder path
+
+Use "proctor provision [command] --help" for more information about a command.
+```
+
+#### Network allocation
+
+We have an internal tool called GANA- Gojek Assigned Numbers Authority that is responsible for coordinating the address allocation to resources like VPC, gateways, clusters, etc. It is an internal HTTP service with a custom-written terraform provider.
 
 GANA provides a Terraform resource gana_allocate_subnet to allow allocating a subnet range for any resource type.
 
 ```hcl
+// Allocate a subnet to the resource
 resource "gana_allocate_subnet" "subnet_allocate" {
   project      = "${var.project_name}"
   category     = "vpc"
   network_name = "${var.subnet_name}"
   endpoint     = "${var.gana_endpoint}"
 }
+
 ```
 
 GANA also provides a Terraform data object for other projects to access subnet ranges of already allocated resources.
 
 ```hcl
+// Fetch details of the cluster subnet
 data "gana_subnet" "godata_core" {
   project      = "${var.project_name}"
   category     = "vpc"
   network_name = "godata-core"
   endpoint     = "${var.gana_endpoint}"
 }
+
 ```
 
 GANA allows us to
@@ -119,19 +161,37 @@ GANA allows us to
 - Prevent IP ranges from clashing across different data centers and cloud projects.
 - Provides a central place for accessing allocated resource information for use across different projects.
 
+#### Metadata provider
+
+We also have custom provider to capture metadata and push to a central metadata repository.
+
+```hcl
+provider "godata" {
+  host = "http://xyz.gojek.io"
+}
+
+resource "godata_stream" "gmainstream" {
+  urn         = "urn"
+  name         = "mainstream"
+  brokers {
+    address = "10.11.12.10"
+    name    = "g-godata-box-01"
+    host    = "g-godata-box-01"
+  }
+}
+```
+
 #### Code structure
 
 Structuring the code in Terraform is crucial because it determines which files Terraform has access to when it is executing.
 
 Olympus represents the entire Gojek live cloud infrastructure as IAC. Therefore, each repository in the Olympus GitLab group represents one cloud project owned by their respective teams.
 
-Having each project as a separate repository allows us to
+Having each project as a separate repository allows us to version control each project infrastructure separately. It also enables us to version physical infrastructure. The following example goviet-staging -1.2.3 maps to systems-1.2.3.
 
-Version control each project infrastructure separately. Which, in turn, enables us to version physical infrastructure. The following example goviet-staging -1.2.3 maps to systems-1.2.3.
+Infrastructure mapping enables us to roll back to older versions and always have working state mapping of the last stable infrastructure. The code structure within each project is layered where each layer represents one section of infrastructure and is a combination of similar components.
 
-Infrastructure mapping enables us to roll back to older versions and always have working state mapping of the last stable infrastructure.
-
-The code structure within each project is layered where each layer represents one section of infrastructure and is a combination of similar components.
+## Lessons
 
 #### Blast radius
 
@@ -139,11 +199,15 @@ Terraform can “feel scary” since it’s easy to destroy infrastructure with 
 
 We utilize our Terraform code structure to control the blast radius for our IAC. State. To limit the scope of terraform destroy, our approach breaks down the state into “smaller” components, such as using different states for different projects, environments, and components.
 
-#### Manager
+#### Avoid module nesting
 
-The manager provides scaffolding as a foundation to jump-start your development. Users can run commands to scaffold entire projects or valuable parts. We use Proctor as our IAC scaffold tool.
+Keep your module nesting minimum to avoid versioning hierarchy and easy management of module.
 
-## Summary
+#### Consistent naming
+
+Form and follow clear conventions for naming infrastructure resources.
+
+## Impact
 
 Olympus allowed us to cut provisioning new infrastructure time from weeks to minutes. By breaking it down into modules, managing our infrastructure resources allowed operations and infra teams to be more efficient and organized, thus providing more business value. It helped us implement Infrastructure As Code in Gojek less risky and less complex for adoption.
 

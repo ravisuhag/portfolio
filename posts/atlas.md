@@ -1,5 +1,6 @@
 ---
 title: "ATLAS: Gojek’s real-time geospatial visualization platform"
+slug: "atlas-gojek-real-time-geospatial-visualization-platform"
 date: "Feb 19, 2018"
 ---
 
