@@ -31,6 +31,8 @@ The power of storytelling has an immense impact on human culture. We are wired t
 
 The product narrative is the answer to the question of why this product exists. Answer to ‘why’ provides context for the vision of the product. It creates the world in which the vision exists. Following is the early version of the data infrastructure narrative:
 
+![](/img/asgard_home.png)
+
 ## Asgard Architecture
 
 This product narrative then translated to five services:

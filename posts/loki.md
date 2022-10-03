@@ -15,6 +15,21 @@ Built on the principles of Chaos Engineering and tailored to our specific use ca
 - **Reports:** At the end of a simulation, Loki can prepare a disaster recovery playbook and reports. These playbooks act as the foundation of our auto-healing service, Thor.
 - **CLI interface:** It also has an easy-to-use command-line interface for running and monitoring any experiment.
 
+```sh
+Usage:
+  loki [command]
+
+Available Commands:
+  simulate      Run a simulation
+  new           Create a new simulation
+  list          List resources, simulations and deployments
+
+Flags:
+  -h, --help   help for a command
+
+Use "loki [command] --help" for more information about a command.
+```
+
 ## Architecture
 
 Following is the high-level architecture diagram of Loki.
@@ -54,6 +69,43 @@ Our mainstream data cluster is six brokers, five zookeeper nodes, multi-zone Kaf
 
 Once the performance environment is up and configured with Loki, creating a simulation schema using the Loki CLI tool is next. Following is an example simulation.
 
+```json
+{
+    "name" : "esb-kafka-mirror-resilency-test-phase-3",
+    "description": "Resilency test for ESB kafka mirror",
+    "cluster": "mainstream-perf",
+    "producers": [],
+    "choas": [
+        {
+            "name" : "CASE 1",
+            "blast_radius": "mainstream-perf",
+            "type": "kafka",
+            "failure_percentage": "10%",
+            "data_disk_failure":"true",
+            "instance_recovery": "true",
+            "downtime":"20m"
+        }
+    ]
+    "consumers": [
+        {
+            "name" : "ride_consumer",
+            "topic": "ride-booking-log",
+            "offset": "latest",
+            "count": "5",
+            "consumer_per_group":"2",
+            "schema": "com.gojek.booking.Message",
+        }
+    ],
+    "feeders":[
+        {
+            "name": "test",
+            "topic": "test",
+            "count" : "2"
+        }
+    ]
+}
+```
+
 To test the resiliency of our stream cluster, we run chaos with different failure combinations. As an example
 
 - Broker failure and recovery with same broker id - with and without data disk loss.
@@ -69,6 +121,8 @@ Each simulation schema has its unique id used by the Loki run command to launch 
 ### Monitoring
 
 Loki monitors the state of the system over time during the experiment. In addition, it continuously monitors the deviation from steady-state and recovery time once the system recovers from downtime.
+
+![](/img/loki_met.png)
 
 ### Experiment report metadata
 
