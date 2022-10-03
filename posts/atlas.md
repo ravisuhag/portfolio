@@ -56,27 +56,27 @@ This structure enables anyone to
 
 ## Data experience
 
-**Layer selection:**
+#### Layer selection
 
 Pick your visualization layers as per your use case. Build heatmaps, data clusters, 2D/3D choropleths, and more.
 
 ![Atlas](/img/atlas_2.png)
 
-**Metric selection:**
+#### Metric selection
 
 Flexible mapping of dimensions and data metrics allow exploratory analysis to seamlessly integrate into each team’s data analytics needs.
 
-**Cell Panel:**
+#### Cell Panel
 
 Atlas also allows you to explore detailed data of layer’s cell. e.g. number stats, histogram. Each layer can interface with the cell panel and provide detailed information about the cells (e.g. S2 Id).
 
 ![Atlas](/img/atlas_panel.png)
 
-**Area Navigation:**
+#### Area Navigation
 
 You can smoothly pan across different service areas all across Indonesia.
 
-**Map Style:**
+#### Map Style
 
 Atlas allows you to quickly switch between map themes without a need for remapping dimensions or data reload. Each map theme is designed to focus on certain properties like roads, area boundaries, etc.
 
