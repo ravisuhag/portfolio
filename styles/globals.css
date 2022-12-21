@@ -1,9 +1,6 @@
 :root {
-  --body_color: #333;
-  /* --heading_color: #011834; */
+  --body_color: #555;
   --heading_color: #000;
-  /* --link_color: #069275; */
-  /* --link_hover: #047c64; */
   --link_color: #3856ff;
   --link_hover: #2a45de;
 }
@@ -13,10 +10,9 @@ body {
   padding: 0;
   margin: 0;
   color: var(--body_color);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   font-family: "Source Serif Pro", serif;
-  /* background-color: #eaf5f3; */
 }
 
 a {
@@ -113,6 +109,14 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-size: 15px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+  color: #666;
+  font-weight: normal;
+}
+
 h4 + p {
   margin-top: 5px;
 }
@@ -129,7 +133,7 @@ h4 + p {
 .header__logo {
   color: var(--heading_color);
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .navbar {
@@ -168,7 +172,6 @@ h4 + p {
 }
 
 /**********  LIST  **********/
-
 .list {
   margin-top: 30px;
 }
@@ -204,10 +207,6 @@ h4 + p {
 }
 
 /**********  TALKS  **********/
-/* .videos.list {
-  margin-top: 60px;
-} */
-
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;

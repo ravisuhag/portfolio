@@ -19,15 +19,25 @@ export default function Work() {
                     for solving unstructured problems by holistically matching my tooling
                     decisions with business circumstances.
                 </p>
-                <h4>Founder, Open DataOps Foundation, Mar 2021 - Present</h4>
+                <h4>Pixxel</h4>
+                <h5>VP Engineering . 2022 - Present</h5>
+                <span>
+                    Leading product and engineering efforts to build a geospatial platform to democratize
+                    access to data of a constellation of hyperspectral imaging satellites across a multitude
+                    of sectors. My role also contributes towards the development of automated image processing
+                    and machine learning platform that will enable us to detect, monitor, and predict global
+                    phenomena in near real-time..
+                </span>
+                <h4>Open DataOps Foundation</h4>
+                <h5>Founder . Mar 2021 - Present</h5>
                 <span>
                     In 2021, I founded <a target="_blank" href="https://github.com/odpf/">Open DataOps Foundation(ODPF)</a>,
                     a non-profit organisation where I am leading vision and community efforts to build an open-source,
-                    self-service modern data platform. ODPF provides a consistent and
-                    unified platform for data lifecycle, data management, data integrity,
-                    and data governance to magnify developer productivity.
+                    self-service modern data platform. ODPF provides a consistent and unified platform for data lifecycle,
+                    data management, and data governance to magnify developer productivity.
                 </span>
-                <h4>VP Engineering, Gojek, Jan 2017 - Present</h4>
+                <h4>Gojek</h4>
+                <h5>VP Engineering . Jan 2017 - 2022</h5>
                 <span>
                     Leading product and engineering efforts to build large-scale, self-service
                     data platforms encompassing Enterprise Data Platform, Experimentation Platform,
@@ -38,7 +48,8 @@ export default function Work() {
                     data open-source tools including but not limited to Kafka, Flink, Spark, BigQuery,
                     Airflow, Zeppelin, Kubernetes etc.
                 </span>
-                <h4>Engineering Lead, Harvard Kennedy School of Government, Apr 2014 - Mar 2017</h4>
+                <h4>Harvard Kennedy School of Government</h4>
+                <h5>Engineering Lead . Apr 2014 - Mar 2017</h5>
                 <span>
                     Orchestrated technology efforts to design and develop data interfaces for
                     evidence-based policy decisions to increase accountability in public programs.
@@ -47,7 +58,8 @@ export default function Work() {
                     creating innovative and effective ways for policy actors to employ to utilize
                     data and research evidence to improve their decision making.
                 </span>
-                <h4>Consultant, Data Journalism, Hindustan Times, Nov 2015 - Aug 2016</h4>
+                <h4>Hindustan Times</h4>
+                <h5>Consultant, Data Journalism . Nov 2015 - Aug 2016</h5>
                 <span>
                     Built a definitive online source for monitoring the real-time air quality of
                     India for Hindustan Times. This project constituted sensor journalism, and
@@ -56,7 +68,8 @@ export default function Work() {
                     actively engage with the government, allowing decision-makers to reconnect
                     with citizens’ needs, priorities, and values.
                 </span>
-                <h4>Consultant, Data Interfaces, JPAL, Apr 2015 - Dec 2015</h4>
+                <h4>JPAL</h4>
+                <h5>Consultant, Data Interfaces . Apr 2015 - Dec 2015</h5>
                 <span>
                     Built data-exploration framework for emission trading system to enable the
                     Ministry of Environment & Forests to cap total pollution emissions in selected
@@ -66,7 +79,8 @@ export default function Work() {
                     Gujarat Pollution Control Board, Maharashtra Pollution Control Board and the Tamil
                     Nadu Pollution Control Board.
                 </span>
-                <h4>Founder, Inspiration Edge, Jun 2011 - Dec 2015</h4>
+                <h4>Inspiration Edge</h4>
+                <h5>Founder . Jun 2011 - Dec 2015</h5>
                 <span>
                     Founded Inspiration Edge, a design-driven software company by establishing a progressivist
                     community of passionate individuals, cohesively working to revolutionize the IT industry and
@@ -75,7 +89,8 @@ export default function Work() {
                     and government sectors. The company’s belief stood to improve the quality of living with
                     technology and sharing what we learn by running events, conferences and contributing to open-source.
                 </span>
-                <h4>Lead Architect, Info Assembly, Dec 2013 - Mar 2014</h4>
+                <h4>Info Assembly</h4>
+                <h5>Lead Architect . Dec 2013 - Mar 2014</h5>
                 <span>
                     Worked on designing the architecture for Big Data web platform for Info Assembly which leverages
                     data analytics and offers innovative FinTech products for businesses. Applied Machine Learning and
