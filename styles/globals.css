@@ -1,5 +1,5 @@
 :root {
-  --body_color: #555;
+  --body_color: #222;
   --heading_color: #000;
   --link_color: #3856ff;
   --link_hover: #2a45de;
@@ -172,7 +172,7 @@ h4 + p {
 
 /**********  HOME  **********/
 .work h4 {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 0.1rem;
 }
 .work h5 {
