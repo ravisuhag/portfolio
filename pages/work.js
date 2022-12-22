@@ -10,7 +10,7 @@ export default function Work() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <main className="main">
+            <main className="main work">
                 <img width="100%" src="/ravi_suhag_full.png" alt="Ravi Suhag" />
                 <p>
                     Having more than a decade of experience in building and leading

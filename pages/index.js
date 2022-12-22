@@ -57,7 +57,7 @@ export default function Home() {
               where we are on a mission to build a health monitor for the planet through a constellation of cutting edge
               hyperspectral small satellites.
 
-              Before that I worked as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
+              Previously, I worked as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
               Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service
               data platforms, allowing its workforce to make data-driven decisions. Before that, I worked as a tech
               consultant at the <a href="https://epod.cid.harvard.edu/" target="_blank">Center for International Development, Harvard University</a>,

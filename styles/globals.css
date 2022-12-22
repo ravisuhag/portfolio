@@ -112,7 +112,6 @@ h4 {
 h5 {
   font-size: 15px;
   margin-top: 0.3rem;
-  margin-bottom: 0.6rem;
   color: #666;
   font-weight: normal;
 }
@@ -171,9 +170,20 @@ h4 + p {
   }
 }
 
+/**********  HOME  **********/
+.work h4 {
+  margin-top: 30px;
+  margin-bottom: 0.1rem;
+}
+.work h5 {
+  margin-top: 0.1rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
 /**********  LIST  **********/
 .list {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .list__thumbnail {

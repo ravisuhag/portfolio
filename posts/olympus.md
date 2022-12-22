@@ -207,7 +207,7 @@ We utilize our Terraform code structure to control the blast radius for our IAC 
 
 Maintaining versions of Terraform code can become cumbersome if modules have deep nesting. A small chnage in one module can trigger a huge chain of dependency upgrades to all your modules. We advise to keep your module nesting minimum to avoid versioning hierarchy and easy management of module.
 
-### Consistent naming
+#### Consistent naming
 
 Form and follow clear conventions for naming infrastructure resources. It helps humans to understand the context of infrastructure when needed. We use a combination of parameters to form naming. e.g. `p-gojek-id-mainstream-kafka-01`
 
