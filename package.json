@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.6",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "11.1.3",
