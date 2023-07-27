@@ -19,7 +19,7 @@ export default function Work() {
                     for solving unstructured problems by holistically matching my tooling
                     decisions with business circumstances.
                 </p>
-                <h4>Pixxel</h4>
+                {/* <h4>Pixxel</h4>
                 <h5>VP Engineering . 2022 - Present</h5>
                 <span>
                     Leading product and engineering efforts to build a geospatial platform to democratize
@@ -27,11 +27,11 @@ export default function Work() {
                     of sectors. My role also contributes towards the development of automated image processing
                     and machine learning platform that will enable us to detect, monitor, and predict global
                     phenomena in near real-time..
-                </span>
-                <h4>Open DataOps Foundation</h4>
+                </span> */}
+                <h4>Raystack Foundation</h4>
                 <h5>Founder . Mar 2021 - Present</h5>
                 <span>
-                    In 2021, I founded <a target="_blank" href="https://github.com/odpf/">Open DataOps Foundation(ODPF)</a>,
+                    In 2021, I founded <a target="_blank" href="https://raystack.org">Raystack Foundation</a>,
                     a non-profit organisation where I am leading vision and community efforts to build an open-source,
                     self-service modern data platform. ODPF provides a consistent and unified platform for data lifecycle,
                     data management, and data governance to magnify developer productivity.

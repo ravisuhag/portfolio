@@ -53,9 +53,10 @@ export default function Home() {
               style and a dedication to transparency and open-source development.
             </p>
             <p>
-              I am currently working as VP Engineering at <a href="https://www.pixxel.space/" target="_blank">Pixxel</a>,
+              {/* I am currently working as VP Engineering at <a href="https://www.pixxel.space/" target="_blank">Pixxel</a>,
               where we are on a mission to build a health monitor for the planet through a constellation of cutting edge
-              hyperspectral small satellites.
+              hyperspectral small satellites. */}
+              I am currently building open-source technology for data, ML and AI as Founder of <a href='https://raystack.org'>Raystack Foundation</a>.
 
               Previously, I worked as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
               Indonesia's largest hyper-local company. Where I lead teams to build large-scale, self-service
