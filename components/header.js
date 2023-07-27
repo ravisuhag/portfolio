@@ -5,13 +5,13 @@ export default function Header() {
   const router = useRouter();
   return (
     <div className="header">
-      <Link href="/"><a className="header__logo">Ravi Suhag</a></Link>
+      <Link href="/" className="header__logo">Ravi Suhag</Link>
       <div className="navbar">
-        <Link href="/"><a className={router.pathname == "/" ? "active" : ""}>Bio.</a></Link>
-        <Link href="/work"><a className={router.pathname == "/work" ? "active" : ""}>Work.</a></Link>
-        <Link href="/posts"><a className={router.pathname == "/posts" ? "active" : ""}>Posts.</a></Link>
-        <Link href="/talks"><a className={router.pathname == "/talks" ? "active" : ""}>Talks.</a></Link>
-        <Link href="/contact"><a className={router.pathname == "/contact" ? "active" : ""}>Contact.</a></Link>
+        <Link href="/" className={router.pathname == "/" ? "active" : ""}>Bio.</Link>
+        <Link href="/work" className={router.pathname == "/work" ? "active" : ""}>Work.</Link>
+        <Link href="/posts" className={router.pathname == "/posts" ? "active" : ""}>Posts.</Link>
+        <Link href="/talks" className={router.pathname == "/talks" ? "active" : ""}>Talks.</Link>
+        <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>Contact.</Link>
       </div>
     </div>
   )
