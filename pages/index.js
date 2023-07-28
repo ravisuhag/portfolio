@@ -35,7 +35,7 @@ export default function Home() {
         </p>
         <p>
           Previously, I worked as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
-          Indonesia's largest hyper-local company. Where I led teams to build large-scale, self-service
+          Indonesia&apos;s largest hyper-local company. Where I led teams to build large-scale, self-service
           data platforms, allowing its workforce to make data-driven decisions.
         </p>
         <p>
@@ -44,7 +44,7 @@ export default function Home() {
         </p>
         <p>
           A curiosity-driven mindset has majorly contributed both to my personal and professional growth.
-          Fascinated by how we use technology and interact with it, I earned a bachelor's degree in
+          Fascinated by how we use technology and interact with it, I earned a bachelor&apos;s degree in
           Electronics and Communication Engineering, where I studied, designed, and developed embedded
           systems.
         </p>

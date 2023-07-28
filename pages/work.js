@@ -66,7 +66,7 @@ export default function Work() {
                     extensive web crawling for data collection, as well as monitoring platform
                     for data exploration. The exposition of the project empowered citizens to
                     actively engage with the government, allowing decision-makers to reconnect
-                    with citizens’ needs, priorities, and values.
+                    with citizens&apos; needs, priorities, and values.
                 </span>
                 <h4>JPAL</h4>
                 <h5>Consultant, Data Interfaces . Apr 2015 - Dec 2015</h5>
@@ -86,7 +86,7 @@ export default function Work() {
                     community of passionate individuals, cohesively working to revolutionize the IT industry and
                     create positive social impact. Worked with ambitious people and organizations to provide
                     software delivery, pioneering tools, and consulting in commercial, social, educational,
-                    and government sectors. The company’s belief stood to improve the quality of living with
+                    and government sectors. The company&apos;s belief stood to improve the quality of living with
                     technology and sharing what we learn by running events, conferences and contributing to open-source.
                 </span>
                 <h4>Info Assembly</h4>

@@ -11,7 +11,7 @@ export default function Bio() {
       </Head>
       <Header />
       <main className="main">
-        <h1>Let's get in touch.</h1>
+        <h1>Let&apos;s get in touch.</h1>
         <p>
           Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me about interesting opportunities, collaborations or thought provoking discussions.
         </p>
@@ -27,7 +27,7 @@ export default function Bio() {
         <p>
           Please note that I receive a lot of emails, so it may take me a while to get back to you.
           If I do seem to be taking a while to respond, please feel free to send me a follow-up email
-          to remind to reply, that certainly won't offend me.
+          to remind to reply, that certainly won&apos;t offend me.
         </p>
         <p>
           Drop me an email at suhag.ravi@gmail.com or call me on (+91)9717860747.
