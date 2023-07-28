@@ -96,9 +96,7 @@ export default function Bio() {
                         embed: '-owEuelYLXc',
                         date: 'Nov 2014',
                         publisher: 'Srijan Technologies'
-                    },
-
-
+                    }
                 ]} />
             </main>
         </div>
