@@ -1,4 +1,5 @@
 :root {
+  --background_color: #fff;
   --body_color: rgb(23, 23, 23);
   --heading_color: #000;
   --link_color: #2a44d7;
@@ -121,23 +122,83 @@ i {
   letter-spacing: 0.05em;
 }
 
-.navbar {
+.menu {
   text-align: right;
   float: right;
 }
 
-.navbar a {
+.menu a {
   display: inline-block;
   margin-left: 40px;
   color: #444;
 }
 
-.header a:hover {
+.navbar__open {
+  display: none;
+}
+
+.navbar__anchor {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar__mobile {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_color);
+  padding: 45px 30px;
+  width: var(--radix-popper-available-width);
+  height: var(--radix-popper-available-height);
+}
+.navbar__mobile[data-state="open"] {
+  animation: fadeIn 0.2s;
+}
+
+.navbar__close {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+  color: #666;
+  cursor: pointer;
+}
+
+.navbar__mobile:focus-visible {
+  outline: none;
+}
+
+.menu a:hover {
   color: var(--link_color);
 }
 
-.navbar .active {
+.menu .active {
   color: var(--link_color);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar__open {
+    display: block;
+  }
+
+  .menu {
+    text-align: left;
+    float: none;
+  }
+  .menu a {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .menu a:last-child {
+    border-bottom: none;
+  }
 }
 
 /**********  HOME  **********/
@@ -189,4 +250,13 @@ i {
 
 .remark-highlight pre {
   border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
