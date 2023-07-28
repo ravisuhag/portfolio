@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Header from '../components/header';
-import Videos from '../components/videos';
 
 export default function Bio() {
   return (

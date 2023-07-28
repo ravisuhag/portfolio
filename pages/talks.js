@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/header';
-import Videos from '../components/videos';
+import Talk from '../components/talk';
 
 export default function Bio() {
     return (
@@ -16,7 +16,7 @@ export default function Bio() {
                 <p>
                     I love sharing what I know with others. Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me if you’d like me to come and speak at an event.
                 </p>
-                <Videos contents={[
+                <Talk contents={[
                     {
                         title: 'Building data platform with ODPF at Gojek on Google Cloud',
                         subtitle: 'In this talk Ravi shares how Gojek built data platform with Open DataOps Foundation suite and Google Cloud.',
@@ -34,7 +34,7 @@ export default function Bio() {
                         publisher: 'Github Constellation'
                     },
                     {
-                        title: 'Feature Engineering at Scale with Dagger and Feast',
+                        title: 'Feature engineering at scale with Dagger and Feast',
                         subtitle: 'In this talk Ravi will talk about the end to end architecture and how Dagger and Feast work together to provide a cohesive feature engineering workflow.',
                         link: 'https://youtu.be/9B9qqqJVm4M',
                         embed: '9B9qqqJVm4M',
@@ -50,7 +50,7 @@ export default function Bio() {
                         publisher: 'Hashi Talks'
                     },
                     {
-                        title: 'Managing Flink operations at Gojek',
+                        title: 'Managing Apache Flink operations at Gojek',
                         subtitle: 'We use Flink extensively to provide real-time streaming aggregation and analytics for billions of data points generated on daily basis. Working at such a large scale makes it really important to automate operations from infrastructure, failover, and monitoring.',
                         link: 'https://youtu.be/9WmM-f3OjeM',
                         embed: '9WmM-f3OjeM',

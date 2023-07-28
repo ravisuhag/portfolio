@@ -11,7 +11,7 @@ export default function Header() {
         <Link href="/work" className={router.pathname == "/work" ? "active" : ""}>Work.</Link>
         <Link href="/posts" className={router.pathname == "/posts" ? "active" : ""}>Posts.</Link>
         <Link href="/talks" className={router.pathname == "/talks" ? "active" : ""}>Talks.</Link>
-        <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>Contact.</Link>
+        <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>Connect.</Link>
       </div>
     </div>
   )

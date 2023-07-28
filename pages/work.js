@@ -33,7 +33,7 @@ export default function Work() {
                 <span>
                     In 2021, I founded <a target="_blank" href="https://raystack.org">Raystack Foundation</a>,
                     a non-profit organisation where I am leading vision and community efforts to build an open-source,
-                    self-service modern data platform. ODPF provides a consistent and unified platform for data lifecycle,
+                    self-service modern data platform. Raystack products provides a consistent and unified platform for data lifecycle,
                     data management, and data governance to magnify developer productivity.
                 </span>
                 <h4>Gojek</h4>
@@ -79,10 +79,10 @@ export default function Work() {
                     Gujarat Pollution Control Board, Maharashtra Pollution Control Board and the Tamil
                     Nadu Pollution Control Board.
                 </span>
-                <h4>Inspiration Edge</h4>
+                <h4>Infoclot</h4>
                 <h5>Founder . Jun 2011 - Dec 2015</h5>
                 <span>
-                    Founded Inspiration Edge, a design-driven software company by establishing a progressivist
+                    Founded Infoclot, a design-driven software company by establishing a progressivist
                     community of passionate individuals, cohesively working to revolutionize the IT industry and
                     create positive social impact. Worked with ambitious people and organizations to provide
                     software delivery, pioneering tools, and consulting in commercial, social, educational,
@@ -104,8 +104,7 @@ export default function Work() {
                 <ul className="bullet__list">
                     <li><a target="_blank" href="https://qz.com/995235/ravi-suhag-indias-most-prolific-hackathon-winner-never-went-to-an-iit-or-any-other-name-brand-school/">Quartz </a>- India’s most prolific hackathon winner </li>
                     <li><a target="_blank" href="https://yourstory.com/2014/09/techie-tuesdays-ravi-suhag/">Your Story </a>- From helping his dad in farms to winning hackathons</li>
-                    <li><a target="_blank" href="http://joshtalks.com/talks/switched-to-a-5x8-room-taught-physics-and-sold-health-insurances-before-i-could-register-my-company/">Josh Talks </a>-  Cracking programming languages, without books</li>
-                    <li><a target="_blank" href="http://angelhack.com/2014/09/25/infoclot-another-name-to-look-out-for-at-global-demo-day/">AngelHack </a>- Another Name to Look out for at Global Demo Day</li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=KVzoe6risNo&ab_channel=JoshTalks">Josh Talks </a>-  Cracking programming languages, without books</li>
                     <li><a target="_blank" href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school">Scroll </a>- India’s most prolific hackathon winner </li>
                 </ul>
                 <h4>Awards</h4>
