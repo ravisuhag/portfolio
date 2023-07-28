@@ -13,7 +13,7 @@ export default function Posts({ list }) {
       </Head>
       <Header />
       <main className="main">
-        <h2>Posts</h2>
+        <h1>Posts</h1>
         <p>
           I indulge in writing, mostly about my work to share my understanding
           and thoughts, highlighting the process and choices that went into a

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image';
 import Header from '../components/header';
 
 export default function Work() {
@@ -11,7 +12,7 @@ export default function Work() {
             </Head>
             <Header />
             <main className="main work">
-                <img width="100%" src="/ravi_suhag_full.png" alt="Ravi Suhag" />
+                <Image src={"/ravi_suhag_full.png"} width={780} height={428} alt="Ravi Suhag" style={{ "width": "100%", height: "auto" }} />
                 <p>
                     Having more than a decade of experience in building and leading
                     high-impact engineering and product teams, I have implemented a deep understanding
@@ -19,7 +20,8 @@ export default function Work() {
                     for solving unstructured problems by holistically matching my tooling
                     decisions with business circumstances.
                 </p>
-                {/* <h4>Pixxel</h4>
+                {/* 
+                <h4>Pixxel</h4>
                 <h5>VP Engineering . 2022 - Present</h5>
                 <span>
                     Leading product and engineering efforts to build a geospatial platform to democratize
@@ -27,7 +29,8 @@ export default function Work() {
                     of sectors. My role also contributes towards the development of automated image processing
                     and machine learning platform that will enable us to detect, monitor, and predict global
                     phenomena in near real-time..
-                </span> */}
+                </span> 
+                */}
                 <h4>Raystack Foundation</h4>
                 <h5>Founder . Mar 2021 - Present</h5>
                 <span>

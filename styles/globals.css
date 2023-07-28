@@ -1,5 +1,5 @@
 :root {
-  --body_color: rgb(58, 58, 58);
+  --body_color: rgb(23, 23, 23);
   --heading_color: #000;
   --link_color: #2a44d7;
   --link_hover: #2a45de;
@@ -52,6 +52,7 @@ img {
 
 .main {
   padding: 3rem 0;
+  position: relative;
 }
 
 ul {
@@ -67,8 +68,8 @@ li {
 
 h1 {
   color: var(--heading_color);
-  font-weight: normal;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 h2 {
