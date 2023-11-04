@@ -20,7 +20,7 @@ export default function Work() {
                     for solving unstructured problems by holistically matching my tooling
                     decisions with business circumstances.
                 </p>
-                {/* 
+
                 <h4>Pixxel</h4>
                 <h5>VP Engineering . 2022 - Present</h5>
                 <span>
@@ -29,8 +29,8 @@ export default function Work() {
                     of sectors. My role also contributes towards the development of automated image processing
                     and machine learning platform that will enable us to detect, monitor, and predict global
                     phenomena in near real-time..
-                </span> 
-                */}
+                </span>
+
                 <h4>Raystack Foundation</h4>
                 <h5>Founder . Mar 2021 - Present</h5>
                 <span>
