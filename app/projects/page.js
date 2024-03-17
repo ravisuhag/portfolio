@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import Header from '../components/header';
+import Header from '../../components/header';
+
+export const metadata = {
+  title: 'Ravi Suhag',
+  description: 'Ravi Suhag\'s personal homepage',
+}
 
 export default function Bio() {
   return (
     <div className="container">
-      <Head>
-        <title>Talks | Ravi Suhag</title>
-        <meta name="description" content="Ravi Suhag's personal homepage" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main className="main">
         <h1>Talks</h1>

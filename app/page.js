@@ -1,14 +1,15 @@
-import Head from 'next/head'
 import Header from '../components/header';
+import Link from 'next/link';
+import Image from 'next/image';
+
+export const metadata = {
+  title: 'Ravi Suhag',
+  description: 'Ravi Suhag\'s personal homepage',
+}
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Ravi Suhag</title>
-        <meta name="description" content="Ravi Suhag's personal homepage" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main className="main">
         <i> Crafting data experiences.</i>
@@ -25,21 +26,18 @@ export default function Home() {
           crafted both technology and product roadmaps with a distinct programming
           style and a dedication to transparency and open-source development.
         </p>
-        {/* <p>
-          I am currently working as VP Engineering at <a href="https://www.pixxel.space/" target="_blank">Pixxel</a>,
-          where we are on a mission to build a health monitor for the planet through a constellation of cutting edge
-          hyperspectral small satellites.
-        </p> */}
         <p>
-          I am currently building open-source technology for data, ML and AI as Founder of <a href='https://raystack.org'>Raystack Foundation</a>.
+          I am currently working as VP Engineering at <Link href="https://www.pixxel.space/" target="_blank">Pixxel</Link>,
+          where we are on a mission to build a health monitor for the planet through a constellation of cutting edge
+          hyperspectral small satellites. I also build open-source technology for data, ML and AI as Founder of <Link href='https://raystack.org'>Raystack Foundation</Link>.
         </p>
         <p>
-          Previously, I worked as VP Engineering at <a href="https://www.gojek.com/" target="_blank">Gojek</a>,
+          Previously, I worked as VP Engineering at <Link href="https://www.gojek.com/" target="_blank">Gojek</Link>,
           Indonesia&apos;s largest hyper-local company. Where I led teams to build large-scale, self-service
           data platforms, allowing its workforce to make data-driven decisions.
         </p>
         <p>
-          Before that, I worked as a tech consultant at the <a href="https://epod.cid.harvard.edu/" target="_blank">Center for International Development, Harvard University</a>,
+          Before that, I worked as a tech consultant at the <Link href="https://epod.cid.harvard.edu/" target="_blank">Center for International Development, Harvard University</Link>,
           to build tools that enabled the government to make data-driven policy decisions.
         </p>
         <p>
@@ -52,7 +50,7 @@ export default function Home() {
           At the same time, a serendipitous need to create a website for my startup triggered
           me to code and design. With no mentor or curriculum to follow, I was drawn to code and tirelessly
           lost myself in the world of building programs with unabated coding endeavors. This newly developed
-          passion enthralled me to enroll and win several nation-held <a href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school" target="_blank"> hackathons</a>.
+          passion enthralled me to enroll and win several nation-held <Link href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school" target="_blank"> hackathons</Link>.
           Ever since, I have been working at the intersection of technology and design to socially impact the lives of others.
         </p>
         <p>
@@ -69,7 +67,7 @@ export default function Home() {
         <p><strong>Athlete</strong> following a lifestyle that includes playing either cricket, basketball, boxing, volleyball, and/or hiking.</p>
         <p><strong>Utopian</strong> with keenness to interpret and idealize why humans and universe are the way they are and how they are going to evolve.</p> */}
         <p>Have fun browsing and thank you for visiting!</p>
-        <p><img className="signature" width="100%" src="/sign.png" alt="Ravi Suhag" /></p>
+        <p><Image className="signature" width={108} height={73} src="/sign.png" alt="Ravi Suhag" /></p>
       </main >
     </div >
   );

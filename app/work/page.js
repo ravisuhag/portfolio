@@ -1,15 +1,15 @@
-import Head from 'next/head'
+import Link from 'next/link';
 import Image from 'next/image';
-import Header from '../components/header';
+import Header from '../../components/header';
+
+export const metadata = {
+    title: 'Ravi Suhag',
+    description: 'Ravi Suhag\'s personal homepage',
+}
 
 export default function Work() {
     return (
         <div className="container">
-            <Head>
-                <title>Work | Ravi Suhag</title>
-                <meta name="description" content="Ravi Suhag's personal homepage" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <Header />
             <main className="main work">
                 <Image src={"/ravi_suhag_full.png"} width={780} height={428} alt="Ravi Suhag" style={{ "width": "100%", height: "auto" }} />
@@ -34,7 +34,7 @@ export default function Work() {
                 <h4>Raystack Foundation</h4>
                 <h5>Founder . Mar 2021 - Present</h5>
                 <span>
-                    In 2021, I founded <a target="_blank" href="https://raystack.org">Raystack Foundation</a>,
+                    In 2021, I founded <Link target="_blank" href="https://raystack.org">Raystack Foundation</Link>,
                     a non-profit organisation where I am leading vision and community efforts to build an open-source,
                     self-service modern data platform. Raystack products provides a consistent and unified platform for data lifecycle,
                     data management, and data governance to magnify developer productivity.
@@ -101,29 +101,29 @@ export default function Work() {
                     experiences that greatly simplified the manual financial market research process.
                 </span>
                 <p>
-                    Full list of organisations is available on my <a href="https://www.linkedin.com/in/ravisuhag/" target="_blank">Linkedin</a> profile.
+                    Full list of organisations is available on my <Link href="https://www.linkedin.com/in/ravisuhag/" target="_blank">Linkedin</Link> profile.
                 </p>
                 <h4>Media</h4>
                 <ul className="bullet__list">
-                    <li><a target="_blank" href="https://qz.com/995235/ravi-suhag-indias-most-prolific-hackathon-winner-never-went-to-an-iit-or-any-other-name-brand-school/">Quartz </a>- India’s most prolific hackathon winner </li>
-                    <li><a target="_blank" href="https://yourstory.com/2014/09/techie-tuesdays-ravi-suhag/">Your Story </a>- From helping his dad in farms to winning hackathons</li>
-                    <li><a target="_blank" href="https://www.youtube.com/watch?v=KVzoe6risNo&ab_channel=JoshTalks">Josh Talks </a>-  Cracking programming languages, without books</li>
-                    <li><a target="_blank" href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school">Scroll </a>- India’s most prolific hackathon winner </li>
+                    <li><Link target="_blank" href="https://qz.com/995235/ravi-suhag-indias-most-prolific-hackathon-winner-never-went-to-an-iit-or-any-other-name-brand-school/">Quartz </Link>- India’s most prolific hackathon winner </li>
+                    <li><Link target="_blank" href="https://yourstory.com/2014/09/techie-tuesdays-ravi-suhag/">Your Story </Link>- From helping his dad in farms to winning hackathons</li>
+                    <li><Link target="_blank" href="https://www.youtube.com/watch?v=KVzoe6risNo&ab_channel=JoshTalks">Josh Talks </Link>-  Cracking programming languages, without books</li>
+                    <li><Link target="_blank" href="https://scroll.in/article/840527/indias-top-hackathon-winner-did-not-go-to-an-iit-or-any-other-name-brand-school">Scroll </Link>- India’s most prolific hackathon winner </li>
                 </ul>
                 <h4>Awards</h4>
                 <ul className="bullet__list">
-                    <li><a target="_blank" href="https://nasscom.in/">NASSCOM</a> - Nasscom Technology Adopter, Jan 2017</li>
-                    <li><a target="_blank" href="https://angelhack.com/">Angel Hack</a> - Angel Hack Jaipur HPE winner, June 2016</li>
-                    <li><a target="_blank" href="https://nasscom.in/">NASSCOM</a> - TechNgage Delhi winner, June 2016</li>
-                    <li><a target="_blank" href="https://presidentofindia.nic.in/fine.htm">President of India</a> - Festival of innovation winner, March 2016</li>
-                    <li><a target="_blank" href="https://www.netherlandsandyou.nl/">Embassy of The Kingdom of Netherlands</a> - Hack Health On, June 2015</li>
-                    <li><a target="_blank" href="">Up Global</a> - Startup Weekend Delhi 2015 Winner, May 2015</li>
-                    <li><a target="_blank" href="https://www.sequoiacap.com/">Sequoia Capital</a> - Sequoia Hack 2014 Winner, September 2014</li>
-                    <li><a target="_blank" href="https://angelhack.com/">Angel Hack</a> - Angel Hack 2014 Winner, June 2014</li>
-                    <li><a target="_blank" href="https://gsfindia.com/">GSF India</a> - GSF Hacks Winner, April 2014</li>
-                    <li><a target="_blank" href="https://www.directi.com/">Directi</a> - Rockstar of Design, Jan 2014</li>
-                    <li><a target="_blank" href="https://timesinternet.in/">Times Internet</a> - Times Designathon Winner, Oct 2013</li>
-                    <li><a target="_blank" href="">Peer Hack</a> - PeerHack Hackathon Winner, July 2013</li>
+                    <li><Link target="_blank" href="https://nasscom.in/">NASSCOM</Link> - Nasscom Technology Adopter, Jan 2017</li>
+                    <li><Link target="_blank" href="https://angelhack.com/">Angel Hack</Link> - Angel Hack Jaipur HPE winner, June 2016</li>
+                    <li><Link target="_blank" href="https://nasscom.in/">NASSCOM</Link> - TechNgage Delhi winner, June 2016</li>
+                    <li><Link target="_blank" href="https://presidentofindia.nic.in/fine.htm">President of India</Link> - Festival of innovation winner, March 2016</li>
+                    <li><Link target="_blank" href="https://www.netherlandsandyou.nl/">Embassy of The Kingdom of Netherlands</Link> - Hack Health On, June 2015</li>
+                    <li><Link target="_blank" href="">Up Global</Link> - Startup Weekend Delhi 2015 Winner, May 2015</li>
+                    <li><Link target="_blank" href="https://www.sequoiacap.com/">Sequoia Capital</Link> - Sequoia Hack 2014 Winner, September 2014</li>
+                    <li><Link target="_blank" href="https://angelhack.com/">Angel Hack</Link> - Angel Hack 2014 Winner, June 2014</li>
+                    <li><Link target="_blank" href="https://gsfindia.com/">GSF India</Link> - GSF Hacks Winner, April 2014</li>
+                    <li><Link target="_blank" href="https://www.directi.com/">Directi</Link> - Rockstar of Design, Jan 2014</li>
+                    <li><Link target="_blank" href="https://timesinternet.in/">Times Internet</Link> - Times Designathon Winner, Oct 2013</li>
+                    <li><Link target="_blank" href="">Peer Hack</Link> - PeerHack Hackathon Winner, July 2013</li>
                 </ul>
             </main>
         </div >

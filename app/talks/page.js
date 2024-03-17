@@ -1,20 +1,20 @@
-import Head from 'next/head'
-import Header from '../components/header';
-import Talk from '../components/talk';
+import Link from 'next/link';
+import Header from '../../components/header';
+import Talk from '../../components/talk';
+
+export const metadata = {
+    title: 'Ravi Suhag',
+    description: 'Ravi Suhag\'s personal homepage',
+}
 
 export default function Bio() {
     return (
         <div className="container">
-            <Head>
-                <title>Talks | Ravi Suhag</title>
-                <meta name="description" content="Ravi Suhag's personal homepage" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <Header />
             <main className="main">
                 <h1>Talks</h1>
                 <p>
-                    I love sharing what I know with others. Feel free to <a target="_blank" href="mailto:suhag.ravi@gmail.com">contact</a> me if you’d like me to come and speak at an event.
+                    I love sharing what I know with others. Feel free to <Link target="_blank" href="mailto:suhag.ravi@gmail.com">contact</Link> me if you’d like me to come and speak at an event.
                 </p>
                 <Talk contents={[
                     {
