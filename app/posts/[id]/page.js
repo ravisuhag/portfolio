@@ -1,11 +1,13 @@
 import Header from '../../../components/header';
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 
-const metadata = {
-  title: 'postData.title',
-  description: 'Ravi Suhag\'s personal homepage',
+export async function generateMetadata({ params }) {
+  const post = await getPostData(params.id);
+  return {
+    title: post.title,
+    description: post.description,
+  }
 }
-export const dynamicParams = false;
 
 export default async function Post({ params }) {
   const post = await getPostData(params.id);
