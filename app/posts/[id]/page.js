@@ -7,8 +7,8 @@ const metadata = {
 }
 export const dynamicParams = false;
 
-export default function Post({ params }) {
-  const post = getPost(params.id);
+export default async function Post({ params }) {
+  const post = await getPostData(params.id);
   return (
     <div className="container">
       <Header />
@@ -28,9 +28,4 @@ export default function Post({ params }) {
 export async function generateStaticParams() {
   const paths = getAllPostIds()
   return paths
-}
-
-export async function getPost(id) {
-  const postData = await getPostData(id)
-  return postData
 }
