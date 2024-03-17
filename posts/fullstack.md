@@ -1,48 +1,38 @@
 ---
-title: "The art of being full stack"
+title: "The art of being full-stack"
 date: "Sep 30, 2017"
 ---
 
-Throughout my career, I have changed job roles more frequently than I have changed my wardrobe.
+I've danced through careers like a chameleon in a rainbow, never sticking to one shade. My journey has been a kaleidoscope of roles: from tutoring minds, to weaving narratives as a data journalist, to the adrenaline rush of entrepreneurship.
 
-I started out being a tutor, then sold health insurance, marketed embedded products, designed interfaces, developed embedded systems, wrote software, wrote stories as a data journalist, was an entrepreneur, and much more.
+But let's zero in on the software development saga. As a craftsman in software development, I've dipped my toes into every pool - from the delicate art of front-end to the robust mechanics of backend development, and now, I'm flirting with the enigmatic world of DevOps and data engineering. The question that keeps popping up at dinner parties (because, let's face it, software development is the talk of the town) is:
 
-As a software developer, specifically, I’ve been doing prototyping, design, front-end development, backend development and now exploring DevOps and data engineering. And that must be the reason that I’m frequently asked:
+And amidst this whirlwind of change, a question often finds its way to me: "How does one become a maestro in full-stack development?"
 
-"How to do it all and be a full-stack developer?"
+Well, pull up a chair, and let's demystify this together.
 
-So, here are a few techniques that have been instrumental in my own life in being a full-stack and kicking do-one-thing-syndrome butt.
+### Mindset: The secret ingredient
 
-## Mindset
+Here's a little secret that might surprise you: full-stack development isn't about the stack of skills you've accumulated; it's about how you stack your thoughts.
 
-Everyone thinks full-stack is a skill set and everyone is wrong about it.
+You see, the common myth that a full-stack developer juggles APIs by day and crafts stunning interfaces by night is just that - a myth. The essence of being full-stack lies in your insatiable curiosity about how every cog in the machine works and your relentless drive to solve the puzzle, piece by piece.
 
-"Being full stack isn’t a skillset, it’s a mindset".
+It's about falling in love with the problem, not just cozying up with a fancy job title. As the digital landscape evolves at breakneck speed, it's your mindset, your eye for detail, and your passion for making a difference that will stand the test of time.
 
-The perception of ‘full-stack dev’ is that it’s about writing APIs and working on nice-looking interfaces simultaneously. Front-end and Back-end.
+### Approach: Digging deeper than the tools
 
-This is both naive and over-simplistic.
+When it comes to mastering full-stack, it's easy to get lost in the sea of tools and technologies. But here's the kicker: being a UI designer isn't about your prowess with Sketch or Photoshop; it's about understanding the human behind the screen. Being a full-stack developer isn't about reciting the Ruby on Rails documentation by heart; it's about weaving the web of APIs and DOM to serve up information in the most seamless way possible.
 
-Full-stack skills come from how much you care about the product you are building. It comes from one’s curiosity to figure out how things work in a system. Being full-stack comes from a need to solve problems, not from a need to hold a job with a specific title.
+In the grand tapestry of product development, every thread has its purpose. Your mission, should you choose to accept it, is to uncover the why behind the what, to seek the stories behind the syntax.
 
-Skillsets are temporary and so are the tools we use in our workflows. One day they will be obsolete and that day was yesterday. What remains relevant in the entire process is your thinking, your love for attention to detail, and building products which change lives on a daily basis.
+### Action: The art of starting somewhere
 
-## Approach
+Now, I know what you're thinking. "But where do I even start?" The world of software development is vast, and the fear of not knowing enough can be paralyzing. But here's a little nugget of wisdom: even the most seasoned developers are perpetually learning, perpetually evolving.
 
-Your approach should always be about learning fundamentals. Being a UI designer is not about how to use Sketch or Photoshop but about how people will interact with your interface.
+The key is to dive in headfirst. Have an idea? Build it. Curious about design? Sketch something and share it with the world. The beauty of creation lies in its imperfection, in the relentless pursuit of something better. Seek inspiration, crave feedback, and most importantly, embrace the journey.
 
-Being a full-stack web developer is not about learning Ruby on Rails or Django but about how APIs and DOM will work together to make information available. Learning Ruby and HTML will then be part of the process, not the process itself. Being DevOps is not about learning chef or ansible but how automation can help you build reliable software and make your life simple.
+### Summary: Dreaming big and diving in
 
-Every part of the product building exists because of a reason and your approach should be to understand that reason and philosophy and not just the tools and frameworks for it.
+So there you have it, my fellow adventurers. The path to full-stack enlightenment is paved with dreams bigger than your fears, a curiosity that knows no bounds, and an unwavering commitment to the craft. It's not about being a jack of all trades or mastering every line of code. It's about the joy of building, of bringing to life solutions that matter, solutions that resonate.
 
-## Action
-
-When people start working on something new, they feel like they need to wait until they know the answers to every question before they can consider themselves capable of doing that job.
-
-But even the most experienced person in that field is still learning new ways of doing their work better. So it is important to start experimenting with it and not worrying about being perfect or knowing it all.
-
-The best way to go about it is to start building something. Whatever may be in your mind, just go for it and give a good confident start. Look for inspiration from how other people have done it. If you are starting with design, look at communities like Dribbble. If you are starting with the frontend, look at platforms like code pen. Once you have your first iteration, look for feedback from people who are good at it or users of your product.
-
-## Summary
-
-The art of being full-stack is about dreaming more than others think practical. Exploring what all you can be and giving it a try. It is not about being a professional or the best at everything you do but enjoying the process of building something you care about or love doing.
+As we navigate this ever-changing digital odyssey, remember: the most powerful tool at your disposal is not the latest framework or programming language; it's your unique perspective, your story, and your passion to make a dent in the universe.

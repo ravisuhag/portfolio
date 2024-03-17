@@ -1,46 +1,38 @@
 ---
-title: "Scaling culture at a hyper-growth organization"
+title: "Cultivating culture in the fast lane "
 date: "Dec 26, 2017"
 ---
 
-In a hyper-growth organization like Gojek, technology plays a vital role. However, as an organization matures, the hard part is not scaling the technology, but paying heed to culture.
+In the dynamic world of hyper-growth organizations, technology stands tall as a pillar of progress. Yet, as these organizations evolve, the most intricate challenge emerges not from scaling technology but from nurturing the very essence that defines them: their culture.
 
-For us at Gojek, culture is a collective philosophy about how to build products that change lives. We all do our bit to make sure it‘s transparent and open to innovation.
+Culture within such organizations transcends mere corporate jargon; it becomes the lifeblood, driving the creation of products and services that genuinely resonate with people's lives.
 
-## Trust
+### Trust: The invisible glue
 
-A great way to understand an organization is to ask, “Why should someone work there?”
+Peek behind the curtain of any organization that's not just surviving but thriving, and you'll uncover a simple truth: it's all about the people. Ask them, "Why are you here?" and watch as their eyes light up. You'll hear a chorus: it's the camaraderie, sense of belonging, the shared dreams, and the collective zeal that weaves them into a single fabric.
 
-For me, it’s the people. And it’s not just me, most of us at Gojek will have a similar answer. We are here because of each other.
+Sure, they clash—like any vibrant tapestry of passionate minds would. Yet, it's this very dance of diverse opinions, underpinned by unwavering trust, that orchestrates an unparalleled symphony of collaboration.
 
-This isn’t to say that we don’t disagree — like any group of passionate, opinionated people, we disagree often. And that’s the essence of working in a dynamic engineering org like Gojek. Trust is everything.
+### Ownership: Crafting legacies, not just jobs
 
-## Ownership
+I've seen places where 'people first' is just a poster on the wall. But when you hand someone the reins, when their input shapes the journey, work transforms. It becomes a part of a legacy they're building, pixel by pixel, idea by idea. Sharing ownership across the team not only empowers each member to bring their A-game but also infuses everyday tasks with a deeper sense of purpose.
 
-From my personal experience, a lot of companies talk about being “people first,” but most don’t practice the mindset of what it takes to be truly people first.
-
-For us, it is about distributing ownership to everyone on the team. This ownership gives everyone the responsibility to put their best and gives meaning to daily work.
-
-## Empathy
+### Empathy: The bridge between teams
 
 Everyone talks about empathizing with the customer, but we rarely empathize with the next team. They’re often reduced to a binary absolute: The Magical Team, or the Useless team.
 
-Either way, it makes engagement and collaboration difficult, because nobody empathizes with an ideal. At Gojek, to overcome this, we encourage regular, short-term movements from one team to another. It’s not unusual for a person to move teams to pick up a technology they’re interested i,n or pair on solving a common problem.
+Either way, it makes engagement and collaboration difficult, because nobody empathizes with an ideal. To overcome this, I always advocate for fluid team transitions, enabling individuals to explore new technologies or collaborate on shared challenges. This practice of inter-team mobility can be a cornerstone of culture, enriching the collective experience and fostering a more connected, innovative organization.
 
-## Humility
+### Humility: The quiet strength
 
-People without egos are a luxury in the current times. Having the patience to listen to someone else’s ideas with an open mind, especially ones you disagree with is rare.
+In a world loud with egos, the ability to listen, really listen, is a superpower. Finding individuals who can set aside their egos to consider ideas, especially those they initially disagree with, is becoming increasingly rare and invaluable.
 
-We do our utmost to get this right. As our Group CTO, Ajey, says in his post on our engineering principles, every decision is the right one at the time it’s made.
+Striving for this ideal, cultivate a culture where every voice is heard and valued, guided by the principle that every decision made is the right one for that moment, encouraging a mindset of open-mindedness and mutual respect across the organization.
 
-## Ambition
+### Ambition: The never ending climb
 
-As individuals and as a team, we never let ourselves get too comfortable — whether it’s about knowing a piece of technology, scaling for hyper-growth, or achieving new milestones every day.
+In this journey, there's no finish line, just endless horizons. It's about fostering a culture that's always reaching for the next peak, never settling, always curious. Whether it's mastering a new skill, pushing the boundaries of what's possible, or simply finding new ways to bring joy to customers, it's this relentless drive that keeps the wheels turning, the lights burning, and the hearts yearning for what's next.
 
-We know for a fact that there is no finish line and it’s a continuous journey to achieve amazing things and change millions of lives for the better. We grew 900x in 18 months and still rapidly doubling. Being part of this journey is nothing short of exhilarating.
+### The quest continues
 
-## It’s not like we have the answers
-
-We don’t claim to know what it takes to build a culture that can scale. What makes a difference, though, is that each of us is willing to try. Making that extra effort to learn, listen and grow together.
-
-You can see this happening in our everyday conversations. Every piece of code we ship and our efforts to make sure our customers have a better experience.
+No company has it all figured out, but the great ones are always on the quest, always asking, always learning. It's in the code they write, the strategies they devise, the smiles they earn. It's about the willingness to stretch a little further, to make the leap, together.
