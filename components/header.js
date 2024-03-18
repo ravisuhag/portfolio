@@ -20,7 +20,6 @@ const Menu = () => {
 }
 
 export default function Header() {
-
   return (
     <div className="header">
       <Link href="/" className="header__logo">Ravi Suhag</Link>
