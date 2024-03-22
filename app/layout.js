@@ -3,7 +3,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import '../styles/globals.css'
 import '../styles/dark.css'
-import '../styles/prism.css'
+import '../styles/code.css'
+// import '../styles/prism.css'
 
 const inter = Inter({
   subsets: ['latin'],

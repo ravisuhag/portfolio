@@ -1,20 +1,20 @@
 'use client';
 
 import Link from 'next/link'
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import * as Popover from '@radix-ui/react-popover';
 
 const Menu = () => {
-  const router = useRouter();
+  const pathname = usePathname();
   return (
     <div className="menu">
-      <Link href="/" className={router.pathname == "/" ? "active" : ""}>Bio.</Link>
-      <Link href="/work" className={router.pathname == "/work" ? "active" : ""}>Work.</Link>
-      <Link href="/posts" className={router.pathname == "/posts" ? "active" : ""}>Posts.</Link>
-      <Link href="/talks" className={router.pathname == "/talks" ? "active" : ""}>Talks.</Link>
-      <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>Connect.</Link>
+      <Link href="/" className={pathname == "/" ? "active" : ""}>Bio.</Link>
+      <Link href="/work" className={pathname == "/work" ? "active" : ""}>Work.</Link>
+      <Link href="/posts" className={pathname == "/posts" ? "active" : ""}>Writing.</Link>
+      <Link href="/talks" className={pathname == "/talks" ? "active" : ""}>Talks.</Link>
+      <Link href="/contact" className={pathname == "/contact" ? "active" : ""}>Connect.</Link>
     </div>
   )
 }
