@@ -3,9 +3,9 @@ title: "The art of being full-stack"
 date: "Sep 30, 2017"
 ---
 
-I've danced through careers like a chameleon in a rainbow, never sticking to one shade. My journey has been a kaleidoscope of roles: from tutoring minds, to weaving narratives as a data journalist, to the adrenaline rush of entrepreneurship.
+I've danced through careers like a chameleon in a rainbow, never sticking to one shade. My journey has been a kaleidoscope of roles: from tutoring minds, building softwares, weaving narratives as a data journalist, to the adrenaline rush of entrepreneurship.
 
-But let's zero in on the software development saga. As a craftsman in software development, I've dipped my toes into every pool - from the delicate art of front-end to the robust mechanics of backend development, and now, I'm flirting with the enigmatic world of DevOps and data engineering. The question that keeps popping up at dinner parties (because, let's face it, software development is the talk of the town) is:
+But let's zero in on the software development saga. As a craftsman in software development, I've dipped my toes into every pool - from the delicate art of front-end to the robust mechanics of backend development, and now, I'm flirting with the enigmatic world of DevOps and data engineering.
 
 And amidst this whirlwind of change, a question often finds its way to me: "How does one become a maestro in full-stack development?"
 
