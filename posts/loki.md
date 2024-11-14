@@ -3,17 +3,31 @@ title: "Loki: Chaos engineering tool for data infrastructure at Gojek"
 date: "Apr 2, 2018"
 ---
 
-We need to build a resilient and scalable data infrastructure when the daily lives of millions of people depend on us. It means designing systems that can sustain operations in the face of failure.
+When millions depend on Gojek’s platform daily, resilient and scalable data infrastructure is essential. Loki, our internal chaos engineering tool, was developed to build confidence in our infrastructure by simulating failure scenarios and stress-testing the system. Designed for disaster simulation and load testing, Loki exposes Gojek’s data infrastructure to random failures and performance challenges, pushing it to its limits to ensure reliability.
 
-Built on the principles of Chaos Engineering and tailored to our specific use cases, Loki is our internal disaster simulation and load testing tool. It helps ensure our data infrastructure can tolerate random instance failures. Exposing engineers to failures frequently incentivizes them to build these resilient services.
+## Core Capabilities
 
-## Key features:
+Loki is built on principles of chaos engineering, with features tailored for our unique infrastructure needs:
 
-- **Disaster simulation:** Loki can randomly terminate virtual machine instances, containers, and cluster nodes that run inside our production/performance environment.
-- **Load testing:** It can launch multiple instances of data feeders and consumers at desired load state on any of our data streams.
-- **Network testing:** It can simulate network connectivity issues.
-- **Reports:** At the end of a simulation, Loki can prepare a disaster recovery playbook and reports. These playbooks act as the foundation of our auto-healing service, Thor.
-- **CLI interface:** It also has an easy-to-use command-line interface for running and monitoring any experiment.
+#### Disaster Simulation
+
+Loki can randomly terminate VMs, containers, and nodes within our production or performance environments, testing resilience in real-world scenarios.
+
+#### Load Testing
+
+The tool launches multiple instances of data feeders and consumers to apply desired loads across data streams.
+
+#### Network Testing
+
+Loki simulates network disruptions to ensure services can withstand connectivity issues.
+
+#### Automated Reports
+
+After each simulation, Loki generates recovery playbooks and detailed reports, serving as the foundation for our auto-healing services.
+
+#### CLI Interface
+
+An intuitive CLI allows engineers to set up, run, and monitor experiments seamlessly.
 
 ```sh
 Usage:
@@ -30,44 +44,54 @@ Flags:
 Use "loki [command] --help" for more information about a command.
 ```
 
-## Architecture
+A typical Loki command structure allows engineers to quickly set up experiments, define failure points, and monitor outcomes.
 
-Following is the high-level architecture diagram of Loki.
+## Architecture
 
 ![](/img/loki_Arch.png)
 
-- **Resources:** Resources are the data infrastructure components on which Loki can operate.
-- **Simulation store:** Every disaster simulation experiment is represented as a JSON schema. The simulation store holds information about all simulations ever run.
-- **Simulation Agent:** The simulation agent takes care of parsing simulation schemas and running specified operations on resources.
-- **Reports:** As the simulation agent runs, the reporter takes care of monitoring system state, experiment timings, and reporting. It helps us provide detail on data loss, recovery recommendations, etc.
+Loki’s architecture was designed to streamline chaos testing across our extensive data infrastructure. Here’s an overview of its core components:
 
-## Process
+#### Resources
 
-We replicate our production infrastructure to a performance infrastructure that is used to run all experiments.
+Infrastructure components that Loki can target, such as brokers, clusters, and network resources.
 
-These experiments typically consist of four steps:
+#### Simulation Store
 
-1. First, define the system’s “steady state” — based on measurable output like overall throughput, error rates, latency, etc.
-2. Second, hypothesize about the steady-state behavior of an experimental group as compared to a stable control group.
-3. Third, expose the experimental group to simulate real-world events such as server crashes, malformed responses, or traffic spikes.
-4. The last step is to test the hypothesis by comparing the steady-state of the control group and the experimental group. The smaller the differences, the more confidence we have that the system is resilient.
+A repository that stores simulation experiments as JSON schemas, allowing traceability and reusability.
 
-To explain the process, we will cover one of the case study experiments we ran on our mainstream data cluster using Loki.
+#### Simulation Agent
 
-### Environment setup
+This component parses simulation schemas, executing predefined operations on specified resources.
 
-Our mainstream data cluster is six brokers, five zookeeper nodes, multi-zone Kafka cluster. The first step is to replicate the infrastructure state, identify the running load and equivalent simulation load for the cluster. We use Odin, an internal tool built on top of Terraform and Ansible for infrastructure automation to set up the environment.
+#### Reporting Engine
 
-**Example of sample steady-state:**
+The reporting engine tracks experiment progress and collects metrics on system performance, recovery times, and failure points.
 
-- Full ISR, No leader skew, No broker skew
-- Produce time < 20ms
-- Combined consumers lags < 1k
-- No data loss
+## Process flow
 
-### Simulation scenarios
+Loki’s process replicates production infrastructure to a performance environment where it conducts controlled experiments. A typical simulation involves four steps:
 
-Once the performance environment is up and configured with Loki, creating a simulation schema using the Loki CLI tool is next. Following is an example simulation.
+1. **Define the “Steady State”:** Establish baseline metrics like throughput, error rates, and latency.
+2. **Hypothesize Behavior:** Predict steady-state behavior in the experimental group compared to a stable control group.
+3. **Simulate Failures:** Introduce real-world disruptions, such as server crashes, malformed responses, and traffic spikes.
+4. **Analyze and Compare:** Assess the difference between the experimental and control groups, validating resilience and identifying areas for improvement.
+
+## Case Study: Simulating Failure on Gojek’s Mainstream Data Cluster
+
+One experiment involved testing resilience in Gojek’s primary data cluster, a multi-zone Kafka setup with six brokers and five Zookeeper nodes. We used Odin, an internal tool built on Terraform and Ansible, to replicate the production environment.
+
+#### Sample Steady-State Metrics:
+
+- **Full ISR:** All in-sync replicas.
+- **No Leader or Broker Skew:** Balanced load across brokers.
+- **Produce Time:** <20ms.
+- **Consumer Lag:** <1k.
+- **Data Loss:** None.
+
+#### Simulation scenarios
+
+Using the Loki CLI, we defined the following simulation schema:
 
 ```json
 {
@@ -106,36 +130,29 @@ Once the performance environment is up and configured with Loki, creating a simu
 }
 ```
 
-To test the resiliency of our stream cluster, we run chaos with different failure combinations. As an example
+Loki conducted multiple failure scenarios, such as:
 
-- Broker failure and recovery with same broker id - with and without data disk loss.
-- Broker failure and recovery with different broker id - with and without data disk loss.
-- Brokers failure ranging from 10% of the cluster to 80%.
-- Downtime simulation from 10m to 90m.
-- 50 simulated consumers with different consumption and offset rates
-- 100 feeders with 10K RPM
-- Mirror workers with batch size= 10 and linger.ms = 1
+- **Broker Failures:** Tests with 10%-80% broker failures, with and without data loss.
+- **Downtime Simulations:** Varied from 10 to 90 minutes.
+- **Load Testing:** Simulated 50 consumers at different consumption rates and offsets, plus 100 feeders at 10K RPM.
+- **Mirror Worker Variations:** Batch size set to 10, linger.ms set to 1.
 
-Each simulation schema has its unique id used by the Loki run command to launch the experiment.
+Each experiment’s unique ID allows engineers to execute, monitor, and assess each test independently.
 
-### Monitoring
-
-Loki monitors the state of the system over time during the experiment. In addition, it continuously monitors the deviation from steady-state and recovery time once the system recovers from downtime.
+#### Monitoring and Reporting
 
 ![](/img/loki_met.png)
 
-### Experiment report metadata
+Throughout each simulation, Loki tracks deviations from the steady state, recovery times, and system behavior. Reporting includes key data points like:
 
-For data streams, reports include detailed information like
+- **Time to Stabilize:** Full ISR, no leader or broker skew.
+- **Producer Metrics:** Kafka produce time and throughput.
+- **Consumer Lag:** Detailed lag analysis per consumer.
+- **Failure Points:** Identification of data loss and vulnerable subsystems.
+- **Comprehensive Metrics Dashboard:** Provides a centralized view of experiment outcomes.
 
-- Amount of time taken to reach stable state — full ISR, no leader skew, no broker skew
-- Kafka produce time
-- Consumer lag and status
-- Producer state
-- Failure point for each subsystem in isolation
-- Any data loss
-- Detailed metrics dashboard
+## Impact and Future Plans
 
-### Conclusion
+Since launching Loki, we’ve been able to rigorously test new data infrastructure components and gain confidence in the resilience of our systems. Currently, we use Loki on performance replicas, but our goal is to expand it to run chaos experiments in production environments, ensuring that we can deploy features confidently in complex, dynamic systems.
 
-We started Loki to load-test new data infrastructure components and build confidence in our infrastructure. At the moment, we run Loki on new infra and performance replica. But soon enough, we will also use Loki to run chaos engineering on production infrastructure as well - this gives us the confidence to move quickly in a complex system. You can read more about our Data Infrastructure here.
+Loki has become a cornerstone of Gojek’s infrastructure strategy, aligning engineering teams with best practices in resilience and proactive infrastructure management. By integrating chaos engineering directly into our workflow, Loki enables us to design systems that meet the demands of Gojek’s users every day.

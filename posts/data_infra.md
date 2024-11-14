@@ -3,76 +3,73 @@ title: "Data infrastructure at Gojek"
 date: "Mar 12, 2018"
 ---
 
-At Gojek, we build products that help millions of Indonesians commute, shop, eat and pay, daily. The Data Platform team is responsible to create a reliable data infrastructure across all of Gojek’s 18+ products. In the process of realizing this vision, here are some learnings:
+Supporting millions of daily interactions across Gojek’s ecosystem requires a highly resilient and scalable data infrastructure. Our Data Platform team is tasked with building this foundation, ensuring reliable data infrastructure for Gojek’s 18+ products. As we scale, we’ve developed a robust data platform designed to handle exponential growth, automate processes, and operate with a product mindset.
 
-**Scale:** Data at Gojek doesn’t grow linearly with the business, but exponentially, as people start building new products and logging new activities on top of the growth of the business. We currently see 6 Billion events daily and rising.
+**Scale:** Gojek’s data doesn’t grow linearly but exponentially as new products and features generate increasing amounts of data. Currently, our platform processes over 6 billion events daily.
 
-**Automation:** Working on such a large scale makes it important to automate everything from deployment to infrastructure. This way we can push features faster without causing chaos and disruption to the production environment.
+**Automation:** Operating at such a scale requires extensive automation, from deployment to infrastructure management, enabling rapid feature rollouts while maintaining production stability.
 
-**Product mindset:** The Data Platform team operates as an internal B2B SaaS company. We measure success with business metrics like user adoption, retention, and the revenue, or cost savings generated per feature. And our users are Product Managers, Developers, Data Scientists, and Analysts within Gojek.
+**Product mindset:** The Data Platform team operates as an internal B2B SaaS entity, measuring success by metrics like adoption, retention, and cost savings. Our users—Product Managers, Developers, Data Scientists, and Analysts—rely on our infrastructure for insights and decision-making.
 
 ## Overview
 
-Our data infrastructure lets us publish and consume raw and aggregated data effortlessly and reliably. This unleashes a plethora of possibilities within Gojek. From AI-based allocations, fraud detections, and recommendations, to critical real-time business reporting and monitoring. Given the real-time nature of the business at Gojek, the entire data infrastructure from the ground up focuses on real-time data processing, unlike traditional batch processing architectures.
-A high-level architecture diagram showing major components of our infrastructure stack:
+Our data infrastructure supports seamless publishing and consumption of both raw and aggregated data. With real-time processing at its core, this platform powers essential use cases like AI-driven allocations, fraud detection, recommendations, and real-time reporting. Here’s a high-level breakdown of the architecture and components that drive our data infrastructure.
 
 ![](/img/infra.png)
 
 ### Data Ingestion
 
-Raw data comes into our system from multiple channels. Source code instrumentation sends events through a stream producer library available for different programming languages used at Gojek e.g. Clojure, Jand ava, Ruby, Go. Machine stats daemon runs on compute instances to collect API logs, container logs, statistics, like counters and timers, sent over UDP or TCP.
+We handle diverse data sources, each feeding into our system via stream producers:
 
-Stream producers provide publishers with the power to evolve their data schemas without breaking any of the consumers. Data is encoded as protocol buffers, a language-neutral, platform-neutral extensible mechanism for serializing structured data. Producers publish encoded data to fronting servers, particularly suited for high traffic. Each team is allocated one or more highly available fronting servers to avoid any single-point failure and data loss.
+**Source Instrumentation:** Events are instrumented directly from source code and ingested through a stream producer library, with language support for Clojure, Java, Ruby, and Go.
+
+**Stats Collection:** Machine daemons on compute instances collect logs, API statistics, and metrics sent over UDP or TCP.
+
+**Schema Evolution:** Stream producers empower teams to evolve data schemas without breaking downstream dependencies, ensuring flexibility and scalability.
 
 ### Event Streams
+
+Data flows into Kafka-based, multi-region, rack-aware clusters for durability and high availability.
 
 - Fronting streams push data to central data streams. Data streams are highly reliable multi-region, rack-aware Kafka clusters.
 - We have more than 10 different data streams. Each handles more than a billion points each day. e.g. Locstream- Driver Location stream, Logstream- API Log stream, Tagstream- Segmentation stream, etc.
 - A Mirror stream is the mirror of its corresponding data stream with high data retention, purposed for data aggregation and data replays.
-- Perf stream is an exact copy of the data stream for chaos engineering and load testing purposes.
-- We are also working on making the data stream highly available by having a failover mirror cluster by using cluster service discovery to prevent any downtime.
+- Performance stream is an exact copy of the data stream for chaos engineering and load testing purposes.
 
 ### Data Consumption
 
-Firehose allows the consumption of raw as well as aggregated data without doing anything more than setting up a web application to receive messages.
-
-- Firehose can work in different sink modes. At the moment firehose supports more than 5 sink modes including HTTP, Influx, Postgres, Log, and more.
-- Firehose can be easily deployed on VMs — Virtual Machines or Kubernetes clusters.
+Firehose is our service for consuming raw and aggregated data, supporting multiple sink modes (HTTP, InfluxDB, PostgreSQL, etc.), and deployable on both VMs and Kubernetes clusters. Firehose abstracts data access, allowing consumers to ingest data seamlessly without managing backend infrastructure.
 
 ### Data Storage
 
-Data must be retained for business or compliance purposes on a long-term basis, if not indefinitely.
-
-- Secor clusters pull data from data streams to persist messages for long-term storage. We run Secor, distributed across multiple machines. The data is stored in parquet format to cloud storage.
-- Zeppelin is a web-based notebook that enables interactive data analytics. We use it for querying data from the apache spark cluster on top of our cold storage.
+Long-term data retention is managed through Secor clusters, which pull data from Kafka and persist it to cloud storage in Parquet format. For interactive analytics, we leverage Zeppelin notebooks, which query data from Apache Spark clusters on top of cold storage.
 
 ### Data Aggregation
 
-- Dagger is our real-time streaming aggregation and analytics platform powered by Flink.
-- To inhibit control and isolation, each team has dedicated dagger clusters, but it comes at the cost of handling a large volume of data replication and maintenance. Currently, we are running more than 10 dagger clusters with increasing demand.
-- Datlantis is a user-friendly interface to a fully automated system that creates and deploys custom streaming aggregation on top of Daggers. This allows us to create and deploy massive, production-grade real-time data aggregation pipelines in minutes using SQL-like syntax. The results are written to a time-series database.
+Our real-time data aggregation layer is powered by Dagger, built on Apache Flink. Each team operates dedicated Dagger clusters, allowing isolation and scalability while handling high data replication volumes. For rapid pipeline creation, Datlantis provides an interface to define and deploy custom aggregations on top of Dagger using a SQL-like syntax, with results stored in a time-series database.
 
 ### Data Visualization
 
-Data is our biggest asset and there’s immense potential in making sense of it. Data viz infrastructure helps us find insights and improves our decision-making.
+Our data visualization tools enable insights that drive decision-making across Gojek:
 
-- Enigma is a metrics query engine to access time-series data with powerful functions to aggregate, filter, and analyze.
-- Cosmos is the configuration service that holds mappings of Atlas visualization layers and Dagger metrics. More on this later.
-- Atlas is our geo-visualization platform for exploring and visualizing location data sets at scale. Read more about ATLAS here.
+- **Enigma:** A query engine for time-series data, supporting powerful aggregation, filtering, and analysis functions.
+- **Cosmos:** A configuration service that manages visualization layer mappings and Dagger metrics for Atlas.
+- **Atlas:** Our geo-visualization platform for real-time location data, enabling teams to explore and analyze location data at scale.
 
 ### Infrastructure automation
 
-- Odin, built on top of Terraform and Ansible/Chef enables us to safely and predictably create, change, and improve infrastructure. It allows us to define infrastructure as code to increase operator productivity and transparency.
-- Odin can create clusters, and services, replicate data infrastructure across multiple data centers and manage infrastructure state.
-- Odin has helped us reduce provisioning time by 99% despite an increasing number of requests.
+Infrastructure automation is key to scaling and maintaining Gojek’s data platform. Odin, built on Terraform and Ansible/Chef, enables infrastructure as code, allowing us to safely create, change, and improve infrastructure. Odin automates the provisioning of clusters, data replication across data centers, and infrastructure management, reducing provisioning times by 99%.
 
 ### Chaos engineering
 
-- Loki is our disaster simulation tool that helps ensure the infrastructure can tolerate random instance failures. Loki can randomly terminate virtual machine instances and containers, exposing engineers to failures more frequently and incentivizing them to build resilient services.
-- Loki can also launch feeders and consumers on-demand to load test the new or running clusters.
+Resilience testing is critical in our infrastructure strategy. Loki, our internal chaos engineering tool, conducts disaster simulations by terminating instances and containers, pushing systems to their limits to identify failure points and ensure recoverability. It also supports load testing by launching feeders and consumers on-demand, providing robust infrastructure testing capabilities.
 
 ### Infrastructure Monitoring
 
-Infrastructure monitoring is an essential and high-priority job. It provides crucial information that helps us ensure service uptime and optimal performance. We use a wide range of monitoring tools to lets us visualize events and get alerts in real-time including TICK stack, Datadog, and PagerDuty.
+Real-time monitoring is vital to maintain service uptime and performance. We use the TICK stack, Datadog, and PagerDuty for alerting and visualization. Additionally, we are developing Heimdall, an internal data tracing service that aggregates and visualizes data events across the platform, helping us monitor data pipeline health daily.
 
-We are also working on Heimdall, an internal data tracing service to collect and visualize data and events by data infrastructure. Heimdall builds reporting dashboards for monitoring the state of data collection every day in Gojek.
+## Conclusion
+
+Gojek’s data infrastructure is designed to be robust, resilient, and flexible, supporting the real-time demands of a fast-paced, data-driven organization. Through automation, chaos engineering, and a product-focused mindset, our Data Platform team empowers the company to innovate and scale reliably.
+
+Our infrastructure will continue to evolve as we refine and expand our systems to meet new challenges, ensuring that data remains a core driver of Gojek’s growth and success.

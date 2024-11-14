@@ -13,7 +13,7 @@
     "date": "July 16, 2018",
     "time": "4"
   },
-  "chronicle-a-story-of-building-technical-documentation-for-go-data-4c20160107a2": {
+  "building-technical-documentation-as-a-product-at-scale-4c20160107a2": {
     "file": "chronicle",
     "title": "Building technical documentation as a product at scale",
     "subtitle": "In the real world, when we buy a product, it comes with a quick guide or some other form of documents which help you get going with the product. Without these documents, we’ll have to learn how to use the product leveraging solely on the ‘trial and error’ method — which is not a pleasant user experience.",
@@ -48,7 +48,7 @@
     "date": "Febraury 9, 2018",
     "time": "3"
   },
-  "scaling-culture-at-go-jek-773f336c8b7e": {
+  "scaling-culture-at-a-hyper-growth-organization": {
     "file": "culture",
     "title": "Scaling culture at a hyper-growth organization",
     "subtitle": "In a hyper-growth organization like Gojek, technology plays a vital role. However, as an organization matures, the hard part is not scaling the technology, but paying heed to culture.",

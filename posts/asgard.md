@@ -1,68 +1,70 @@
 ---
-title: "Asgard: A case study to envision data infrastructure automation at Gojek"
+title: "Asgard: Envisioning data infrastructure automation at Gojek"
 date: "Apr 30, 2018"
 ---
 
-Given that our internal services generate billions of events a day, our data infrastructure must be highly scalable, available, and flexible enough to keep up with rapid product iteration and exponential data growth. Unfortunately, it results in spending a substantial portion of our time in infrastructure provisioning, load testing, and system recovery. This article describes how we envisioned Asgard, our toolbox for automating end-to-end data infrastructure challenges.
+As Gojek scaled, our data infrastructure grew exponentially—handling billions of events daily across a wide range of services. This constant demand meant our platform needed to be not just scalable but highly resilient and flexible. However, we quickly found ourselves spending more time than we’d like on infrastructure provisioning, load testing, and system recovery, time that could be better spent innovating. So, we set out to build Asgard: a toolkit designed to automate these essential processes, freeing our team to focus on the next big thing.
 
-## Product Goal
+## Defining the product vision
 
-Every product needs a vision. It can come from many sources, the most crucial being solving existing pain points and fulfilling a real, deeply-felt human need. The goal with product vision is to create an experience that respects users’ time and efforts and makes the product the no-brainer solution.
+Every impactful product begins with a clear vision, rooted in solving real problems. For Asgard, this vision was to create an infrastructure experience that was powerful yet seamless, respecting the time and effort of everyone who depended on it. We framed our goals in concrete, actionable terms:
 
-When setting a product vision, It is always tempting to make a prescriptive goal that is too macro or vague. To avoid it and align efforts towards a common goal, gathering rich information and evidence about the customer and their experience is vital. For us, Asgard has clear goals:
+- **Zero Manual Provisioning:** Reduce data infrastructure provisioning man-hours to zero.
+- **Integrated Load Testing:** Make load testing an automatic part of provisioning.
+- **Automated Disaster Simulation:** Create an environment for controlled disaster simulation.
+- **Auto-Healing for a Pager-Free World:** Build a system that empowers teams to avoid on-call disruptions through self-healing automation.
 
-- Reduce the data infrastructure provisioning man-hours to zero.
-- Make load testing an integral part of the provisioning.
-- Being able to run disaster simulation in an automated controlled environment.
-- Build an internal auto-healing playbook/service to empower teams and live in a pager-free world.
+Each of these goals addressed specific pain points, pushing us to think strategically about how to structure Asgard for maximum impact.
 
-## User Personas
+## Personas: Understanding our users
 
-A user persona is a character that represents a potential user of your product. It’s a representation of the goals and behavior of a hypothesized group of users. To introduce persona development into your product thinking, frame the problems and opportunities related to the most important people — your users.
+A critical part of our approach was developing user personas. These personas represented the diverse roles within Gojek who would rely on Asgard, allowing us to design with specific needs and challenges in mind:
 
-- ​John Doe: Data Engineer with privileges for infra provisioning
-- ​​John Roe: Product Engineer from internal teams who need data infrastructure
-- Richard Roe: Data analysts who consume data through different data products
-- Jane Roe: Management stakeholder who wants to ensure systems don’t fail.
+- John Doe: A data engineer tasked with infrastructure provisioning.
+- John Roe: A product engineer in need of reliable data infrastructure.
+- Richard Roe: A data analyst working with various data products.
+- Jane Roe: A management stakeholder focused on system reliability.
 
-## Product Narrative
+Each persona guided our decisions, ensuring that Asgard would be intuitive, functional, and scalable for a broad audience.
 
-The power of storytelling has an immense impact on human culture. We are wired to respond to stories, so it makes perfect sense to use narrative to create the emotional, human connection to a product.
+## Product narrative: Why Asgard exists
 
-The product narrative is the answer to the question of why this product exists. Answer to ‘why’ provides context for the vision of the product. It creates the world in which the vision exists. Following is the early version of the data infrastructure narrative:
+With a strong product narrative, we humanized the complex challenges Asgard aimed to address. This narrative became the “why” behind every feature, a guiding story that kept our focus clear. By connecting Asgard’s goals to the people it served, we created a unifying context that aligned our team and clarified our mission: to enable a resilient, efficient, and scalable data infrastructure that liberated teams to work independently.
 
 ![](/img/asgard_home.png)
 
-## Asgard Architecture
+## Architecture: Building blocks of automation
 
-This product narrative then translated to five services:
+The product narrative helped us break down Asgard into five essential services, each with a distinct role in making our vision a reality:
 
-#### Odin— The Infrastructure orchestrator
+#### Odin — The infrastructure orchestrator
 
-Odin helps to safely and predictably create, change, and improve infrastructure. It allows us to define infrastructure as code to increase operator productivity and transparency.
+Odin is Asgard’s infrastructure-as-code solution. It allows us to define and manage infrastructure configurations efficiently, increasing transparency and enabling safe, predictable infrastructure changes.
 
-#### Loki— Infrastructure disaster simulation
+#### Loki — Disaster simulation tool
 
-Loki is a disaster simulation tool that helps ensure our infrastructure can tolerate random instance failures. Loki randomly terminates compute instances and containers that run inside of a production environment. Exposing engineers to failures more frequently incentivizes them to build resilient services.
+Loki simulates controlled failures, exposing infrastructure to random instance terminations in production. By building resilience through regular disaster simulations, Loki helps teams create services that can withstand unexpected disruptions.
 
-#### Thor- Infrastructure auto-healing
+#### Thor — Auto-Healing for infrastructure
 
-Thor is a service for infrastructure auto-healing and workload balancing. Thor can automatically detect broker failure and reassign the workload on the failed nodes to other nodes. Thor can also perform load balancing and make sure broker usage does not exceed the defined settings.
+Thor is Asgard’s auto-healing service, detecting infrastructure failures and rebalancing workloads autonomously. This proactive approach keeps systems stable, reassigning tasks from failed nodes and maintaining optimal performance.
 
-#### Heimdall- Data monitoring
+#### Heimdall — Monitoring and visualization
 
-Heimdall is a data monitoring and tracing service. It collects and visualizes the data and events collected by data engineering infrastructure. Heimdall builds reporting dashboards for monitoring the state of data collection in Gojek daily.
+Heimdall provides real-time monitoring and tracing for data infrastructure, building dashboards that track data collection across Gojek. This observability layer allows teams to quickly assess data quality and performance metrics.
 
-#### Bifrost- Infrastructure access
+#### Bifrost — Infrastructure access gateway
 
-Bifrost allows internal teams to request data infrastructure without the intervention of a data team. It also allows users to take a closer look at data services dedicated to the concerned teams.
+Bifrost enables Gojek teams to request data infrastructure independently, removing the dependency on data engineers. By granting secure access to relevant data services, Bifrost empowers teams to work autonomously.
 
-In the coming posts, I will be discussing each service in much more detail.
+## Results: From vision to real impact
 
-## How it turned out and where we’re going next
+In the months following Asgard’s implementation, we saw remarkable results. Odin reduced provisioning time by an incredible 99%, despite the increase in requests. Loki allowed us to simulate and handle infrastructure failures confidently, and Thor’s recipes ensured data continuity by replaying old data in cases of disruption.
 
-Odin has helped us reduce provisioning time by 99% despite an increasing number of requests. We can now load test and run disaster simulation with Loki on our performance infrastructure with complete confidence. In addition, we can run recipes on Thor to replay old data to prevent any data loss.
+Currently, we’re working on enabling these services to communicate and coordinate, pushing automation even further.
 
-At the time of writing this post, We’re working on the model to allow these services to communicate and coordinate their actions with each other.
+## Reflections: Product narratives in technical architecture
 
-Leading a product from conception to completion is no easy task with prioritizing features, organizing requirements, creating and maintaining product roadmaps. Over the last few years, product narrative has proved to be an effective technique for designing interfaces and UI/UX flows. At the same time, it is not common to use this approach for envisioning complex, distributed technology architecture and service interactions. But we believe that personas and narratives are helpful for every product. This approach has helped us shape our data engineering products for the better.
+Leading Asgard from conception to deployment underscored the value of blending strategic thinking with technical execution. Defining user personas and product narratives may be common in UX design, but applying these principles to complex, distributed infrastructure design gave us a clear and human-centered roadmap. It’s a technique that proved invaluable, enabling us to build a toolkit that wasn’t just functional but transformational.
+
+As we look forward, Asgard’s development serves as a reminder of what’s possible when vision and execution come together. By focusing on automation, resilience, and accessibility, we created a foundation that empowers teams across Gojek—giving them the freedom to innovate and scale, knowing that the infrastructure is ready for whatever comes next.

@@ -4,82 +4,114 @@ slug: "atlas-gojek-real-time-geospatial-visualization-platform"
 date: "Feb 19, 2018"
 ---
 
-At Gojek, location is built into the fabric of all our products, powering dozens of products that are used by millions of customers and drivers.
-As a result, we have billions of locations points flowing through our data pipelines in real time. This data drives decisions like driver allocation, surge pricing, driver incentives, and many more.
+Location data is the backbone of Gojek’s products, powering everything from driver allocation and surge pricing to city operations and driver incentives. With billions of location points processed daily, the need for real-time, scalable visualization became clear. To meet this demand, the Gojek Data Platform team built Atlas, a geo-visualization platform designed for exploring and visualizing large-scale location datasets in near real-time.
 
-Gojek’s Data Platform team built Atlas to make it easy for teams to visually explore this flood of geospatial data. Atlas is our geo-visualization platform for exploring and visualizing location data sets at scale. It enables
+## Empowering teams with geospatial intelligence
 
-- City Ops teams with near real-time information on the current supply and demand distribution.
-- Data Science team with rich exploratory interfaces to tackle multidimensional data for experimental analysis.
+Atlas enables several Gojek teams to leverage location data effectively:
+
+- **City Operations:** Gain near real-time insights into supply and demand distribution to optimize operations.
+- **Data Science:** Explore multidimensional location data through interactive, customizable visualizations for deep analysis and experimentation.
 
 ![Atlas](/img/atlas_home.png)
 
 ## Architecture
 
+Atlas is built on a robust, high-throughput data pipeline and integrates multiple internal tools and services for data ingestion, aggregation, storage, and querying. Here’s a breakdown of its architecture:
+
+#### Real-Time Data Ingestion with Kafka
+
+Billions of raw location data points from active drivers and customers are ingested into a Kafka-based real-time pipeline, where events are processed and routed for further analysis.
+
+#### Aggregation via Dagger
+
+Dagger, Gojek’s real-time streaming aggregation platform built on Flink, processes and aggregates these raw events. This layer transforms high-velocity data into actionable metrics, optimized for efficient querying and storage.
+
+#### Datlantis: Streaming Aggregation Interface
+
+Datlantis is a user-friendly interface enabling teams to create and deploy real-time aggregation pipelines on Dagger with a SQL-like syntax. Datlantis allows rapid deployment of production-grade pipelines, storing results in a time-series database and supporting various analytical use cases.
+
+#### Enigma: Metrics Query Engine
+
+Enigma is a powerful query engine for accessing and analyzing time-series data produced by Dagger. It supports advanced functions for data filtering, aggregation, and retrieval, powering data queries across Atlas’s visualizations.
+
+#### Cosmos: Configuration Service
+
+Cosmos manages Atlas’s visualization layers and metric mappings. It holds configurations for Atlas’s visualizations, allowing users to define and customize metrics and data layers dynamically.
+
 ![Atlas](/img/atlas_arch.png)
 
-It is made possible by several internal products and tools we’ve developed over the last 18 months.
+## Data Streaming and Client Interaction
 
-- Billions of raw data points representing active driver and customer locations are ingested in real-time into a pipeline built on top of Kafka.
-- Raw events data is aggregated by Dagger, our real-time streaming aggregation and analytics platform powered by Flink.
-- Datlantis is a user-friendly interface to a fully automated system that creates and deploys custom streaming aggregation on top of Dagger. This allows us to create and deploy massive, production-grade real-time data aggregation pipelines in minutes using a SQL-like syntax. The results are written to a time-series database.
-- Enigma is a metrics query engine to access time-series data with powerful functions to aggregate, filter, and analyze.
-- Cosmos is the configuration service that holds mappings of Atlas visualization layers and Dagger metrics. More on this later.
+Data flows from Enigma to Atlas clients through HTTP long polling and WebSocket connections for optimized performance and load reduction. Here’s how the data streaming works:
 
-## Metric streaming
-
-Data flow from Enigma to Atlas clients uses a combination of HTTP long polling and web sockets to improve performance and reduce load.
-
-The frequency of HTTP long polling between Enigma and cosmos is decided by the Dagger metric aggregation window. This makes data on Atlas as real-time as your aggregated metric.
+- **Long Polling:** Data is retrieved from Enigma based on Dagger’s metric aggregation window, ensuring that metrics in Atlas are updated nearly in real-time.
+- **WebSocket Streaming:** Cosmos serves metrics to Atlas clients through WebSocket streaming, tracking metric subscriptions and channels for each client session.
 
 ![Atlas](/img/atlas_metric.png)
 
-Cosmos tracks the metric census, subscribers, and channels for all the clients. The client can subscribe to any number of metrics which are then served by cosmos to Atlas via web socket streaming.
-
 ## Dimension mapping
 
-The Cosmos sub-system of Atlas makes for a great deal of flexibility in rendering location data. It provides an interface to define metrics models and layers. This lets users map data into the structure required by the visualization layer of Atlas.
+The Cosmos subsystem enhances Atlas’s flexibility by allowing users to map and render location data metrics across multiple visualization dimensions (e.g., color, height). It offers a powerful configuration interface where users can define metric models and layer schemas:
 
-The metric model holds all information related to the data metric. e.g. supported data types, filters, aggregations windows. For each Dagger created through Datlantis, there is one associated metric model in Cosmos.
+#### Metric Models
 
-A layer schema holds information about the visualization layer and its dimensions — e.g. color and height.
+Each metric model in Cosmos corresponds to a Dagger stream created through Datlantis, holding metadata like supported data types, filter options, and aggregation windows.
 
-Dimensions of a layer are the visual variables that can hold and visualize supported metrics. Each dimension can support one or more metrics. E.g. on a 3D choropleth, color and height are the two dimensions that can be used to display data.
+#### Layer Schemas
+
+Layer schemas define visualization dimensions for each data layer in Atlas, allowing users to customize color, height, and other visual attributes to suit specific use cases.
 
 ![Atlas](/img/atlas_schema.png)
 
-This structure enables anyone to
+This modular architecture allows teams to:
 
-- Augment their visualization layers tailored for a specific use case.
-- Create and publish dagger metrics dynamically to Atlas for everyone to consume.
-- Allow other teams to host their own Atlas instance for focused use cases.
+- Customize visualization layers for specialized insights.
+- Publish new metrics dynamically to Atlas, making them accessible to all users.
+- Deploy and manage dedicated Atlas instances for focused use cases.
 
-## Data experience
+## User Experience
 
-#### Layer selection
+Atlas offers a rich set of visualization options, each tailored to the diverse needs of Gojek’s operational and data science teams:
 
-Pick your visualization layers as per your use case. Build heatmaps, data clusters, 2D/3D choropleths, and more.
+#### Layer Selection
+
+Users can choose from various visualization types such as heatmaps, data clusters, and 2D/3D choropleths.
 
 ![Atlas](/img/atlas_2.png)
 
-#### Metric selection
+#### Metric Selection
 
-Flexible mapping of dimensions and data metrics allow exploratory analysis to seamlessly integrate into each team’s data analytics needs.
+Users can map data metrics onto visual dimensions, enabling exploratory analysis aligned with each team’s specific analytics requirements.
 
-#### Cell Panel
+#### Cell Panel Analysis
 
-Atlas also allows you to explore detailed data of layer’s cell. e.g. number stats, histogram. Each layer can interface with the cell panel and provide detailed information about the cells (e.g. S2 Id).
+Each layer includes a cell panel for detailed data inspection, offering insights like cell stats and histograms. Cells are represented by S2 IDs for precise geospatial indexing.
 
 ![Atlas](/img/atlas_panel.png)
 
 #### Area Navigation
 
-You can smoothly pan across different service areas all across Indonesia.
+Users can navigate service areas across Indonesia smoothly, with adjustable pan and zoom controls.
 
-#### Map Style
+#### Map Themes
 
-Atlas allows you to quickly switch between map themes without a need for remapping dimensions or data reload. Each map theme is designed to focus on certain properties like roads, area boundaries, etc.
+Atlas allows for seamless theme switching, supporting maps optimized for different features like road networks or area boundaries.
 
 ![Atlas](/img/atlas_map.png)
 
-Our tech stack for Atlas consists of a few open-source libraries including React, MapboxGL, and deck.gl. Our data pipeline uses Kafka, Flink, and some other big-data frameworks. Other microservices are written mainly using Clojure, Go, Ruby, and (more rarely) NodeJs.
+## Tech Stack
+
+The tech stack powering Atlas includes:
+
+- **Front-End:** React, MapboxGL, and Deck.gl for interactive, high-performance geospatial visualizations.
+- **Data pipeline:** Kafka for event streaming and Flink for real-time data aggregation.
+- **Back-End services:** Primarily developed in Clojure, Go, and Ruby, with some components in Node.js.
+
+Atlas is built to handle the high scale and speed of Gojek’s data infrastructure, transforming billions of location points into a tool for real-time, actionable insights.
+
+## Impact
+
+By delivering Atlas, we enabled Gojek teams to access, explore, and leverage real-time geospatial data independently, with minimal dependence on engineering support. This platform empowers City Operations, Data Science, and Product teams to visualize and analyze location data at scale, supporting faster decision-making and experimentation.
+
+Atlas continues to evolve, with ongoing improvements to enhance performance, scalability, and user experience, making it a foundational tool for geospatial intelligence at Gojek.

@@ -56,20 +56,25 @@ img {
   position: relative;
 }
 
-ul {
+ul,
+ol {
   padding-left: 25px;
+}
+
+ul {
   list-style-type: square;
 }
 
 li {
   line-height: 1.8em;
+  padding-bottom: 10px;
 }
 
 /**********  TYPOGRAPHY  **********/
 
 h1 {
   color: var(--heading_color);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -81,14 +86,14 @@ h2 {
 
 h3 {
   color: var(--heading_color);
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
 h4 {
   margin-bottom: 0.3rem;
   color: var(--heading_color);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h5 {

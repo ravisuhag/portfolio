@@ -1,7 +1,8 @@
 import Header from '../../../components/header';
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const post = await getPostData(params.id);
   return {
     title: post.title,
@@ -9,7 +10,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function Post({ params }) {
+export default async function Post(props) {
+  const params = await props.params;
   const post = await getPostData(params.id);
   return (
     <div className="container">

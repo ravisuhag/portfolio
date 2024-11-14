@@ -3,67 +3,57 @@ title: "Terraforming repeatable and extensible infrastructure"
 date: "Oct 3, 3018"
 ---
 
-From where we started, Gojek has grown to be a community of more than one million drivers with three million+ orders every day in almost no time. To keep supporting this growth, hundreds of microservices run and communicate across multiple data centers to serve the best experience to our customers.
-
-In this post, we’ll talk about our approach of assembling infrastructure as code that simplifies the maintenance of an increasingly complex microservices architecture for our company.
+As Gojek expanded to over a million drivers and three million+ daily orders, our infrastructure requirements scaled rapidly. With hundreds of microservices running across multiple data centers, maintaining a seamless experience required a flexible, efficient infrastructure capable of handling exponential growth. This post outlines our journey in building Olympus, an infrastructure-as-code (IAC) platform that automated and simplified Gojek’s complex infrastructure needs.
 
 ![Olympus](/img/olympus.png)
 
 ## Motivation
 
-Building infrastructure is, without a doubt, a complex problem evolving over time. Maintainability, scalability, observability, fault-tolerance, and performance are some of the aspects around it that demand improvements over and over again.
+Infrastructure at scale presents challenges that go far beyond mere configuration. High availability, observability, fault tolerance, and security all come into play—and they demand careful orchestration. As the infrastructure grew, so did the complexity:
 
-One of the reasons it is so complex is the need for high availability. Most of the components are deployed as a cluster with hundreds of microservices and thousands of machines. This constantly growing infrastructure took us to a place where no one knew what the managed infrastructure looked like, how the running machines were configured, what changes were made, and how networks were connected. In a nutshell, we lacked observability in our infrastructure, and when there was a failure in the system, it was hard to tell what could’ve brought the system down. Some of the unique challenges we encountered:
+#### Lack of visibility
 
-#### Infrastructure Expansion
+We reached a point where no single person knew the entire infrastructure landscape. Identifying configuration details, recent changes, or the impact of failures became increasingly difficult.
 
-With 4 countries, 20+ products, and 3 super apps, infrastructure keeps on expanding and there is always a requirement of launching data infrastructure for an entire product from the ground up.
+#### Scaling and speed
 
-#### Distributed teams
+With operations spanning 4 countries, 20+ products, and millions of transactions, our team needed infrastructure that could expand quickly and without bottlenecks.
 
-Multiple functions and teams spread across various locations and time zones have complex on-demand needs from the data infrastructure team.
+#### On-demand access
 
-#### Auto scaling
+Traditional ticket-based provisioning wasn’t practical at this scale. We needed an automated, self-serve model to keep up with the speed of development.
 
-Higher elasticity of infrastructure, where instead of months or years, infrastructure might live for just a few hours traditional ticket-based on-demand setup for spinning up infrastructure is no longer practical.
+Olympus was designed to tackle these issues head-on, bringing efficiency, consistency, and independence to Gojek’s infrastructure management.
 
-## Objectives
+## Vision
 
-We have been using Terraform for our IAC(Infrastructure As Code) in bits and pieces for a while now, but it lacked structure and consistency. Different teams had different repositories. Modules were all over the place or inside the project itself. They were complex, and there were lots of bash scripts.
+From the outset, we envisioned Olympus as a platform that would make infrastructure provisioning as seamless as possible. We established four primary goals:
 
-It was very challenging and error-prone to create infrastructure and maintain it manually. We needed to switch from updating our infrastructure manually and embracing end-to-end infrastructure as code.
+#### Declarative infrastructure
 
-IAC allows you to take advantage of all software development best practices. As a result, you can safely and predictably create, change, and improve infrastructure. Every network, server, database, every open network port can be written in code, committed to version control, peer-reviewed, and then updated as often as necessary.
-
-Project Olympus is the Gojek infrastructure engineering team initiative to solve these problems and achieve the mentioned goals.
-
-#### Declarative style infrastructure
-
-Engineers write code that specifies its desired end state, and the IAC tool itself is responsible for figuring out how to achieve that state. With a declarative style, the code always represents the latest state of your infrastructure. Thus, at a glance, you can tell what’s currently deployed and configured without worrying about the past state.
+Engineers should be able to define the desired end state of the infrastructure, while Olympus figures out the details. By using a declarative style, we ensured that the code always reflected the current state, providing an up-to-date view of what’s deployed.
 
 #### Structure and consistency
 
-Consistent workflow and code structure for developers to provision resources on any provider; central module registry to publish and discover modules that can be reused to provision the infrastructure of their choice.
+Olympus provided a centralized registry of reusable modules, streamlining resource provisioning. With a consistent structure, teams could find what they needed, reducing duplication and minimizing errors.
 
-#### Self-serve and On-demand infrastructure
+#### Self-Serve access
 
-A self-service model that allows engineers to pick the infrastructure best suited to run their workloads and provision it on-demand in a predictable and consistent way.
+We wanted engineers to be able to deploy their infrastructure on demand. This self-serve model was crucial for enabling fast-paced development and eliminating bottlenecks.
 
 #### Safety and security
 
-Provide fine-grained control on infrastructure operations for security, and safety and reduces human errors. All operations are limited to authorized users following data governance guidelines.
-
-#### Accountability
-
-With many moving pieces and large-scale infrastructure comes a vital need of allowing both ops teams and service owners to maintain observability of running applications and critical infrastructure.
+Fine-grained control allowed us to enforce data governance and prevent unauthorized access. Security was integral to Olympus, ensuring that teams could work quickly without compromising protection.
 
 ## Architecture
+
+Here’s a closer look at how Olympus brought these goals to life, with some of its most impactful components:
 
 ![Olympus](/img/olympus_arch.png)
 
 #### Module Registry
 
-Modules in Terraform are self-contained packages of Terraform configurations used to create reusable components. Currently, we have more than 30 core base modules and a few abstracted modules built using composition on top of base modules.
+Modules in Terraform act as reusable infrastructure “building blocks.” Olympus introduced a central registry of modules hosted on GitLab, with over 30 core modules maintained by our Infrastructure Engineering team. This registry allowed us to enforce best practices, security, and governance across the organization.
 
 ```hcl
  module "kafka" {
@@ -96,11 +86,11 @@ module "godata_core_vpc" {
 }
 ```
 
-We host our modules on the self-hosted Gitlab group, which is a central hub for all Terraform modules. The Infrastructure Engineering team maintains all base modules. Having a central module registry also allows us to enforce governance, compliance, and security against the modules made available to teams.
+These modules could be version-controlled and shared across teams, ensuring that everyone had access to reliable, tested components.
 
 #### Infrastructure provisioner
 
-The provisioner provides scaffolding as a foundation to jump-start your development. Users can run commands to scaffold entire projects or valuable parts. We use Proctor, an internal tool as our IAC scaffold tool.
+We developed Proctor as Olympus’s infrastructure scaffold tool, providing teams with on-demand access to infrastructure templates. With simple commands, engineers could generate Terraform code to deploy anything from Kafka clusters to network infrastructure.
 
 ```sh
 Usage:
@@ -129,11 +119,13 @@ Global Flags:
 Use "proctor provision [command] --help" for more information about a command.
 ```
 
+Proctor simplified the setup process, making it easy for teams to initiate infrastructure in minutes instead of days.
+
 #### Network allocation
 
-We have an internal tool called GANA- Gojek Assigned Numbers Authority that is responsible for coordinating the address allocation to resources like VPC, gateways, clusters, etc. It is an internal HTTP service with a custom-written terraform provider.
+Gojek Assigned Numbers Authority (GANA) was our internal service for network management, allocating IP ranges to prevent conflicts. By integrating GANA as a Terraform resource, teams could avoid overlapping IPs across projects and data centers—an essential safeguard at Gojek’s scale.
 
-GANA provides a Terraform resource `gana_allocate_subnet` to allow allocating a subnet range for any resource type.
+GANA provided a Terraform resource `gana_allocate_subnet` to allow allocating a subnet range for any resource type.
 
 ```hcl
 // Allocate a subnet to the resource
@@ -146,7 +138,7 @@ resource "gana_allocate_subnet" "subnet_allocate" {
 
 ```
 
-GANA also provides a Terraform data object for other projects to access subnet ranges of already allocated resources.
+GANA also provided a Terraform data object for other projects to access subnet ranges of already allocated resources.
 
 ```hcl
 // Fetch details of the cluster subnet
@@ -158,14 +150,9 @@ data "gana_subnet" "godata_core" {
 }
 ```
 
-GANA allows us to
-
-- Prevent IP ranges from clashing across different data centers and cloud projects.
-- Provides a central place for accessing allocated resource information for use across different projects.
-
 #### Metadata provider
 
-We also have custom Terraform provider to capture metadata and push to a central metadata repository. Metadata is later used for referncing machine addressess, service discovery and more.
+To enhance visibility, we built a custom metadata provider, centralizing information on IP addresses, service locations, and resource configurations. This metadata supported service discovery and streamlined infrastructure management across the board.
 
 ```hcl
 provider "godata" {
@@ -195,24 +182,28 @@ Infrastructure mapping enables us to roll back to older versions and always have
 
 ## Lessons
 
-Taking this project live gave us some important lessons about using Terraform at scale. Some of them are listed below:
+Building Olympus was both a technical and strategic challenge. Here are some of the key lessons we gained in managing IAC at scale:
 
-#### Control blast radius
+#### Control the blast radius
 
-Terraform can “feel scary” since it’s easy to destroy infrastructure with only one command, making state management very important. One fundamental rule is to use remote state/remote backends. Terraform stores the state of the infrastructure in a JSON File. It is recommended to store that file on an external backend like Amazon S3 or Google cloud storage bucket.
+With Terraform, the potential to make sweeping changes is powerful—and risky. We adopted best practices to limit the “blast radius” of any one command, breaking down infrastructure into smaller components and using remote state to manage updates safely.
 
-We utilize our Terraform code structure to control the blast radius for our IAC state. To limit the scope of `terraform destroy`, our approach breaks down the state into “smaller” components, such as using different states for different projects, environments, and components.
+#### Avoid deep module nesting
 
-#### Avoid module nesting
+Modules with deep dependencies can quickly become unmanageable. We kept module nesting minimal, enabling simpler versioning and easier maintenance.
 
-Maintaining versions of Terraform code can become cumbersome if modules have deep nesting. A small chnage in one module can trigger a huge chain of dependency upgrades to all your modules. We advise to keep your module nesting minimum to avoid versioning hierarchy and easy management of module.
+#### Consistent naming conventions
 
-#### Consistent naming
+Standardized naming conventions became essential as our infrastructure grew. Consistent names allowed us to maintain context across resources and projects, making infrastructure easier to manage. e.g. `p-gojek-id-mainstream-kafka-01`
 
-Form and follow clear conventions for naming infrastructure resources. It helps humans to understand the context of infrastructure when needed. We use a combination of parameters to form naming. e.g. `p-gojek-id-mainstream-kafka-01`
+## Future
 
-## Impact
+Olympus transformed how we managed infrastructure, cutting provisioning time from weeks to minutes and empowering teams with a true self-serve model. This shift marked a cultural transformation at Gojek, moving the company towards a model where engineers could handle their infrastructure needs independently. Teams now have the autonomy to provision resources on demand without relying on ticket-based systems, accelerating development and improving agility.
 
-Olympus allowed us to cut provisioning new infrastructure time from weeks to minutes. By breaking it down into modules, managing our infrastructure resources allowed operations and infra teams to be more efficient and organized, thus providing more business value.
+Looking forward, we’re exploring ways to make Olympus even more responsive, connecting its components to allow for coordinated infrastructure management. This next step will bring us closer to a fully autonomous infrastructure model, where automation and resilience are built into every layer.
 
-This project also helped us set up the foundational organizational shift to say, “Here’s a wiki to tell you how to provision it yourself. Don’t file a ticket, don’t wait for the Infra engineering team”.
+## Reflections
+
+Building Olympus taught us that effective infrastructure isn’t just about code; it’s about creating a product that people want to use. By emphasizing reusability, self-service, and security, we built a platform that serves as the backbone of Gojek’s infrastructure—allowing us to scale, iterate, and grow alongside the business. With Olympus, we laid the foundation for a culture of empowerment, agility, and resilience, ensuring that Gojek’s infrastructure could keep pace with its ambitions.
+
+Olympus is more than a toolkit; it’s a way of reimagining how infrastructure can support fast-growing organizations, making the complex manageable and the essential accessible.
