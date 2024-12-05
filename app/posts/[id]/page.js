@@ -1,18 +1,19 @@
-import Header from '../../../components/header';
-import { getAllPostIds, getPostData } from '../../../lib/posts'
+import Header from '@/components/header';
+import { getPostData } from '@/lib/posts'
+import data from '@/data/posts.json'
 
-export async function generateMetadata(props) {
-  const params = await props.params;
-  const post = await getPostData(params.id);
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const post = await getPostData(id);
   return {
     title: post.title,
     description: post.description,
   }
 }
 
-export default async function Post(props) {
-  const params = await props.params;
-  const post = await getPostData(params.id);
+export default async function Post({ params }) {
+  const { id } = await params;
+  const post = await getPostData(id);
   return (
     <div className="container">
       <Header />
@@ -30,6 +31,6 @@ export default async function Post(props) {
 }
 
 export async function generateStaticParams() {
-  const paths = getAllPostIds()
-  return paths
+  const posts = Object.keys(data).map(key => ({ id: key }));
+  return posts
 }
