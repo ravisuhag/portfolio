@@ -1,5 +1,5 @@
 ---
-title: "Trust is fragile—but necessary"
+title: "Trust is fragile-but necessary"
 date: "Feb 8, 2025"
 ---
 
