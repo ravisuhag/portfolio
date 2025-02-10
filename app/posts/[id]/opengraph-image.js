@@ -1,14 +1,7 @@
 import { ImageResponse } from "next/og";
-import { getPostData } from "@/lib/posts";
 
-export const config = {
-  runtime: "edge",
-  methods: ["GET"],
-};
-
-export default async function handler(req) {
-  const { id } = req.params;
-  const post = await getPostData(id);
+export default async function Image({ params }) {
+  const post = await getPostData(params.id);
 
   return new ImageResponse(
     (

@@ -6,7 +6,7 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   const post = await getPostData(id);
   const url = `https://ravisuhag.com/posts/${id}`;
-  const imageUrl = `https://ravisuhag.com/api/og/${id}`;
+  const imageUrl = `https://ravisuhag.com/posts/${id}/opengraph-image`;
 
   return {
     title: post.title,
