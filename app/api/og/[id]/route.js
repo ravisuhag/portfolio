@@ -1,10 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getPostData } from "@/lib/posts";
 
-export const config = {
-  runtime: "edge",
-};
-
 export default async function handler(req) {
   const { id } = req.params;
   const post = await getPostData(id);
@@ -13,15 +9,15 @@ export default async function handler(req) {
     (
       <div
         style={{
-          display: "flex",
-          fontSize: 60,
-          color: "white",
-          background: "black",
+          fontSize: 40,
+          color: "black",
+          background: "white",
           width: "100%",
           height: "100%",
-          alignItems: "center",
+          padding: "50px 200px",
+          textAlign: "center",
           justifyContent: "center",
-          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <h1>{post.title}</h1>
