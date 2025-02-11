@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "posts/[id]/opengraph-image.js": {
+      "includeFiles": ["posts/**", "data/**"]
+    }
+  }
+}
