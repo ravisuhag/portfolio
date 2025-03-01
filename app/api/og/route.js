@@ -1,10 +1,9 @@
 import { ImageResponse } from "next/og";
 import { getPostData } from "@/lib/posts";
 
-export default async function Image({ params }) {
+export async function GET() {
   const { id } = await params;
   const post = await getPostData(id);
-
   return new ImageResponse(
     (
       <div
