@@ -8,6 +8,8 @@ export async function generateMetadata({ params }) {
   const url = `https://ravisuhag.com/posts/${id}`;
   const imageUrl = `https://ravisuhag.com/api/og?id=${id}`;
 
+  console.log(post);
+
   return {
     title: post.title,
     description: post.description,

@@ -1,5 +1,6 @@
 ---
 title: "From invincible to human: The journey of humility"
+description: "Life humbles us in ways we never expect—through the quiet erosion of time and the sharp lessons of loss. This is how they shape us, one moment at a time."
 date: "Feb 1, 2025"
 ---
 

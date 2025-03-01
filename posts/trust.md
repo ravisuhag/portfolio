@@ -1,5 +1,6 @@
 ---
 title: "Trust is fragile-but necessary"
+description: "The risks of trusting, the dangers of not, and why it’s still worth it."
 date: "Feb 8, 2025"
 ---
 
