@@ -1,6 +1,6 @@
 ---
 title: "Waking up dumb: The builder’s dream"
-description:"The true dream of a builder isn’t effortless genius-it’s the relentless pursuit of problems just beyond their reach."
+description: "The true dream of a builder isn’t effortless genius-it’s the relentless pursuit of problems just beyond their reach."
 date: "Mar 1, 2025"
 ---
 
