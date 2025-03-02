@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getPostData } from "@/lib/posts";
+import { getPostTitle } from "@/lib/posts";
 
 export async function GET(request) {
   try {
@@ -7,14 +7,11 @@ export async function GET(request) {
     // ?id=<id>
     const hasId = searchParams.has("id");
 
-    let post = {
-      title: "Ravi Suhag - Personal Blog",
-    };
+    let title = "Ravi Suhag - Personal Blog";
 
     if (hasId) {
       const id = searchParams.get("id");
-      console.log(id);
-      post = await getPostData(id);
+      title = getPostTitle(id);
     }
 
     return new ImageResponse(
@@ -75,7 +72,7 @@ export async function GET(request) {
               lineHeight: 1.4,
             }}
           >
-            {post.title}
+            {title}
           </div>
         </div>
       ),
