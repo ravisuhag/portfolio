@@ -14,6 +14,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.title,
       description: post.description,
+      site_name: "Ravi Suhag",
       url,
       type: "article",
       article: {
