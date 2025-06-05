@@ -1,267 +1,361 @@
 :root {
-  --background_color: #fff;
-  --body_color: rgb(23, 23, 23);
-  --heading_color: #000;
-  --link_color: #2a44d7;
-  --link_hover: #2a45de;
-  --type_italic: "Newsreader", serif;
+    --background_color: #fff;
+    --body_color: rgb(23, 23, 23);
+    --heading_color: #000;
+    --link_color: #2a44d7;
+    --link_hover: #2a45de;
+    --type_italic: "Newsreader", serif;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  color: var(--body_color);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.8;
-  font-family: "Inter", sans-serif;
-  font-feature-settings: "kern", "frac", "kern", "ss02";
-  font-smooth: always;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    color: var(--body_color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: "Inter", sans-serif;
+    font-feature-settings: "kern", "frac", "kern", "ss02";
+    font-smooth: always;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-  color: var(--link_color);
-  text-decoration: none;
+    color: var(--link_color);
+    text-decoration: none;
 }
 
 a:hover {
-  color: var(--link_hover);
+    color: var(--link_hover);
 }
 
 a:hover h4 {
-  color: var(--link_color);
+    color: var(--link_color);
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /**********  LAYOUT  **********/
 .container {
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 0 30px;
-  min-height: 100vh;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-height: 100vh;
 }
 
 .main {
-  padding: 3rem 0;
-  position: relative;
+    padding: 3rem 0;
+    position: relative;
 }
 
 ul,
 ol {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
 ul {
-  list-style-type: square;
+    list-style-type: square;
 }
 
 li {
-  line-height: 1.8em;
-  padding-bottom: 10px;
+    line-height: 1.8em;
+    padding-bottom: 10px;
 }
 
 /**********  TYPOGRAPHY  **********/
 
 h1 {
-  color: var(--heading_color);
-  font-weight: 600;
-  font-size: 24px;
+    color: var(--heading_color);
+    font-weight: 600;
+    font-size: 24px;
 }
 
 h2 {
-  color: var(--heading_color);
-  font-weight: normal;
-  margin-bottom: 0;
+    color: var(--heading_color);
+    font-weight: normal;
+    margin-bottom: 0;
 }
 
 h3 {
-  color: var(--heading_color);
-  font-weight: 600;
-  margin-bottom: 0;
+    color: var(--heading_color);
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 h4 {
-  margin-bottom: 0.3rem;
-  color: var(--heading_color);
-  font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--heading_color);
+    font-weight: 600;
 }
 
 h5 {
-  font-size: 15px;
-  margin-top: 0.3rem;
-  color: #666;
-  font-weight: normal;
+    font-size: 15px;
+    margin-top: 0.3rem;
+    color: #666;
+    font-weight: normal;
 }
 
 h4 + p {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 i {
-  font-family: var(--type_italic);
-  font-size: 1.1em;
+    font-family: var(--type_italic);
+    font-size: 1.1em;
 }
 
 /**********  HEADER  **********/
 
 .header {
-  padding: 40px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
-  color: var(--heading_color);
-  font-weight: 500;
-  letter-spacing: 0.05em;
+    color: var(--heading_color);
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
 
 .menu {
-  text-align: right;
-  float: right;
+    text-align: right;
+    float: right;
 }
 
 .menu a {
-  display: inline-block;
-  margin-left: 40px;
-  color: #444;
+    display: inline-block;
+    margin-left: 40px;
+    color: #444;
 }
 
 .navbar__open {
-  display: none;
+    display: none;
 }
 
 .navbar__anchor {
-  position: fixed;
-  top: 0;
-  left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .navbar__mobile {
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background_color);
-  padding: 45px 30px;
-  width: var(--radix-popper-available-width);
-  height: var(--radix-popper-available-height);
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background_color);
+    padding: 45px 30px;
+    width: var(--radix-popper-available-width);
+    height: var(--radix-popper-available-height);
 }
 .navbar__mobile[data-state="open"] {
-  animation: fadeIn 0.2s;
+    animation: fadeIn 0.2s;
 }
 
 .navbar__close {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1.5em;
-  color: #666;
-  cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
 }
 
 .navbar__mobile:focus-visible {
-  outline: none;
+    outline: none;
 }
 
 .menu a:hover {
-  color: var(--link_color);
+    color: var(--link_color);
 }
 
 .menu .active {
-  color: var(--link_color);
+    color: var(--link_color);
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
+    .navbar {
+        display: none;
+    }
 
-  .navbar__open {
-    display: block;
-  }
+    .navbar__open {
+        display: block;
+    }
 
-  .menu {
-    text-align: left;
-    float: none;
-  }
-  .menu a {
-    display: block;
-    margin: 0;
-    padding: 10px 0;
-  }
-  .menu a:last-child {
-    border-bottom: none;
-  }
+    .menu {
+        text-align: left;
+        float: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .menu a:last-child {
+        border-bottom: none;
+    }
 }
 
 /**********  HOME  **********/
 .signature {
-  display: block;
-  padding-top: 30px;
-  width: 80px;
+    display: block;
+    padding-top: 30px;
+    width: 80px;
 }
 
 /**********  WORK  **********/
 .work h4 {
-  margin-top: 40px;
-  margin-bottom: 0.1rem;
-  font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
 }
 .work h5 {
-  margin-top: 0.1rem;
-  margin-bottom: 0.3rem;
-  color: #000;
-  font-size: 13px;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+    color: #000;
+    font-size: 13px;
 }
 
 /**********  LIST  **********/
 .list {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .list__title {
-  color: var(--heading_color);
-  margin-bottom: 0;
+    color: var(--heading_color);
+    margin-bottom: 0;
 }
 
 .list__sub,
 .list__date {
-  color: var(--body_color);
+    color: var(--body_color);
 }
 
 .list__date {
-  padding-top: 2px;
-  font-size: 13px;
-  line-height: 28px;
+    padding-top: 2px;
+    font-size: 13px;
+    line-height: 28px;
 }
 
 /**********  POST  **********/
 .bullet__list {
-  padding-left: 20px;
-  margin-left: 0;
+    padding-left: 20px;
+    margin-left: 0;
 }
 
 .remark-highlight pre {
-  border-radius: 6px;
+    border-radius: 6px;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/**********  RESUME  **********/
+.resume {
+    padding: 60px 30px;
+    font-size: 13px;
+    color: #000;
+    line-height: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.resume header h1 {
+    font-size: 36px;
+    margin: 0 0 15px;
+    color: #000;
+    font-weight: 300;
+}
+
+.resume header h1 strong {
+    font-weight: 500;
+}
+
+.resume .columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.resume aside {
+    flex: 1;
+    min-width: 300px;
+    border-right: solid 0.5px #e0e0e0;
+    padding-right: 30px;
+}
+
+.resume main {
+    flex: 2;
+    min-width: 400px;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .resume aside {
+        border-right: none;
+        border-bottom: none;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .resume main {
+        padding-left: 0;
+    }
+}
+
+.resume section h2 {
+    padding-bottom: 5px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.resume ul {
+    padding-left: 20px;
+}
+
+.resume .job {
+    margin-bottom: 30px;
+}
+
+.resume .job h3 {
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.resume .job h3 span {
+    font-size: 14px;
+    color: #555;
+    font-weight: normal;
+}
+
+.resume .job h4 {
+    font-size: 14px;
+    margin: 0 0 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.resume .job p {
+    margin: 5px 0 0;
 }
