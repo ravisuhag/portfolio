@@ -17,18 +17,36 @@ But it turned out to be the saddest of them all.
 
 People lost their lives. Some fans went out to celebrate and never made it back home. What should’ve been the happiest night in the team’s history became a moment of mourning.
 
-And it made me reflect. While my views on fandom had evolved, I still struggle with the darker sides of it. The trolling. The blind defense of players we don’t know. The hate. The chaos. The dangerous obsession that plays out on our screens every day. Somewhere along the way, the love for the game became a license to fight, mock, and even endanger others. We’ve confused loyalty with aggression. We’ve let passion become reckless.
+### Why we care so much
 
-In the world of sports, wins and losses come and go. Trophies gather dust. Stats fade from memory. But what happened this time, this will stay. It is now part of RCB’s legacy.
+Some people wonder, why do fans go nuts over a team or a game? Why do entire cities erupt in joy over a win or mourn a loss like a personal tragedy?
 
-And legacies are a choice.
+Because sports aren’t just games. They’re the most pure form of entertainment we have: unscripted, unsanitized, unfiltered.
 
-There’s nothing we can do to bring back the lives lost. Next season will come, as it always does. The stadiums will fill, the jerseys will be worn with pride, and the chants will rise again. But something will be different. Something will linger in the air, unspoken but deeply felt.
+In a world where so much is manufactured, sports offer real emotion. You can’t fake a buzzer-beater. You can’t script a last-minute goal or a comeback from the edge of defeat. It’s raw, unpredictable drama played out in real time by real people, with everything on the line.
 
-This time, we carry more than just hope. We carry memory.
+Fans aren’t just watching, they’re living it. They see themselves in the struggle, in the fight, in the refusal to give up. Their team’s story becomes their own story. The loyalty runs deep because it taps into something primal: identity, belonging, belief.
 
-RCB has an opportunity to make that memory visible. Not through grand gestures, but through quiet conviction. Through the way they play. Through the way they lead. Every match can be a moment to honor those who aren’t here to witness it. Not as a ritual, but as a responsibility.
+We cheer, we shout, we cry: not because we’re irrational, but because we care. Because for those few hours, life becomes simple: us vs them, hope vs despair, triumph vs heartbreak. And in a complicated world, that clarity is priceless.
+
+Sports remind us what it means to feel. And that’s why millions remain faithfully, joyfully, crazily in love with it.
+
+### But this time, something broke
+
+Even though I’ve grown to understand the pull of fandom, I still can’t make peace with what it sometimes becomes.
+
+We see it everywhere now, people trolling each other online, defending players like family, turning rivalry into hate. Social media timelines turn into battlegrounds. Loyalty transforms into toxicity. And now, with this tragedy, we’re forced to ask: how far have we gone?
+
+Because this time, it went too far. Celebration turned to chaos. Joy turned into mourning. And the cost was human lives.
+
+In the world of sports, wins and losses come and go. Trophies gather dust. Stats fade from memory. But what happened this time, this will stay. It is now a part of RCB’s legacy.
+
+### What comes next matters more
+
+There’s nothing we can do to bring those lives back. But there’s everything we can do to make sure they’re not forgotten. Next season will come, as it always does. The stadiums will fill, the jerseys will be worn with pride, and the chants will rise again. But something will be different. Something will linger in the air, unspoken but deeply felt. This time, we carry more than just hope. We carry memory.
+
+RCB has an opportunity to make that memory visible. Not through grand gestures, but through quiet conviction. A reminder of who this game truly belongs to- the fans. Every match can be a moment to honor those who aren’t here to witness it. Not as a ritual, but as a responsibility.
 
 Let this not be the kind of tragedy we move on from. Let it be the kind that changes how we show up for the game, for each other, for what truly matters.
 
-Because the real spirit of sport isn’t just in the winning. It’s in how we carry our losses. And who we choose to remember.
+Because sport, at its best, doesn’t just bring us joy. It brings us together. And it should never, ever, take someone away.
