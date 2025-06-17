@@ -9,7 +9,7 @@ But somewhere along the road, that changed.
 
 Maybe it was the emotion, the unpredictability, or just how the story of a team unfolds like a living drama. I started watching cricket again. And over the last few years, I began supporting RCB. Quietly, consistently. Not the loudest in the room, but deeply invested.
 
-Three years of cheering. Of disappointment. Of hope. And this year, finally, RCB won.
+Four years of cheering. Of disappointment. Of hope. And this year, finally, RCB won.
 
 For a team long defined by heartbreak, it felt like redemption. A dream realized. We believed the celebration would be like nothing else. A release of years of longing. A night to remember.
 
@@ -19,7 +19,7 @@ People lost their lives. Some fans went out to celebrate and never made it back 
 
 And it made me reflect. While my views on fandom had evolved, I still struggle with the darker sides of it. The trolling. The blind defense of players we don’t know. The hate. The chaos. The dangerous obsession that plays out on our screens every day. Somewhere along the way, the love for the game became a license to fight, mock, and even endanger others. We’ve confused loyalty with aggression. We’ve let passion become reckless.
 
-In the world of sports, wins and losses come and go. Trophies gather dust. Stats fade from memory. But what happened this time—this will stay. It is now part of RCB’s legacy.
+In the world of sports, wins and losses come and go. Trophies gather dust. Stats fade from memory. But what happened this time, this will stay. It is now part of RCB’s legacy.
 
 And legacies are a choice.
 
