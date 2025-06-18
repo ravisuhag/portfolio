@@ -1,4 +1,4 @@
-import PageLayout from "../../components/page-layout";
+import Shell from "../../components/shell";
 import List from "../../components/list";
 import { getAllPostList } from "../../lib/posts";
 import { pageMetadata } from "../../lib/metadata";
@@ -8,7 +8,7 @@ export const metadata = pageMetadata.posts;
 export default async function Posts() {
   const list = await getAllPostList();
   return (
-    <PageLayout>
+    <Shell>
       <h1>Posts</h1>
       <p>
         I indulge in writing, mostly about my work to share my understanding and
@@ -17,6 +17,6 @@ export default async function Posts() {
         perspective and opinions.
       </p>
       <List contents={list} />
-    </PageLayout>
+    </Shell>
   );
 }

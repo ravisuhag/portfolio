@@ -5,54 +5,69 @@ import * as Popover from "@radix-ui/react-popover";
 import { usePathname } from "next/navigation";
 import { Link } from "next-view-transitions";
 
+// Extract navigation items to a constant
+const NAVIGATION_ITEMS = [
+  { path: "/", label: "Bio." },
+  { path: "/work", label: "Work." },
+  { path: "/posts", label: "Writing." },
+  { path: "/talks", label: "Talks." },
+  { path: "/contact", label: "Connect." },
+];
+
 const Menu = () => {
-	const pathname = usePathname();
-	return (
-		<div className="menu">
-			<Link href="/" className={pathname === "/" ? "active" : ""}>
-				Bio.
-			</Link>
-			<Link href="/work" className={pathname === "/work" ? "active" : ""}>
-				Work.
-			</Link>
-			<Link href="/posts" className={pathname === "/posts" ? "active" : ""}>
-				Writing.
-			</Link>
-			<Link href="/talks" className={pathname === "/talks" ? "active" : ""}>
-				Talks.
-			</Link>
-			<Link href="/contact" className={pathname === "/contact" ? "active" : ""}>
-				Connect.
-			</Link>
-		</div>
-	);
+  const pathname = usePathname();
+
+  return (
+    <nav className="menu">
+      {NAVIGATION_ITEMS.map(({ path, label }) => (
+        <Link
+          key={path}
+          href={path}
+          className={pathname === path ? "active" : ""}
+          aria-current={pathname === path ? "page" : undefined}
+        >
+          {label}
+        </Link>
+      ))}
+    </nav>
+  );
 };
 
+const MobileMenu = () => (
+  <Popover.Root>
+    <Popover.Trigger asChild>
+      <button type="button" className="navbar__open" aria-label="Open menu">
+        <HamburgerMenuIcon />
+      </button>
+    </Popover.Trigger>
+    <Popover.Anchor className="navbar__anchor" />
+    <Popover.Portal>
+      <Popover.Content className="navbar__mobile" aria-label="Navigation menu">
+        <Popover.Close asChild>
+          <button
+            type="button"
+            className="navbar__close"
+            aria-label="Close menu"
+          >
+            <Cross2Icon />
+          </button>
+        </Popover.Close>
+        <Menu />
+      </Popover.Content>
+    </Popover.Portal>
+  </Popover.Root>
+);
+
 export default function Header() {
-	return (
-		<div className="header">
-			<Link href="/" className="header__logo">
-				Ravi Suhag
-			</Link>
-			<div className="navbar">
-				<Menu />
-			</div>
-			<Popover.Root>
-				<Popover.Trigger asChild>
-					<HamburgerMenuIcon className="navbar__open" />
-				</Popover.Trigger>
-				<Popover.Anchor className="navbar__anchor" />
-				<Popover.Portal>
-					<Popover.Content className="navbar__mobile">
-						<Popover.Close asChild>
-							<div className="navbar__close">
-								<Cross2Icon />
-							</div>
-						</Popover.Close>
-						<Menu />
-					</Popover.Content>
-				</Popover.Portal>
-			</Popover.Root>
-		</div>
-	);
+  return (
+    <div className="header">
+      <Link href="/" className="header__logo">
+        Ravi Suhag
+      </Link>
+      <div className="navbar">
+        <Menu />
+      </div>
+      <MobileMenu />
+    </div>
+  );
 }

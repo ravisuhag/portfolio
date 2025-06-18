@@ -1,12 +1,12 @@
 import Link from "next/link";
-import PageLayout from "../../components/page-layout";
+import Shell from "../../components/shell";
 import { pageMetadata } from "../../lib/metadata";
 
 export const metadata = pageMetadata.contact;
 
 export default function Contact() {
   return (
-    <PageLayout>
+    <Shell>
       <h1>Let&apos;s get in touch.</h1>
       <p>
         Feel free to{" "}
@@ -56,6 +56,6 @@ export default function Contact() {
       <p>
         Drop me an email at suhag.ravi@gmail.com or call me on (+91)9717860747.
       </p>
-    </PageLayout>
+    </Shell>
   );
 }

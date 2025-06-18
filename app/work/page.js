@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import PageLayout from "../../components/page-layout";
+import Shell from "../../components/shell";
 import { pageMetadata } from "../../lib/metadata";
 
 export const metadata = pageMetadata.work;
 
 export default function Work() {
   return (
-    <PageLayout className="work">
+    <Shell className="work">
       <Image
         src={"/ravi_suhag_full.png"}
         width={780}
@@ -237,6 +237,6 @@ export default function Work() {
           - PeerHack Hackathon Winner, July 2013
         </li>
       </ul>
-    </PageLayout>
+    </Shell>
   );
 }

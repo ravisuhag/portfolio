@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PageLayout from "../../components/page-layout";
+import Shell from "../../components/shell";
 import List from "../../components/list";
 import { pageMetadata } from "../../lib/metadata";
 
@@ -110,16 +110,16 @@ export default function Talks() {
   ];
 
   return (
-    <PageLayout>
+    <Shell>
       <h1>Talks</h1>
       <p>
         I love sharing what I know with others. Feel free to{" "}
         <Link target="_blank" href="mailto:suhag.ravi@gmail.com">
           contact
         </Link>{" "}
-        me if you'd like me to come and speak at an event.
+        me if you&apos;d like me to come and speak at an event.
       </p>
       <List contents={talks} />
-    </PageLayout>
+    </Shell>
   );
 }

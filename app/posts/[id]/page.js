@@ -1,4 +1,4 @@
-import PageLayout from "@/components/page-layout";
+import Shell from "@/components/shell";
 import { getAllPostList, getPostData } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
 
@@ -103,7 +103,7 @@ export default async function Post({ params }) {
   const { id } = await params;
   const post = await getPostData(id);
   return (
-    <PageLayout>
+    <Shell>
       <div className="row">
         <div className="column">
           {formatDate(post.date)}
@@ -112,7 +112,7 @@ export default async function Post({ params }) {
           <div dangerouslySetInnerHTML={post.markup} />
         </div>
       </div>
-    </PageLayout>
+    </Shell>
   );
 }
 

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import PageLayout from "../components/page-layout";
+import Shell from "../components/shell";
 import { pageMetadata } from "../lib/metadata";
 
 export const metadata = pageMetadata.home;
 
 export default function Home() {
   return (
-    <PageLayout>
+    <Shell>
       <i> Crafting data experiences.</i>
       <p>
         I am Ravi Suhag, an agile engineer with a vision to transform software
@@ -95,6 +95,6 @@ export default function Home() {
           alt="Ravi Suhag"
         />
       </p>
-    </PageLayout>
+    </Shell>
   );
 }
