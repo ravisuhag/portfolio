@@ -1,38 +1,24 @@
 <p align="center"><img src="https://www.ravisuhag.com/ravi_home.png" width="200"></p>
 
-<!-- ![Vercel](https://vercelbadge.vercel.app/api/ravisuhag/portfolio)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ravisuhag/portfolio) -->
+A decade of turning software chaos into something beautiful. This portfolio is built the same way I approach everything else - with care, intention, and a healthy obsession with making things work better than they need to.
 
-Hello, welcome to my little space on the web. I am Ravi Suhag, an agile engineer with a vision to transform software chaos into seamless experiences. My inherent passion to solve problems involving analysis and synthesis shaped me to lead technology and product for organizations of all sizes, untangling the knots in software development, smoothing product delivery, and instilling best practices.
+## What you'll find here
 
-Have fun in browsing and thank you for visiting!
+Stories from the trenches of building data platforms at scale. Thoughts on engineering leadership. A few projects I'm proud of. Some talks I've given. The usual suspects of a developer's digital life, but hopefully with a bit more soul.
 
-### Colophon
+## Under the hood
 
-This portfolio makes use of many great tools; tools that make my life as a developer easy and fun.
+This is a Next.js app built with modern web tech that prioritizes speed and simplicity. Because life's too short for slow websites.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-The font used is Roboto, and is served via Google Fonts. The photograph on the bio’s masthead is of me speaking at HasGeek.
-
-### Usage
-
-To install dependencies:
-
-```sh
-$ yarn install
+```bash
+yarn install
+yarn dev
 ```
 
-To run development server:
+That's it. Simple as it should be.
 
-```sh
-$ yarn dev
-```
+## Why this exists
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Every engineer needs a place to think out loud. This is mine. The code is on GitHub, the thoughts are everywhere, and the coffee is always brewing.
 
-If you have questions, please open an issue in the [discussion forum](https://github.com/ravisuhag/portfolio/issues).
-
-### Deployment
-
-This website is deployed on the [Vercel Platform](https://vercel.com) from the creators of Next.js.
+Thanks for stopping by.
