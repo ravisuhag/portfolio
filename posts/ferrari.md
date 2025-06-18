@@ -21,7 +21,7 @@ Hiring smart people isn’t the finish line. It’s the starting gun.
 
 Because here’s the truth: You don’t buy a Ferrari and leave it in the garage. You don’t spend top dollar on performance, speed, and beauty only to let it sit idle. You buy it to hit the open road, to feel it roar, to see what it can really do.
 
-And even if you do, guess what? It’ll still cost you the same. The insurance. The maintenance. The fuel. The care. So if you’re going to invest in something that powerful, you better make sure it’s doing what it was built for.
+And even if you let it sit idle, guess what? It’ll still cost you the same. The insurance. The maintenance. The care. So if you’re going to invest in something that powerful, you better make sure it’s doing what it was built for.
 
 Smart, ambitious people are no different. They come with energy, edge, and ideas.
 

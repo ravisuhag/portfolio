@@ -1,0 +1,93 @@
+/**********  RESUME  **********/
+.resume {
+    padding: 60px 30px;
+    font-size: 13px;
+    color: #000;
+    line-height: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.resume header h1 {
+    font-size: 36px;
+    margin: 0 0 15px;
+    color: #000;
+    font-weight: 300;
+}
+
+.resume header h1 strong {
+    font-weight: 500;
+}
+
+.resume .columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.resume aside {
+    flex: 1;
+    min-width: 300px;
+    border-right: solid 0.5px #e0e0e0;
+    padding-right: 30px;
+}
+
+.resume main {
+    flex: 2;
+    min-width: 400px;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .resume aside {
+        border-right: none;
+        border-bottom: none;
+        padding-right: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .resume main {
+        padding-left: 0;
+    }
+}
+
+.resume section h2 {
+    padding-bottom: 5px;
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.resume ul {
+    padding-left: 20px;
+}
+
+.resume .job {
+    margin-bottom: 30px;
+}
+
+.resume .job h3 {
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.resume .job h3 span {
+    font-size: 14px;
+    color: #555;
+    font-weight: normal;
+}
+
+.resume .job h4 {
+    font-size: 14px;
+    margin: 0 0 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.resume .job p {
+    margin: 5px 0 0;
+}
