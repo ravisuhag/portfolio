@@ -1,9 +1,14 @@
 export default function robots() {
-	return {
-		rules: {
-			userAgent: "*",
-			allow: ["/api/log/*", "/api/og/*"],
-		},
-		// sitemap: "https://ravisuhag.com/sitemap.xml",
-	};
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: [
+        "/api/",
+        "/*?*", // Prevent crawling of search pages or any potential duplicate content
+      ],
+    },
+    sitemap: "https://ravisuhag.com/sitemap.xml",
+    host: "https://ravisuhag.com",
+  };
 }
