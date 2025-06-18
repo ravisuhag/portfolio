@@ -1,7 +1,16 @@
 ---
-title: "Waking up dumb: The builder’s dream"
-description: "The true dream of a builder isn’t effortless genius-it’s the relentless pursuit of problems just beyond their reach."
-date: "Mar 1, 2025"
+title: 'Waking up dumb: The builder’s dream'
+description: >-
+  The true dream of a builder isn’t effortless genius-it’s the relentless
+  pursuit of problems just beyond their reach.
+date: '2025-03-01'
+slug: waking-up-dumb-the-builders-dream
+readingTime: 3
+author: Ravi Suhag
+category: product
+tags:
+  - building
+draft: false
 ---
 
 The best builders don’t wake up feeling like they know it all. They wake up feeling like there’s more to learn because that’s what drives them to push forward.

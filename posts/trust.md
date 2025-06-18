@@ -1,7 +1,15 @@
 ---
-title: "Trust is fragile-but necessary"
-description: "The risks of trusting, the dangers of not, and why it’s still worth it."
-date: "Feb 8, 2025"
+title: Trust is fragile-but necessary
+description: 'The risks of trusting, the dangers of not, and why it’s still worth it.'
+date: '2025-02-08'
+slug: trust-is-fragile-but-necessary
+readingTime: 3
+author: Ravi Suhag
+category: product
+tags:
+  - culture
+  - building
+draft: false
 ---
 
 In any professional setting, trust is both the foundation of great work and the reason for some of our biggest disappointments. There will be moments when you feel rewarded for trusting people. And there will be moments when you feel absolutely foolish for doing so.

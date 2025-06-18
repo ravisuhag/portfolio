@@ -1,6 +1,29 @@
 ---
-title: "Data infrastructure at Gojek"
-date: "Mar 12, 2018"
+title: Data infrastructure at Gojek
+date: '2018-03-12'
+slug: data-infrastructure-at-go-jek-cd4dc8cbd929
+subtitle: >-
+  Our data infrastructure lets publish and consume raw and aggregated data
+  effortlessly and reliably. This unleashes a plethora of possibilities within
+  Gojek. From AI-based allocations, fraud detections, recommendations, to
+  critical real-time business reporting and monitoring.
+readingTime: 6
+description: >-
+  Our data infrastructure lets publish and consume raw and aggregated data
+  effortlessly and reliably. This unleashes a plethora of possibilities within
+  Gojek. From AI-based allocations, fraud detections, recommendations, to
+  critical real-time business reporting and monitoring.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 Supporting millions of daily interactions across Gojek’s ecosystem requires a highly resilient and scalable data infrastructure. Our Data Platform team is tasked with building this foundation, ensuring reliable data infrastructure for Gojek’s 18+ products. As we scale, we’ve developed a robust data platform designed to handle exponential growth, automate processes, and operate with a product mindset.

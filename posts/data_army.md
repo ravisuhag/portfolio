@@ -1,6 +1,29 @@
 ---
-title: "Anatomy and mindset of the data army at Gojek"
-date: "Jul 16, 2018"
+title: Anatomy and mindset of the data army at Gojek
+date: '2018-07-16'
+slug: anatomy-and-mindset-of-the-data-army-at-go-jek-dd9040833356
+subtitle: >-
+  As data engineers, we solve problems with data to improve the product that we
+  offer to our users. We build tools, infrastructure, frameworks, and services
+  and on the way develop new skills, new ways of doing things, new tools, and
+  turn our backs to traditional methods.
+readingTime: 4
+description: >-
+  As data engineers, we solve problems with data to improve the product that we
+  offer to our users. We build tools, infrastructure, frameworks, and services
+  and on the way develop new skills, new ways of doing things, new tools, and
+  turn our backs to traditional methods.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 During my time at Gojek, I had the privilege of building and leading a team of engineers who were more than just developers; they were problem-solvers, creators, and passionate advocates for the power of data. Gojek’s mission was ambitious—to make everyday life easier for millions across Southeast Asia. What started as a motorcycle ride-hailing service grew into a multi-faceted platform supporting services like logistics, food delivery, and payments. With this expansion, the role of data became pivotal, and our team took on the responsibility of creating a data platform to power it all.

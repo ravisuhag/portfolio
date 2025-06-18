@@ -1,6 +1,28 @@
 ---
-title: "Asgard: Envisioning data infrastructure automation at Gojek"
-date: "Apr 30, 2018"
+title: 'Asgard: Envisioning data infrastructure automation at Gojek'
+date: '2018-04-30'
+slug: asgard-a-study-to-envision-data-infrastructure-automation-at-go-jek-35dd6da2c72f
+subtitle: >-
+  Every product needs a vision. This can come from many sources; most important
+  being solving existing pain points and fulfilling a real, deeply-felt human
+  need. The goal is to create an experience which respects users’ time, efforts,
+  and make product the no-brainer solution.
+readingTime: 3
+description: >-
+  Every product needs a vision. This can come from many sources; most important
+  being solving existing pain points and fulfilling a real, deeply-felt human
+  need. The goal is to create an experience which respects users’ time, efforts,
+  and make product the no-brainer solution.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 As Gojek scaled, our data infrastructure grew exponentially—handling billions of events daily across a wide range of services. This constant demand meant our platform needed to be not just scalable but highly resilient and flexible. However, we quickly found ourselves spending more time than we’d like on infrastructure provisioning, load testing, and system recovery, time that could be better spent innovating. So, we set out to build Asgard: a toolkit designed to automate these essential processes, freeing our team to focus on the next big thing.

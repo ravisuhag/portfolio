@@ -1,7 +1,14 @@
 ---
-title: "From invincible to human: The journey of humility"
-description: "Life humbles us in ways we never expect—through the quiet erosion of time and the sharp lessons of loss. This is how they shape us, one moment at a time."
-date: "Feb 1, 2025"
+title: 'From invincible to human: The journey of humility'
+description: >-
+  Life humbles us in ways we never expect—through the quiet erosion of time and
+  the sharp lessons of loss. This is how they shape us, one moment at a time.
+date: '2025-02-01'
+slug: from-invincible-to-human-the-journey-of-humility
+readingTime: 3
+author: Ravi Suhag
+category: thoughts
+draft: false
 ---
 
 There’s a kind of arrogance that comes with youth. Not the loud, boastful kind, but the quiet confidence that time is on your side. That you’ll always get better, always move forward, always win.

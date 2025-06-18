@@ -1,7 +1,23 @@
 ---
-title: "ATLAS: Gojek’s real-time geospatial visualization platform"
-slug: "atlas-gojek-real-time-geospatial-visualization-platform"
-date: "Feb 19, 2018"
+title: 'ATLAS: Gojek’s real-time geospatial visualization platform'
+slug: atlas-gojek-real-time-geospatial-visualization-platform
+date: '2018-02-19'
+description: >-
+  Location data is the backbone of Gojek’s products, powering everything from
+  driver allocation and surge pricing to city operations and driver incentives.
+  Wit...
+readingTime: 5
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 Location data is the backbone of Gojek’s products, powering everything from driver allocation and surge pricing to city operations and driver incentives. With billions of location points processed daily, the need for real-time, scalable visualization became clear. To meet this demand, the Gojek Data Platform team built Atlas, a geo-visualization platform designed for exploring and visualizing large-scale location datasets in near real-time.

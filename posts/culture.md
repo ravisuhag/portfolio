@@ -1,6 +1,24 @@
 ---
-title: "Scaling culture at a hyper-growth organization"
-date: "Dec 26, 2017"
+title: Scaling culture at a hyper-growth organization
+date: '2017-12-26'
+slug: scaling-culture-at-a-hyper-growth-organization
+subtitle: >-
+  In a hyper-growth organization like Gojek, technology plays a vital role.
+  However, as an organization matures, the hard part is not scaling the
+  technology, but paying heed to culture.
+readingTime: 3
+description: >-
+  In a hyper-growth organization like Gojek, technology plays a vital role.
+  However, as an organization matures, the hard part is not scaling the
+  technology, but paying heed to culture.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - product
+  - culture
+  - building
+draft: false
 ---
 
 In the dynamic world of hyper-growth organizations, technology often steals the spotlight. But as these companies expand, the real challenge isn’t just scaling infrastructure or speeding up releases; it’s preserving the heartbeat that makes them unique: their culture.

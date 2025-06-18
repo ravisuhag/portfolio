@@ -1,6 +1,24 @@
 ---
-title: "The art of being full-stack"
-date: "Sep 30, 2017"
+title: The art of being full-stack
+date: '2017-09-30'
+slug: the-art-of-being-full-stack-5b88577188fd
+subtitle: >-
+  Throughout my career, I have changed job roles more frequently than I have
+  changed my wardrobe. So, here are a few techniques that have been instrumental
+  in my own life in being a full-stack and kicking do-one-thing-syndrome butt.
+readingTime: 3
+description: >-
+  Throughout my career, I have changed job roles more frequently than I have
+  changed my wardrobe. So, here are a few techniques that have been instrumental
+  in my own life in being a full-stack and kicking do-one-thing-syndrome butt.
+author: Ravi Suhag
+category: engineering
+tags:
+  - data
+  - engineering
+  - product
+  - building
+draft: false
 ---
 
 My career journey has been a kaleidoscope of colors, shifting with each new role I’ve taken on. From tutoring curious minds to building software that solves real problems, from crafting stories as a data journalist to feeling the thrill of entrepreneurship—I’ve danced through careers like a chameleon in a rainbow.

@@ -1,6 +1,27 @@
 ---
-title: "Terraforming repeatable and extensible infrastructure"
-date: "Oct 3, 3018"
+title: Terraforming repeatable and extensible infrastructure
+date: '2018-10-03'
+slug: olympus-terraforming-repeatable-and-extensible-infrastructure-at-go-jek-42ad5b0a4f9a
+subtitle: >-
+  In this post, we’ll talk about our approach of assembling Infrastructure As
+  Code that simplifies the maintenance of an increasingly complex microservices
+  architecture for our company.
+readingTime: 3
+description: >-
+  In this post, we’ll talk about our approach of assembling Infrastructure As
+  Code that simplifies the maintenance of an increasingly complex microservices
+  architecture for our company.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 As Gojek expanded to over a million drivers and three million+ daily orders, our infrastructure requirements scaled rapidly. With hundreds of microservices running across multiple data centers, maintaining a seamless experience required a flexible, efficient infrastructure capable of handling exponential growth. This post outlines our journey in building Olympus, an infrastructure-as-code (IAC) platform that automated and simplified Gojek’s complex infrastructure needs.

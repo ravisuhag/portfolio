@@ -1,6 +1,27 @@
 ---
-title: "Loki: Chaos engineering tool for data infrastructure at Gojek"
-date: "Apr 2, 2018"
+title: 'Loki: Chaos engineering tool for data infrastructure at Gojek'
+date: '2018-04-02'
+slug: loki-chaos-engineering-tool-for-data-infrastructure-at-gojek-a8fdee936f17
+subtitle: >-
+  Built on the principles of Chaos Engineering, and tailored to our specific use
+  cases, Loki is our internal disaster simulation and load testing tool. It
+  helps ensure our data infrastructure can tolerate random instance failures.
+readingTime: 5
+description: >-
+  Built on the principles of Chaos Engineering, and tailored to our specific use
+  cases, Loki is our internal disaster simulation and load testing tool. It
+  helps ensure our data infrastructure can tolerate random instance failures.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 When millions depend on Gojek’s platform daily, resilient and scalable data infrastructure is essential. Loki, our internal chaos engineering tool, was developed to build confidence in our infrastructure by simulating failure scenarios and stress-testing the system. Designed for disaster simulation and load testing, Loki exposes Gojek’s data infrastructure to random failures and performance challenges, pushing it to its limits to ensure reliability.

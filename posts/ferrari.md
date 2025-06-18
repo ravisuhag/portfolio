@@ -1,6 +1,18 @@
 ---
-title: "Don’t buy a Ferrari and leave it in the garage"
-date: "June 17, 2026"
+title: Don’t buy a Ferrari and leave it in the garage
+date: '2026-06-17'
+description: >-
+  There’s plenty of advice floating around about building A-teams, about hiring
+  people smarter, sharper, and more capable than you. And that advice is solid.
+  S...
+slug: dont-buy-a-ferrari-and-leave-it-in-the-garage
+readingTime: 3
+author: Ravi Suhag
+category: product
+tags:
+  - culture
+  - building
+draft: true
 ---
 
 There’s plenty of advice floating around about building A-teams, about hiring people smarter, sharper, and more capable than you. And that advice is solid. Surrounding yourself with exceptional talent can be transformative. But what’s often left unsaid is what comes after you build that team. What does it take to keep them?

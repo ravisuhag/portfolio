@@ -1,6 +1,15 @@
 ---
-title: "A win marked by a loss: The grief that came with glory"
-date: "June 16, 2025"
+title: 'A win marked by a loss: The grief that came with glory'
+date: '2025-06-16'
+slug: a-win-marked-by-a-loss
+subtitle: How RCB’s long-awaited triumph became a moment of reckoning for Indian sport
+readingTime: 2
+description: How RCB’s long-awaited triumph became a moment of reckoning for Indian sport
+author: Ravi Suhag
+category: thoughts
+tags:
+  - culture
+draft: false
 ---
 
 I’ve never been the kind of person to call myself a fan of a sport, or an actor, or anyone I didn’t personally know. To me, sports were meant to be played, not watched. For a long time, watching a match felt like time wasted, a passive act that offered no real return.

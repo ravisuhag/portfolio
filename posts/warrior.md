@@ -1,6 +1,12 @@
 ---
-title: "Until the enemy knocks"
-date: "June 18, 2026"
+title: Until the enemy knocks
+date: '2026-06-18'
+description: Nobody loves a warrior until the enemy is at the gates.
+slug: until-the-enemy-knocks
+readingTime: 2
+author: Ravi Suhag
+category: thoughts
+draft: true
 ---
 
 Nobody loves a warrior until the enemy is at the gates.

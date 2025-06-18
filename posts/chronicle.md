@@ -1,6 +1,29 @@
 ---
-title: "Building technical documentation as a product at scale"
-date: "Jul 5, 2018"
+title: Building technical documentation as a product at scale
+date: '2018-07-05'
+slug: building-technical-documentation-as-a-product-at-scale-4c20160107a2
+subtitle: >-
+  In the real world, when we buy a product, it comes with a quick guide or some
+  other form of documents which help you get going with the product. Without
+  these documents, we’ll have to learn how to use the product leveraging solely
+  on the ‘trial and error’ method — which is not a pleasant user experience.
+readingTime: 5
+description: >-
+  In the real world, when we buy a product, it comes with a quick guide or some
+  other form of documents which help you get going with the product. Without
+  these documents, we’ll have to learn how to use the product leveraging solely
+  on the ‘trial and error’ method — which is not a pleasant user experience.
+author: Ravi Suhag
+category: engineering
+tags:
+  - infrastructure
+  - data
+  - engineering
+  - product
+  - culture
+  - gojek
+  - building
+draft: false
 ---
 
 In a landscape as vast and complex as Gojek’s ecosystem, where 18+ products each demand reliable, scalable data infrastructure, our Data Platform team has one goal: to empower Gojek with a competitive edge. Our mission is clear—make data available, accessible, reliable, and actionable. But as our platform grew, we faced an unexpected challenge. Scaling technology was one thing; communicating our value across the organization was another. That’s where our journey with Chronicle began.
