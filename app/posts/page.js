@@ -10,12 +10,12 @@ export default async function Posts() {
   return (
     <Shell>
       <h1>Posts</h1>
-      <p>
+      {/* <p>
         I indulge in writing, mostly about my work to share my understanding and
         thoughts, highlighting the process and choices that went into a
         particular project. The remaining are thought-centric about my
         perspective and opinions.
-      </p>
+      </p> */}
       <List contents={list} />
     </Shell>
   );

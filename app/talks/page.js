@@ -112,13 +112,13 @@ export default function Talks() {
   return (
     <Shell>
       <h1>Talks</h1>
-      <p>
+      {/* <p>
         I love sharing what I know with others. Feel free to{" "}
         <Link target="_blank" href="mailto:suhag.ravi@gmail.com">
           contact
         </Link>{" "}
         me if you&apos;d like me to come and speak at an event.
-      </p>
+      </p> */}
       <List contents={talks} />
     </Shell>
   );

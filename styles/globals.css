@@ -263,11 +263,6 @@ i {
     color: var(--link_hover);
 }
 
-.list__sub,
-.list__date {
-    color: var(--body_color);
-}
-
 .list__date {
     font-size: 13px;
     line-height: 28px;
