@@ -3,10 +3,9 @@ title: Until the enemy knocks
 date: '2026-06-18'
 description: Nobody loves a warrior until the enemy is at the gates.
 slug: until-the-enemy-knocks
-readingTime: 2
 author: Ravi Suhag
 category: thoughts
-draft: true
+draft: false
 ---
 
 Nobody loves a warrior until the enemy is at the gates.
@@ -21,6 +20,6 @@ Strength - real strength - isn’t loud or cruel. It doesn’t need to boast. It
 
 And it’s only then - when chaos returns, that people remember the value of courage, sacrifice, and strength. That they once again look to the very people they ignored in quieter times.
 
-So here’s the truth: the warrior is always needed, even when you can’t see them. Especially then. Because the presence of peace doesn’t mean the absence of threat—it only means someone, somewhere, is standing watch.
+So here’s the truth: the warrior is always needed, even when you can’t see them. Especially then. Because the presence of peace doesn’t mean the absence of threat - it only means someone, somewhere, is standing watch.
 
 And in a world that forgets this, being strong is an act of quiet rebellion.
