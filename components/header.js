@@ -7,11 +7,10 @@ import { Link } from "next-view-transitions";
 
 // Extract navigation items to a constant
 const NAVIGATION_ITEMS = [
-  { path: "/", label: "Bio." },
-  { path: "/work", label: "Work." },
-  { path: "/posts", label: "Writing." },
-  { path: "/talks", label: "Talks." },
-  { path: "/contact", label: "Connect." },
+  // { path: "/", label: "bio." },
+  { path: "/work", label: "work." },
+  { path: "/posts", label: "thoughts." },
+  { path: "/talks", label: "talks." },
 ];
 
 const Menu = () => {
@@ -36,21 +35,17 @@ const Menu = () => {
 const MobileMenu = () => (
   <Popover.Root>
     <Popover.Trigger asChild>
-      <button type="button" className="navbar__open" aria-label="Open menu">
+      <div className="navbar__open">
         <HamburgerMenuIcon />
-      </button>
+      </div>
     </Popover.Trigger>
     <Popover.Anchor className="navbar__anchor" />
     <Popover.Portal>
       <Popover.Content className="navbar__mobile" aria-label="Navigation menu">
         <Popover.Close asChild>
-          <button
-            type="button"
-            className="navbar__close"
-            aria-label="Close menu"
-          >
+          <div className="navbar__close">
             <Cross2Icon />
-          </button>
+          </div>
         </Popover.Close>
         <Menu />
       </Popover.Content>

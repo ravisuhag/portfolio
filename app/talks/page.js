@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Shell from "../../components/shell";
 import List from "../../components/list";
 import { pageMetadata } from "../../lib/metadata";

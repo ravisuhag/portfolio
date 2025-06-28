@@ -1,7 +1,7 @@
 :root {
-    --background_color: #fff;
-    --body_color: rgb(23, 23, 23);
-    --heading_color: #000;
+    --background_color: rgb(252, 252, 252);
+    --body_color: rgb(74, 81, 91);
+    --heading_color: rgb(59, 65, 73);
     --link_color: #2a44d7;
     --link_hover: #2a45de;
     --type_italic: "Newsreader", serif;
@@ -12,10 +12,11 @@ body {
     padding: 0;
     margin: 0;
     color: var(--body_color);
+    background-color: var(--background_color);
     font-size: 15px;
-    font-weight: 400;
     line-height: 1.8;
     font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-feature-settings: "kern", "frac", "kern", "ss02";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -47,7 +48,7 @@ img {
 }
 
 .main {
-    padding: 3rem 0;
+    padding: 1rem 0;
     position: relative;
 }
 
@@ -69,8 +70,9 @@ li {
 
 h1 {
     color: var(--heading_color);
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 560;
+    font-size: 20px;
+    margin-top: 0;
 }
 
 h2 {
@@ -81,14 +83,14 @@ h2 {
 
 h3 {
     color: var(--heading_color);
-    font-weight: 600;
+    font-weight: 540;
     margin-bottom: 0;
 }
 
 h4 {
     margin-bottom: 0.3rem;
     color: var(--heading_color);
-    font-weight: 600;
+    font-weight: 520;
 }
 
 h5 {
@@ -118,13 +120,18 @@ i {
 
 .header__logo {
     color: var(--heading_color);
-    font-weight: 500;
-    letter-spacing: 0.05em;
+    font-weight: 520;
+    letter-spacing: 0.02em;
+    font-size: 1.05em;
 }
 
 .menu {
     text-align: right;
     float: right;
+    font-family: var(--type_italic);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .menu a {
@@ -253,7 +260,7 @@ i {
         transparent 0px,
         transparent 3px,
         #eee 3px,
-        #eee 4px
+        #eee 5px
     );
     transform: translateY(-50%);
     z-index: 1;
@@ -296,6 +303,9 @@ i {
 }
 
 /**********  POST  **********/
+.post__date {
+    font-size: 12px;
+}
 .bullet__list {
     padding-left: 20px;
     margin-left: 0;

@@ -16,8 +16,9 @@ export default async function Post({ params }) {
     <Shell>
       <div className="row">
         <div className="column">
-          {formatDate(post.date)}
+          {/* <div className="post__date">{formatDate(post.date)}</div> */}
           <h1>{post.title}</h1>
+
           {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Trusted markdown content */}
           <div dangerouslySetInnerHTML={post.markup} />
         </div>
