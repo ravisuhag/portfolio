@@ -1,6 +1,8 @@
 :root {
-    --background_color: rgb(252, 252, 252);
-    --body_color: rgb(74, 81, 91);
+    /*--background_color: rgb(252, 252, 252);*/
+    /*--body_color: rgb(74, 81, 91);*/
+    --background_color: rgb(237, 237, 237);
+    --body_color: rgb(90, 90, 90);
     --heading_color: rgb(59, 65, 73);
     --link_color: #2a44d7;
     --link_hover: #2a45de;
@@ -13,7 +15,7 @@ body {
     margin: 0;
     color: var(--body_color);
     background-color: var(--background_color);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -64,6 +66,10 @@ ul {
 li {
     line-height: 1.8em;
     padding-bottom: 10px;
+}
+
+p {
+    margin: 24px 0;
 }
 
 /**********  TYPOGRAPHY  **********/
@@ -123,6 +129,14 @@ i {
     font-weight: 520;
     letter-spacing: 0.02em;
     font-size: 1.05em;
+    display: flex;
+    vertical-align: middle;
+}
+
+.header__logo img {
+    display: block;
+    width: 80px;
+    padding-top: 15px;
 }
 
 .menu {
@@ -204,13 +218,6 @@ i {
     .menu a:last-child {
         border-bottom: none;
     }
-}
-
-/**********  HOME  **********/
-.signature {
-    display: block;
-    padding-top: 30px;
-    width: 80px;
 }
 
 /**********  WORK  **********/

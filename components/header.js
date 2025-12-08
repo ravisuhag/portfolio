@@ -4,10 +4,10 @@ import { Cross2Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import * as Popover from "@radix-ui/react-popover";
 import { usePathname } from "next/navigation";
 import { Link } from "next-view-transitions";
+import Image from "next/image";
 
 // Extract navigation items to a constant
 const NAVIGATION_ITEMS = [
-  // { path: "/", label: "bio." },
   { path: "/work", label: "work." },
   { path: "/posts", label: "thoughts." },
   { path: "/talks", label: "talks." },
@@ -57,7 +57,7 @@ export default function Header() {
   return (
     <div className="header">
       <Link href="/" className="header__logo">
-        Ravi Suhag
+        <Image width={80} height={53} src="/sign.png" alt="Ravi Suhag" />
       </Link>
       <div className="navbar">
         <Menu />
