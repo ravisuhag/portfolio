@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Shell from "../components/shell";
 import { pageMetadata } from "../lib/metadata";

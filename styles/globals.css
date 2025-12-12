@@ -1,11 +1,9 @@
 :root {
-    /*--background_color: rgb(252, 252, 252);*/
-    /*--body_color: rgb(74, 81, 91);*/
-    --background_color: rgb(237, 237, 237);
-    --body_color: rgb(90, 90, 90);
+    --background_color: #fafafa;
+    --body_color: rgb(80, 80, 80);
     --heading_color: rgb(59, 65, 73);
-    --link_color: #2a44d7;
-    --link_hover: #2a45de;
+    --link_color: #ff4500;
+    --link_hover: #cc2500;
     --type_italic: "Newsreader", serif;
 }
 
