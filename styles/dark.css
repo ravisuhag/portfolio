@@ -1,19 +1,23 @@
 @media (prefers-color-scheme: dark) {
-	:root {
-		--background_color: rgb(22, 22, 24);
-		--body_color: rgb(155, 161, 166);
-		--heading_color: #ddd;
-		--link_color: #069275;
-		--link_hover: #047c64;
-	}
+    :root {
+        --background_color: rgb(22, 22, 24);
+        --body_color: rgb(155, 161, 166);
+        --heading_color: #ddd;
+        --link_color: #069275;
+        --link_hover: #047c64;
+    }
 
-	body {
-		background: var(--background_color);
-	}
+    body {
+        background: var(--background_color);
+    }
 
-	code[class*="language-"],
-	pre[class*="language-"] {
-		background: rgb(22, 22, 24) !important;
-		border-color: #333 !important;
-	}
+    code[class*="language-"],
+    pre[class*="language-"] {
+        background: rgb(22, 22, 24) !important;
+        border-color: #333 !important;
+    }
+
+    .header__logo img {
+        filter: invert(1);
+    }
 }

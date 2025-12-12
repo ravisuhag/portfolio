@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Shell>
       <p>
-        I am Ravi Suhag, an engineering leader specializing in building
+        I'm Ravi Suhag, an engineering leader specializing in building
         large-scale data and software platforms. With over a decade of
         experience across startups, hyper-growth companies, and research
         institutions, I’ve led teams that design systems for reliability, scale,
@@ -26,7 +26,7 @@ export default function Home() {
         open-source infrastructure for data-intensive applications.
       </p>
       <p>
-        Previously I worked as VP Engineering at{" "}
+        Previously, I worked as VP Engineering at{" "}
         <Link href="https://www.gojek.com/" target="_blank">
           Gojek
         </Link>
