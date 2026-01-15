@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Shell from "../../components/shell";
 import { pageMetadata } from "../../lib/metadata";
@@ -8,19 +7,18 @@ export const metadata = pageMetadata.work;
 export default function Work() {
   return (
     <Shell className="work">
-      <Image
+      {/* <Image
         src={"/ravi_suhag_full.png"}
         width={780}
         height={428}
         alt="Ravi Suhag"
         style={{ width: "100%", height: "auto" }}
-      />
+      />*/}
       <p>
-        Having more than a decade of experience in building and leading
-        high-impact engineering and product teams, I have implemented a deep
-        understanding of the data ecosystem and the driving forces of modern
-        data platforms, for solving unstructured problems by holistically
-        matching my tooling decisions with business circumstances.
+        I'm a builder at heart, always drawn to teams, products, and systems
+        that scale. Over the years, the work has grown more complex, the stakes
+        higher, and the impact broader. But the curiosity that started it all
+        remains the same. Here's what that journey has looked like.
       </p>
 
       <h4>Pixxel</h4>
@@ -34,7 +32,7 @@ export default function Work() {
         predict global phenomena in near real-time..
       </span>
 
-      <h4>Raystack Foundation</h4>
+      <h4>Raystack</h4>
       <h5>Founder . Mar 2021 - Present</h5>
       <span>
         In 2021, I founded{" "}

@@ -9,13 +9,12 @@ export default async function Posts() {
   const list = await getAllPostList();
   return (
     <Shell>
-      <h1>Posts</h1>
-      {/* <p>
-        I indulge in writing, mostly about my work to share my understanding and
-        thoughts, highlighting the process and choices that went into a
-        particular project. The remaining are thought-centric about my
-        perspective and opinions.
-      </p> */}
+      <p>
+        Every now and then, I write to share ideas and perspectives I find worth
+        holding on to. These essays reflect what I've come to believe about
+        systems, leadership, and the craft of building things that last. They'll
+        continue to grow as my thinking does.
+      </p>
       <List contents={list} />
     </Shell>
   );

@@ -8,49 +8,48 @@ export default function Home() {
   return (
     <Shell>
       <p>
-        I'm Ravi Suhag, an engineering leader specializing in building
-        large-scale data and software platforms. With over a decade of
-        experience across startups, hyper-growth companies, and research
-        institutions, I’ve led teams that design systems for reliability, scale,
-        and long-term impact.
+        I'm Ravi Suhag, an engineering leader focused on building large-scale
+        data and software systems. Over the past decade, I’ve guided teams
+        across startups, hyper-growth companies, and research institutions to
+        create systems that are reliable, scalable, and built to last.
       </p>
       <p>
-        I currently work as VP of Engineering at{" "}
+        I currently serve as VP of Engineering at{" "}
         <Link href="https://www.pixxel.space/" target="_blank">
           Pixxel
         </Link>
-        , where I oversee the development of our end-to-end earth observation
-        platform. I also run the{" "}
-        <Link href="https://raystack.org">Raystack Foundation</Link>, creating
-        open-source infrastructure for data-intensive applications.
+        , where I lead the development of our Earth observation platform that
+        transforms satellite data into actionable planetary intelligence.
       </p>
       <p>
-        Previously, I worked as VP Engineering at{" "}
+        I’m also the founder of{" "}
+        <Link href="https://raystack.org">Raystack</Link>, a non-profit
+        foundation creating open-source tools to help teams build, scale, and
+        operate complex data systems.
+      </p>
+      <p>
+        Previously, I led engineering at{" "}
         <Link href="https://www.gojek.com/" target="_blank">
           Gojek
         </Link>
-        , scaling self-serve data platforms for one of Southeast Asia’s largest
-        tech ecosystems, and at Center for International Development,{" "}
+        , scaling self-serve data platforms for one of southeast asia’s largest
+        tech ecosystems, and also built data-driven tools for public policy at
+        Center for International Development,{" "}
         <Link href="https://epod.cid.harvard.edu/" target="_blank">
           Harvard University
         </Link>
-        , where I built tools that enabled data-informed public policy.
+        .
       </p>
       <p>
-        I studied Electronics and Communication Engineering, where I built
-        embedded systems and developed an early fascination with how complex
-        systems behave. Over time, that curiosity pulled me into software. Since
-        then, I’ve spent years in distributed systems, software architecture,
-        developer tools, machine learning infrastructure and contributing to
-        open-source.
+        My journey began in Electronics and Communication Engineering, where I
+        studied embedded systems and developed a fascination with how complex
+        systems behave. That curiosity naturally evolved into software, shaping
+        my focus on distributed systems, software architecture, developer tools,
+        and machine learning infrastructure.
       </p>
       <p>
-        My work spans engineering strategy, platform architecture, and building
-        high-performing teams with a focus on systems that scale and products
-        that feel seamless.
-      </p>
-      <p>
-        You can explore my work through my essays or find me on{" "}
+        You can gain further insights into my background and interests through
+        my <Link href="/posts">essays</Link> or find me on{" "}
         <Link href="http://github.com/ravisuhag" target="_blank">
           GitHub
         </Link>

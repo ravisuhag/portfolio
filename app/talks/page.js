@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Shell from "../../components/shell";
 import List from "../../components/list";
 import { pageMetadata } from "../../lib/metadata";
@@ -97,7 +98,7 @@ export default function Talks() {
       external: true,
     },
     {
-      title: " Lean UX for minimal viable products",
+      title: "Lean UX for minimal viable products",
       subtitle:
         "In this webinar, our speaker shares why Lean UX should be the approach to take while designing MVPs. During the session, he also elucidates on the concept of Lean UX and covers different aspects, tools and methodologies of Lean UX that should be adopted for designing MVPs.",
       link: "https://youtu.be/-owEuelYLXc",
@@ -110,14 +111,16 @@ export default function Talks() {
 
   return (
     <Shell>
-      <h1>Talks</h1>
-      {/* <p>
-        I love sharing what I know with others. Feel free to{" "}
+      <p>
+        I speak occasionally at conferences and events, when there's something
+        worth sharing beyond the page. These talks are snapshots from the
+        journey: hard-won lessons, ideas that worked, and a few that didn't.
+        Feel free to{" "}
         <Link target="_blank" href="mailto:suhag.ravi@gmail.com">
-          contact
+          reach out
         </Link>{" "}
-        me if you&apos;d like me to come and speak at an event.
-      </p> */}
+        if you&apos;d like me to speak at an event.
+      </p>
       <List contents={talks} />
     </Shell>
   );
