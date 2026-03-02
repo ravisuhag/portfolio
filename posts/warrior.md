@@ -1,6 +1,6 @@
 ---
 title: Until the enemy knocks
-date: '2026-06-18'
+date: '2025-06-18'
 description: Nobody loves a warrior until the enemy is at the gates.
 slug: until-the-enemy-knocks
 author: Ravi Suhag
