@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <Shell>
       <p>
-        I'm Ravi Suhag, an engineering leader focused on building large-scale
-        data and software systems. Over the past decade, I’ve guided teams
+        I&apos;m Ravi Suhag, an engineering leader focused on building large-scale
+        data and software systems. Over the past decade, I&apos;ve guided teams
         across startups, hyper-growth companies, and research institutions to
         create systems that are reliable, scalable, and built to last.
       </p>

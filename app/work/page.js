@@ -15,10 +15,10 @@ export default function Work() {
         style={{ width: "100%", height: "auto" }}
       />*/}
       <p>
-        I'm a builder at heart, always drawn to teams, products, and systems
+        I&apos;m a builder at heart, always drawn to teams, products, and systems
         that scale. Over the years, the work has grown more complex, the stakes
         higher, and the impact broader. But the curiosity that started it all
-        remains the same. Here's what that journey has looked like.
+        remains the same. Here&apos;s what that journey has looked like.
       </p>
 
       <h4>Pixxel</h4>

@@ -112,9 +112,9 @@ export default function Talks() {
   return (
     <Shell>
       <p>
-        I speak occasionally at conferences and events, when there's something
+        I speak occasionally at conferences and events, when there&apos;s something
         worth sharing beyond the page. These talks are snapshots from the
-        journey: hard-won lessons, ideas that worked, and a few that didn't.
+        journey: hard-won lessons, ideas that worked, and a few that didn&apos;t.
         Feel free to{" "}
         <Link target="_blank" href="mailto:suhag.ravi@gmail.com">
           reach out

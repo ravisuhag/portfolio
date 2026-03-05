@@ -11,7 +11,7 @@ export async function GET(request) {
 
 		if (hasId) {
 			const id = searchParams.get("id");
-			title = getPostTitle(id);
+			title = await getPostTitle(id);
 		}
 
 		return new ImageResponse(
